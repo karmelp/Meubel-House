@@ -1,0 +1,41 @@
+@import '@/app/globals.scss';
+
+@mixin text {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.newsletter-component {
+    display: flex;
+    gap: 11px;
+
+    form input {
+        width: 200px;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+
+        &:focus {
+            outline: none;
+
+            &::placeholder {
+                opacity: 0;
+                transition: opacity 0.3s ease;
+            }
+        }
+
+        &::placeholder {
+            @include text;
+            color: #9F9F9F;
+        }
+    }
+
+    button {
+        @include text;
+        text-transform: uppercase;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #000;
+        font-weight: 500;
+    }
+}

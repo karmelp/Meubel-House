@@ -1,0 +1,70 @@
+$black: #1A1919;
+$yellow: #FBEBB5;
+$lightYellow: #FFF9E5;
+$gray: #9F9F9F;
+$pink: #FAF4F4;
+$gold: #B88E2F;
+$sidePadding: clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+
+$shadow: 0px 8px 24px 0px rgba(69, 69, 80, 0.1);
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: 300ms;
+    outline: none;
+    text-decoration: none;
+    color: $black;
+}
+
+button {
+    cursor: pointer;
+}
+
+html,
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 100%;
+}
+
+a:hover {
+    color: $gold;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+h4 {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+h5 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 133%;
+}
+
+nav {
+    a {
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
