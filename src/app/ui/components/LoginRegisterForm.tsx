@@ -1,12 +1,21 @@
+"use client"
 import React, { useState } from 'react';
 import './loginRegisterForm.scss'
 import Link from 'next/link';
 
-const LoginRegisterForms = () => {
+const LoginRegisterForms: React.FC = () => {
+  const [activeForm, setActiveForm] = useState<string>('login');
+  const [error, setError] = useState<null | string>(null);
+
+  const handleSwitchForm = (event: React.MouseEvent<HTMLElement>, targetForm: 'login' | 'register') => {
+    event.preventDefault();
+    setError(null);
+    setActiveForm(targetForm);
+  };
+
   return (
     <div className="loginRegisterForms-components">
-      <div className="form-container" id="login">
-        {/* {error && <p className="error">{error}</p>} */}
+      <div className={`form-container ${activeForm === 'login' ? 'active' : 'inactive'}`} id="login">
         <h4>Login</h4>
         <form>
           <div className="input-cont">
@@ -30,14 +39,14 @@ const LoginRegisterForms = () => {
           </div>
           <div className="btns">
             <button type="submit">Login</button>
-            <a href="#">Lost Your Password?</a>
+            <Link href="#">Lost Your Password?</Link>
           </div>
-          <span className='switch'>
+          <span className='switch' onClick={(e) => handleSwitchForm(e, 'register')}>
             Not a user? Click here to register!
           </span>
         </form>
       </div>
-      <div className="form-container" id="register">
+      <div className={`form-container ${activeForm === 'register' ? 'active' : 'inactive'}`} id="register">
         <h4>Register</h4>
         <form>
           <div className="input-cont">
@@ -50,7 +59,7 @@ const LoginRegisterForms = () => {
           <p>A link to set a new password will be sent to your email address.</p>
           <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <Link href="/privacy-policies">privacy policy</Link>.</p>
           <button type="submit">Register</button>
-          <span className='switch'>
+          <span className='switch' onClick={(e) => handleSwitchForm(e, 'login')}>
             Already a user? Click here to log in!
           </span>
         </form>
