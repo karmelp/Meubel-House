@@ -1,6 +1,6 @@
 import '@/app/globals.scss';
 import type { Metadata } from 'next'
-import { poppins } from '@/app/ui/fonts'
+import { poppins } from './ui/fonts'
 import Header from './ui/components/Header';
 import Footer from './ui/components/Footer';
 

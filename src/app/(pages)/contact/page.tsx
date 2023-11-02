@@ -1,5 +1,5 @@
-import Hero from '@/app/ui/components/Hero';
-import InfoSection from '@/app/ui/components/InfoSection';
+import Hero from '../../ui/components/Hero';
+import InfoSection from '../../ui/components/InfoSection';
 import React from 'react'
 import './contact.scss'
 

@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import { Metadata } from 'next'
 import './shop.scss'
-import Hero from '@/app/ui/components/Hero';
-import Pagination from '@/app/ui/components/Pagination';
-import InfoSection from '@/app/ui/components/InfoSection';
+import Hero from '../../ui/components/Hero';
+import Pagination from '../../ui/components/Pagination';
+import InfoSection from '../../ui/components/InfoSection';
 
 const metadata: Metadata = {
   title: 'Shop',
@@ -39,6 +39,7 @@ const Shop = (props: Props) => {
         breadcrumbs={breadcrumbs}
       />
 
+      
 
       {/* <Pagination
         currentPage={currentPage}

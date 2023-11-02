@@ -1,21 +1,21 @@
 import Hero from '../../ui/components/Hero';
 import InfoSection from '../../ui/components/InfoSection';
 import React from 'react'
-import './about.scss'
+import './checkout.scss'
 
 type Props = {}
 
-const About = (props: Props) => {
+const Checkout = (props: Props) => {
 
     const breadcrumbs = [
         { text: 'Home', link: '/' },
-        { text: 'About', link: '/about' },
+        { text: 'Checkout', link: '/checkout' },
     ];
 
     return (
-        <div className='about-page'>
+        <div className='checkout-page'>
             <Hero 
-                pageTitle="About"
+                pageTitle="Checkout"
                 breadcrumbs={breadcrumbs}
             />
 
@@ -24,4 +24,4 @@ const About = (props: Props) => {
     )
 }
 
-export default About
+export default Checkout
