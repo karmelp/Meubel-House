@@ -1,0 +1,35 @@
+@import '@/app/globals.scss';
+
+.hero {
+    height: 316px;
+    position: relative;
+
+    .hero-bg {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 316px;
+        filter: blur(6px) opacity(0.5);
+    }
+
+    .hero-content {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: -40px;
+        }
+
+        h2 {
+            margin-top: -20px;
+        }
+    }
+}
