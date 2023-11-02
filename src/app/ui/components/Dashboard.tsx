@@ -1,14 +1,20 @@
-import React from 'react'
-import './dashboard.scss'
+// import { useAuth } from '@/app/lib/auth'
+// import './dashboard.scss'
 
-type Props = {}
+// type Props = {}
 
-const Dashboard = (props: Props) => {
-  return (
-    <div className='dashboard-component'>
-      Dashboard
-    </div>
-  )
-}
+// const Dashboard = (props: Props) => {
+//   const {logout} = useAuth();
 
-export default Dashboard
+//   const handleLogout = () => {
+//     logout();
+//   };  
+
+//   return (
+//     <div className='dashboard-component'>
+//       Welcome to Dashboard! <button onClick={handleLogout}>Log out</button>
+//     </div>
+//   )
+// }
+
+// export default Dashboard
