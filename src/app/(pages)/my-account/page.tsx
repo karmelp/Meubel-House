@@ -1,7 +1,7 @@
-import Dashboard from '@/app/ui/components/Dashboard';
-import Hero from '@/app/ui/components/Hero';
-import InfoSection from '@/app/ui/components/InfoSection';
-import LoginRegisterForms from '@/app/ui/components/LoginRegisterForm';
+import Dashboard from '../../ui/components/Dashboard';
+import Hero from '../../ui/components/Hero';
+import InfoSection from '../../ui/components/InfoSection';
+import LoginRegisterForms from '../../ui/components/LoginRegisterForm';
 import React from 'react'
 
 type Props = {}

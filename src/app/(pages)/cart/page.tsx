@@ -1,21 +1,21 @@
 import Hero from '../../ui/components/Hero';
 import InfoSection from '../../ui/components/InfoSection';
 import React from 'react'
-import './about.scss'
+import './cart.scss'
 
 type Props = {}
 
-const About = (props: Props) => {
+const Cart = (props: Props) => {
 
     const breadcrumbs = [
         { text: 'Home', link: '/' },
-        { text: 'About', link: '/about' },
+        { text: 'Cart', link: '/cart' },
     ];
 
     return (
-        <div className='about-page'>
+        <div className='cart-page'>
             <Hero 
-                pageTitle="About"
+                pageTitle="Cart"
                 breadcrumbs={breadcrumbs}
             />
 
@@ -24,4 +24,4 @@ const About = (props: Props) => {
     )
 }
 
-export default About
+export default Cart
