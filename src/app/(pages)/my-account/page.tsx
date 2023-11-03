@@ -1,13 +1,16 @@
-// import Dashboard from '@/app/ui/components/Dashboard';
-import Hero from '@/app/ui/components/Hero';
-import InfoSection from '@/app/ui/components/InfoSection';
-import LoginRegisterForms from '@/app/ui/components/LoginRegisterForm';
+"use client"
+import Hero from '@/app/ui/components/Hero'
+import InfoSection from '@/app/ui/components/InfoSection'
+import LoginRegisterForms from '@/app/ui/components/LoginRegisterForm'
+import Dashboard from '@/app/ui/components/Dashboard'
 import React from 'react'
+import { AuthContext } from "@/app/lib/AuthContext"
+import { useContext } from "react"
 
 type Props = {}
 
 const MyAccount = (props: Props) => {
-    // const { isAuthenticated } = useAuth();
+    const context = useContext(AuthContext)
 
     const breadcrumbs = [
         { text: 'Home', link: '/' },
@@ -21,13 +24,11 @@ const MyAccount = (props: Props) => {
                 breadcrumbs={breadcrumbs}
             />
             
-            <LoginRegisterForms />
-
-            {/* {isAuthenticated ? (
+            {context.isAuthenticated ? (
                 <Dashboard />
             ) : (
                 <LoginRegisterForms />
-            )} */}
+            )}
 
             <InfoSection />
         </div>

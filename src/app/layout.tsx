@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { poppins } from './ui/fonts'
 import Header from './ui/components/Header';
 import Footer from './ui/components/Footer';
+import AuthProvider from './lib/AuthContext';
 
 export const metadata: Metadata = {
   title: {
@@ -21,7 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${poppins.className}`}>
         <Header />
-        {children}
+        <AuthProvider>
+          {children}
+        </AuthProvider>
         <Footer />
       </body>
     </html>

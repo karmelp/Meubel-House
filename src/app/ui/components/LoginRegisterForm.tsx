@@ -1,15 +1,18 @@
 "use client"
-import React, { useState } from 'react';
+import { AuthContext } from '@/app/lib/AuthContext';
+import React, { useState, useContext } from 'react';
 import './loginRegisterForm.scss'
 import Link from 'next/link';
 
 const LoginRegisterForms: React.FC = () => {
+  const context = useContext(AuthContext)
+
   const [activeForm, setActiveForm] = useState<string>('login');
-  const [error, setError] = useState<null | string>(null);
+  // const [error, setError] = useState<null | string>(null);
 
   const handleSwitchForm = (event: React.MouseEvent<HTMLElement>, targetForm: 'login' | 'register') => {
     event.preventDefault();
-    setError(null);
+    // setError(null);
     setActiveForm(targetForm);
   };
 
@@ -38,7 +41,7 @@ const LoginRegisterForms: React.FC = () => {
             <label htmlFor="remember-me">Remember me</label>
           </div>
           <div className="btns">
-            <button type="submit">Login</button>
+            <button onClick={context.login}>Login</button>
             <Link href="#">Lost Your Password?</Link>
           </div>
           <span className='switch' onClick={(e) => handleSwitchForm(e, 'register')}>

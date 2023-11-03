@@ -1,5 +1,21 @@
 @import '@/app/globals.scss';
 
 .dashboard-component {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    min-height: 621px;
+    padding: 67px clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+
+    button {
+        width: 215px;
+        height: 64px;
+        background-color: transparent;
+        border: 1px solid #000;
+        border-radius: 15px;
+        font-weight: 400;
+        font-size: clamp(1rem, 0.867rem + 0.4255vw, 1.25rem);
+    }
 }
