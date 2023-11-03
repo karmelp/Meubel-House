@@ -19,6 +19,15 @@ const Contact = (props: Props) => {
                 breadcrumbs={breadcrumbs}
             />
 
+            <div className="blog-section">
+                <div className="blog-posts">
+
+                </div>
+                <div className="blog-navi">
+                    
+                </div>
+            </div>
+
             <InfoSection />
         </div>
     )
