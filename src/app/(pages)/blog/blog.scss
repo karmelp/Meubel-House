@@ -6,11 +6,156 @@
     gap: 62px;
 
     .blog-section {
+        max-width: 1440px;
         display: flex;
+        margin: 0 auto;
         gap: 30px;
+        padding: 24px $sidePadding;
 
         .blog-posts {
+            flex: 2;
+
+            .post {
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+
+                .thumbnail {
+                    width: 100%;
+                    height: 500px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                }
+
+                .post-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+
+                    .meta {
+                        display: flex;
+                        gap: 35px;
+
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            gap: 7px;
+                            color: $gray;
+                        }
+                    }
+
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .excerpt {
+                            font-weight: 400;
+                            color: $gray;
+                            font-size: 15px;
+                            line-height: 22.5px;
+                            text-align: justify;
+                        }
+                    }
+
+                    a {
+                        margin-top: 15px;
+                        padding-bottom: 12px;
+                        position: relative;
+                        // border-bottom: 1px solid $black;
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            right: 0;
+                            margin: 0 auto;
+                            bottom: 0;
+                            height: 1px;
+                            width: 86%;
+                            border-bottom: 1px solid $black;
+                        }
+
+                        &:hover {
+                            &::before {
+                                border-color: $gold;
+                            }
+                        }
+                    }
+                }
+            }  
+        }
+
+        .blog-navi {
+            flex: 1;
+            padding: 0 41px;
+            display: flex;
+            flex-direction: column;
+            gap: 41px;
+
+            .nav {
+                .search-bar {
+                    position: relative;
+                
+                    input {
+                        padding: 12px clamp(2.25rem, 0.7554rem + 5.9783vw, 3.625rem) 12px clamp(1.5rem, 0.9565rem + 2.1739vw, 2rem);
+                        width: 100%;
+                        border-radius: 10px;
+                        border: 1px solid $gray;
+                        height: 58px;
             
+                        &:focus {
+                            &::placeholder {
+                                opacity: 0;
+                                transition: opacity 0.3s ease;
+                            }
+                        }
+                    }
+                
+                    .search-icon {
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        width: clamp(1.25rem, 0.9783rem + 1.087vw, 1.5rem);
+                        margin: auto 0;
+                        right: 12px;
+                        cursor: pointer;
+                    }
+                }
+
+                .categories {
+                    padding: 43px 25px 61px 36px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 33px;
+
+                    .cats {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 41px;
+
+                        .category {
+                            display: flex;
+                            justify-content: space-between;
+                            
+                            p {
+                                color: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .nav-heading {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 150%;
+            }
+
+            .recent {
+                padding: 0 25px 0 36px;
+            }
         }
     }
 }
