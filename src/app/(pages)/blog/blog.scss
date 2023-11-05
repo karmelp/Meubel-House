@@ -97,14 +97,14 @@
             .nav {
                 .search-bar {
                     position: relative;
-                
+                  
                     input {
                         padding: 12px clamp(2.25rem, 0.7554rem + 5.9783vw, 3.625rem) 12px clamp(1.5rem, 0.9565rem + 2.1739vw, 2rem);
                         width: 100%;
                         border-radius: 10px;
                         border: 1px solid $gray;
                         height: 58px;
-            
+
                         &:focus {
                             &::placeholder {
                                 opacity: 0;
@@ -112,7 +112,7 @@
                             }
                         }
                     }
-                
+
                     .search-icon {
                         position: absolute;
                         top: 0;
@@ -138,7 +138,7 @@
                         .category {
                             display: flex;
                             justify-content: space-between;
-                            
+         
                             p {
                                 color: $gray;
                             }
