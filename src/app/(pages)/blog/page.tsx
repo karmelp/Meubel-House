@@ -29,10 +29,34 @@ export default async function Blog() {
       <div className="blog-section">
         <div className="blog-posts">
           {/* {data.map((post: any) => (
-            <div key={post.id} className="blog-card">
-              <h2>{post.title}</h2>
+            <div key={post.id} className="post">
+              <Image src={post.thumbnail} alt='post' className='thumbnail'/>
+              <div className='post-content'>
+                <div className="meta">
+                  <div className="item">
+                    <Image src={admin} alt='Author' />
+                    {post.author}
+                  </div>
+                  <div className="item">
+                    <Image src={date} alt='Date' />
+                    {post.date}
+                  </div>
+                  <div className="item">
+                    <Image src={category} alt='Category' />
+                    {post.category}
+                  </div>
+                </div>
+                <div className="content">
+                  <h6 className="title">{post.title}</h6>
+                  <div className="excerpt">
+                    {post.content}
+                  </div>
+                </div>
+                <LinkBtn link="#" text='Read more' />
+              </div>
             </div>
           ))} */}
+          
           <div className="post">
             <Image src={thumbnail} alt='post' className='thumbnail'/>
             <div className='post-content'>
