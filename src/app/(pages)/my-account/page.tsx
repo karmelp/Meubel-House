@@ -1,38 +1,38 @@
-"use client"
-import Hero from '@/app/ui/components/Hero'
-import InfoSection from '@/app/ui/components/InfoSection'
-import LoginRegisterForms from '@/app/ui/components/LoginRegisterForm'
-import Dashboard from '@/app/ui/components/Dashboard'
-import React from 'react'
-import { AuthContext } from "@/app/lib/AuthContext"
-import { useContext } from "react"
+'use client';
+import Hero from '@/app/ui/components/Hero';
+import InfoSection from '@/app/ui/components/InfoSection';
+import LoginRegisterForms from '@/app/ui/components/LoginRegisterForm';
+import Dashboard from '@/app/ui/components/Dashboard';
+import React from 'react';
+import { AuthContext } from '@/app/lib/AuthContext';
+import { useContext } from 'react';
 
 type Props = {}
 
 const MyAccount = (props: Props) => {
-    const context = useContext(AuthContext)
+  const context = useContext(AuthContext);
 
-    const breadcrumbs = [
-        { text: 'Home', link: '/' },
-        { text: 'My Account', link: '/my-account' },
-    ];
+  const breadcrumbs = [
+    { text: 'Home', link: '/' },
+    { text: 'My Account', link: '/my-account' },
+  ];
 
-    return (
-        <div>
-            <Hero 
-                pageTitle="My Account"
-                breadcrumbs={breadcrumbs}
-            />
+  return (
+    <div>
+      <Hero 
+        pageTitle="My Account"
+        breadcrumbs={breadcrumbs}
+      />
             
-            {context.isAuthenticated ? (
-                <Dashboard />
-            ) : (
-                <LoginRegisterForms />
-            )}
+      {context.isAuthenticated ? (
+        <Dashboard />
+      ) : (
+        <LoginRegisterForms />
+      )}
 
-            <InfoSection />
-        </div>
-    )
-}
+      <InfoSection />
+    </div>
+  );
+};
 
-export default MyAccount
+export default MyAccount;
