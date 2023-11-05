@@ -58,31 +58,6 @@
                             text-align: justify;
                         }
                     }
-
-                    a {
-                        margin-top: 15px;
-                        padding-bottom: 12px;
-                        position: relative;
-                        // border-bottom: 1px solid $black;
-
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            left: 0;
-                            right: 0;
-                            margin: 0 auto;
-                            bottom: 0;
-                            height: 1px;
-                            width: 86%;
-                            border-bottom: 1px solid $black;
-                        }
-
-                        &:hover {
-                            &::before {
-                                border-color: $gold;
-                            }
-                        }
-                    }
                 }
             }  
         }
@@ -141,6 +116,10 @@
          
                             p {
                                 color: $gray;
+                            }
+
+                            &:hover p {
+                                color: $gold;
                             }
                         }
                     }
