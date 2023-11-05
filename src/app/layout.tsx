@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | Meubel House',
     default: 'Meubel House',
   },
-  description: 'Boutique furniture store',
+  "description": 'Boutique furniture store',
 }
 
 export default function RootLayout({
