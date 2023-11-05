@@ -1,5 +1,5 @@
 import React from 'react'
-import './blogPostCard'
+import './blogPostCard.scss'
 
 type Props = {}
 
