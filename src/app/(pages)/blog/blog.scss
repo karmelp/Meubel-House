@@ -79,12 +79,12 @@
 
                         &:hover {
                             &::before {
-                                border-bottom: 1px solid $gold;
+                                border-color: $gold;
                             }
                         }
                     }
                 }
-            }
+            }  
         }
 
         .blog-navi {
@@ -97,7 +97,7 @@
             .nav {
                 .search-bar {
                     position: relative;
-
+                  
                     input {
                         padding: 12px clamp(2.25rem, 0.7554rem + 5.9783vw, 3.625rem) 12px clamp(1.5rem, 0.9565rem + 2.1739vw, 2rem);
                         width: 100%;
@@ -138,7 +138,7 @@
                         .category {
                             display: flex;
                             justify-content: space-between;
-
+         
                             p {
                                 color: $gray;
                             }
