@@ -1,6 +1,8 @@
 import React from 'react';
 import './productCard.scss';
 import Image from 'next/image';
+import logo from '@/public/logo.svg';
+// import
 interface ProductCardProps {
   product: {
     thumbnail: string;
@@ -11,15 +13,16 @@ interface ProductCardProps {
 
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   // Construct the image path using require
-  // const thumbnailSrc = `/images/${product.thumbnail}`;
+  // const thumbnailSrc = `/${product.thumbnail}`;
   // const thumbnailSrc = '/../../public/food2.png';
   // const thumbnailSrc = '/images/Asgaard-sofa.svg';
-  const thumbnailSrc = "../../../public/Asgaard-sofa.svg";
-  // const thumbnailSrc = require(`../data/images/${product.thumbnail}`).default;
+  // const thumbnailSrc = "../../../public/Asgaard-sofa.svg";
+  const thumbnailSrc = require(`@/public/${product.thumbnail}`).default;
 console.log("thumbnail =",thumbnailSrc)
   return (
     <div className="product-card">
-     <img className='image' src="/food2.png" alt={product.name} />
+      <Image className='image' src={thumbnailSrc} alt="Logo" />
+     {/* <img className='image' src={logo} alt={product.name} /> */}
       <div className='title'>{product.name}</div>
       <div className='price'>Rs. {product.price}</div>
     </div>

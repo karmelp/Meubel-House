@@ -22,13 +22,13 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
               className={`thumbnail ${currentImageIndex === index ? 'active' : ''}`}
               onClick={() => handleThumbnailClick(index)}
             >
-              <img src={require(`../data/images/${image}`).default} alt={`Product ${index}`} />
+              {/* <img src={require(`../data/images/${image}`).default} alt={`Product ${index}`} /> */}
             </div>
           ))}
         </div>
       </div>
       <div className="main-image">
-        <img src={require(`../data/images/${images[currentImageIndex]}`).default} alt={`Product ${currentImageIndex}`} />
+        {/* <img src={require(`../data/images/${images[currentImageIndex]}`).default} alt={`Product ${currentImageIndex}`} /> */}
       </div>
     </div>
   );
