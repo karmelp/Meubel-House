@@ -9,6 +9,7 @@ import fb from '../icons/akar-icons_facebook-fill.svg';
 import linkedIn from '../icons/akar-icons_linkedin-box-fill.svg';
 import twitter from '../icons/ant-design_twitter-circle-filled.svg';
 import Image from 'next/image';
+import Rating from './Rating';
 interface SingleProductProps {
   product: {
     gallery: string[];
@@ -54,6 +55,12 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
             <div className='price'>Rs. {product.price}</div>
             <Image src={require(`@/public/favs.svg`).default} alt="Favorite" style={favIconStyle} onClick={toggleFav} />
           </div>
+          <div className="price-container">
+      <div className="rating ">      
+        <Rating />
+      </div>
+      <p className="review-count ">5 customer reviews</p>
+    </div>
           <p>{product.description}</p>
           {/* Render the Sizes component only if there are size options require(`@/public/${images[currentImageIndex]}` */}
           {hasSizeOptions && <Sizes sizes={product.size} />}
