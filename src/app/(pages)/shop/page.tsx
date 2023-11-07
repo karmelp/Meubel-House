@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { Metadata } from 'next'
 import './shop.scss'
 import Hero from '../../ui/components/Hero';
@@ -15,15 +15,34 @@ const metadata: Metadata = {
 type Props = {}
 
 const productsPerPage = 16;
-// const data: any[] = []; // Replace with your data structure (adjust the type accordingly)
 
 function Shop() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from the API
+    const fetchData = async () => {
+      try {
+        const productsFetch = await fetch('http://localhost:3001/products', {
+          cache: 'no-store',
+        });
+        const Products1 = await productsFetch.json();
+        setProducts(Products1);
+        console.log('Data for page', Products1);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData(); // Call the fetchData function when the component mounts
+  }, []);
+  // console.log("product here",products);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const startIndex = (currentPage - 1) * productsPerPage;
   const endIndex = startIndex + productsPerPage;
-  const currentProducts = Products?.slice(startIndex, endIndex);
-  const totalPages = Math.ceil(Products?.length / productsPerPage);
+  const currentProducts = products?.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(products?.length / productsPerPage);
 
   const handlePageChange = (newPage: number) => {
     setCurrentPage(newPage);
@@ -43,7 +62,8 @@ function Shop() {
 
       <div className="product-grid">
         {currentProducts?.map((product) => (
-         <Link href={`/shop/${encodeURIComponent(product.name)}`}>
+         <Link href={`/shop/${encodeURIComponent((product as any)?.name)}`}>
+
          <ProductCard product={product} />
        </Link>
         ))}
