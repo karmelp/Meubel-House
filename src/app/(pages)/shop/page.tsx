@@ -4,10 +4,9 @@ import { Metadata } from 'next'
 import './shop.scss'
 import Hero from '../../ui/components/Hero';
 import Pagination from '../../ui/components/Pagination';
-import InfoSection from '../../ui/components/InfoSection';
 import Link from 'next/link';
 import ProductCard from '@/app/ui/components/ProductCard';
-import Products from "../../ui/data/products"
+
 const metadata: Metadata = {
   title: 'Shop',
 }
@@ -62,7 +61,7 @@ function Shop() {
 
       <div className="product-grid">
         {currentProducts?.map((product) => (
-         <Link href={`/shop/${encodeURIComponent((product as any)?.name)}`}>
+         <Link href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
 
          <ProductCard product={product} />
        </Link>

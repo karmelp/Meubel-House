@@ -8,7 +8,7 @@ import AddToCart from './addToCart';
 import fb from '../icons/akar-icons_facebook-fill.svg';
 import linkedIn from '../icons/akar-icons_linkedin-box-fill.svg';
 import twitter from '../icons/ant-design_twitter-circle-filled.svg';
-
+import Image from 'next/image';
 interface SingleProductProps {
   product: {
     gallery: string[];
@@ -52,10 +52,10 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
         <div className="info">
           <div className='price-container'>
             <div className='price'>Rs. {product.price}</div>
-            <img src={favsIcon} alt="Favorite" style={favIconStyle} onClick={toggleFav} />
+            <Image src={require(`@/public/favs.svg`).default} alt="Favorite" style={favIconStyle} onClick={toggleFav} />
           </div>
           <p>{product.description}</p>
-          {/* Render the Sizes component only if there are size options */}
+          {/* Render the Sizes component only if there are size options require(`@/public/${images[currentImageIndex]}` */}
           {hasSizeOptions && <Sizes sizes={product.size} />}
           {/* Render the Colors component only if there are color options */}
           {hasColorOptions && <Colors colors={product.colors} />}
@@ -81,9 +81,9 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
             <span>Share</span>
             <span>:</span>
             <span>
-              <img src={fb} alt="Share to Facebook" />
-              <img src={linkedIn} alt="Share to LinkedIn" />
-              <img src={twitter} alt="Share to Twitter" />
+              <Image src={fb} alt="Share to Facebook" />
+              <Image src={linkedIn} alt="Share to LinkedIn" />
+              <Image src={twitter} alt="Share to Twitter" />
             </span>
           </div>
         </div>
