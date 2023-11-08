@@ -7,16 +7,25 @@ import UserAccount from '@/public/mdi_account-alert-outline.svg';
 import Search from '@/public/akar-icons_search.svg';
 import Favourites from '@/public/akar-icons_heart.svg';
 import ShoppingCart from '@/public/ant-design_shopping-cart-outlined.svg';
-
+import CartSidebar from './CartSidebar';
 type Props = {}
 
 const Header = (props: Props) => {
   const [showMenu, setShowMenu] = useState(false);
-
+  const [isCartOpen, setIsCartOpen] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+  const toggleCart = () => {
+    setIsCartOpen(!isCartOpen);
+  };
 
+  const closeCart = () => {
+    setIsCartOpen(false);
+  };
+  const openCart = () => {
+    setIsCartOpen(true);
+  };
   return (
     <header>
       <div className='section'></div>
@@ -35,8 +44,16 @@ const Header = (props: Props) => {
         <Link href="/my-account"><Image src={UserAccount} width={28} height={28} alt="My Account" /></Link>
         <Link href="#"><Image src={Search} width={28} height={28} alt="Search" /></Link>
         <Link href="#"><Image src={Favourites} width={28} height={28} alt="Favourites" /></Link>
-        <Link href="#"><Image src={ShoppingCart} width={28} height={28} alt="Cart" /></Link>
+        {/* <Link href="#"><Image src={ShoppingCart} width={28} height={28} alt="Cart" /></Link> */}
+        <button onClick={openCart}>
+          <Image src={ShoppingCart} width={28} height={28} alt="Cart" />
+        </button>
       </div>
+      <CartSidebar isOpen={isCartOpen} closeCart={closeCart} />
+      <div
+      className={`overlay ${isCartOpen ? 'active' : ''}`}
+      onClick={closeCart}
+    ></div>
     </header>
   )
 }

@@ -6,7 +6,7 @@ import Hero from '../../ui/components/Hero';
 import Pagination from '../../ui/components/Pagination';
 import Link from 'next/link';
 import ProductCard from '@/app/ui/components/ProductCard';
-
+import InfoSection from '../../ui/components/InfoSection';
 const metadata: Metadata = {
   title: 'Shop',
 }
@@ -72,6 +72,7 @@ function Shop() {
         totalPages={totalPages}
         onPageChange={handlePageChange}
       />
+      <InfoSection/>
     </div>
   );
 }

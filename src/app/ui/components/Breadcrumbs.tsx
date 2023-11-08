@@ -2,7 +2,7 @@ import React from 'react'
 import arrow from '@/public/arrow.svg'
 import Image from 'next/image'
 import './breadcrumbs.scss'
-
+import Link from 'next/link'
 type BreadcrumbItem = {
   text: string;
   link: string;
@@ -21,7 +21,7 @@ const Breadcrumbs = ({ items }: Props) => {
           {index === items.length - 1 ? (
             <span>{item.text}</span>
           ) : (
-            <a href={item.link}>{item.text}</a>
+            <Link href={item.link}>{item.text}</Link>
           )}
         </span>
       ))}

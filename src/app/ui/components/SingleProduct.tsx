@@ -46,51 +46,61 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
   };
 
   return (
-    <div className="single-product">
+    <div className='single-product'>
       <ProductGallery images={product.gallery} /> {/* Use ProductGallery component */}
       <div className='product-data'>
         <h1>{product.name}</h1>
-        <div className="info">
+        <div className='info'>
           <div className='price-container'>
             <div className='price'>Rs. {product.price}</div>
-            <Image src={require(`@/public/favs.svg`).default} alt="Favorite" style={favIconStyle} onClick={toggleFav} />
+            <Image
+              src={require(`@/public/favs.svg`).default}
+              alt='Favorite'
+              style={favIconStyle}
+              onClick={toggleFav}
+            />
           </div>
-          <div className="price-container">
-      <div className="rating ">      
-        <Rating />
-      </div>
-      <p className="review-count ">5 customer reviews</p>
-    </div>
+          <div
+            className='price-containercodecc
+          
+          
+          '
+          >
+            <div className='rating '>
+              <Rating />
+            </div>
+            <p className='review-count '>5 customer reviews</p>
+          </div>
           <p>{product.description}</p>
           {/* Render the Sizes component only if there are size options require(`@/public/${images[currentImageIndex]}` */}
           {hasSizeOptions && <Sizes sizes={product.size} />}
           {/* Render the Colors component only if there are color options */}
           {hasColorOptions && <Colors colors={product.colors} />}
-          <AddToCart />
+          <AddToCart product={product} />          
         </div>
-        <div className="details">
-          <div className="item">
+        <div className='details'>
+          <div className='item'>
             <span>SKU</span>
             <span>:</span>
             <span>{product.SKU}</span>
           </div>
-          <div className="item">
+          <div className='item'>
             <span>Category</span>
             <span>:</span>
             <span>{product.category}</span>
           </div>
-          <div className="item">
+          <div className='item'>
             <span>Tags</span>
             <span>:</span>
             <span>{product.tags?.join(', ')}</span>
           </div>
-          <div className="item">
+          <div className='item'>
             <span>Share</span>
             <span>:</span>
             <span>
-              <Image src={fb} alt="Share to Facebook" />
-              <Image src={linkedIn} alt="Share to LinkedIn" />
-              <Image src={twitter} alt="Share to Twitter" />
+              <Image src={fb} alt='Share to Facebook' />
+              <Image src={linkedIn} alt='Share to LinkedIn' />
+              <Image src={twitter} alt='Share to Twitter' />
             </span>
           </div>
         </div>

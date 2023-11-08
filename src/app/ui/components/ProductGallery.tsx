@@ -20,7 +20,9 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
           {images?.map((image, index) => (
             <div
               key={index}
-              className={`thumbnail ${currentImageIndex === index ? 'active' : ''}`}
+              className={`thumbnail 
+              ${currentImageIndex === index ? 'active' : ''}
+              `}
               onClick={() => handleThumbnailClick(index)}
             >
                <Image className='image' src={require(`@/public/${image}`).default} alt={`Product ${index}`} />

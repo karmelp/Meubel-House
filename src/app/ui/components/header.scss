@@ -84,3 +84,19 @@ header {
         }
     }
 }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent grey overlay */
+    z-index: 999; /* Make sure the overlay appears above the rest of the content */
+    display: none; /* Initially hidden */
+  }
+  
+  .overlay.active {
+    display: block; /* Show the overlay when the cart is open */
+  }
+  
