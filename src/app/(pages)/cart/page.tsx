@@ -44,11 +44,15 @@ const Cart = (props: Props) => {
             <h2>Cart Totals</h2>
             <div className="totals">
               <div className="subtotal">
-                Subtotal: Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
+                Subtotal      Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
+              </div>
+              <div className="subtotal">
+                Total       Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
               </div>
               {/* Add other totals here (e.g., tax, shipping) */}
             </div>
-            <button className="checkout-button">Checkout</button>
+            <div className="checkout">
+            <button className="checkout-button">Checkout</button></div>
           </div>
         </div>       
       </div>

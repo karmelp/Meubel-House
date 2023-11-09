@@ -28,26 +28,23 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
     <table>
       <thead>
         <tr>
-          <th>Image</th>
-          <th>Name</th>
+          <th>Product</th>          
           <th>Price</th>
           <th>Quantity</th>
-          <th>Total</th>
+          <th>Subtotal</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
         {cartItems.map((cartItem) => (
           <tr key={cartItem.product.id}>
-            <td>
-              <Image
+            
+            <td className='img_card'> <Image
               src={require(`@/public/${cartItem.product.gallery?.[0]}`).default}
                 // src={cartItem.product.image}
                 alt={cartItem.product.name}
-              />
-            </td>
-            <td>{cartItem.product.name}</td>
-            <td>Rs .{formatNumber(cartItem.product.price)}</td>
+              />{cartItem.product.name}</td>
+            <td className='price'>Rs .{formatNumber(cartItem.product.price)}</td>
             <td>{cartItem.quantity}</td>
             <td>Rs.{cartItem.product.price * cartItem.quantity}</td>
             <td>
@@ -55,7 +52,7 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
           onClick={() => removeFromCart(cartItem.product.id)}
           className="delete-button"
         >
-          <FontAwesomeIcon icon={faTrash} />
+          <FontAwesomeIcon icon={faTrash} className="delete-button"/>
         </button>
       </td>
           </tr>
