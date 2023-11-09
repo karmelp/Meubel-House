@@ -37,7 +37,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
     updatedCartItems[existingCartItemIndex].quantity += action.payload.quantity;
 
     return {
-      ...state,
+     
       cartItems: updatedCartItems,
     };
   } else {
@@ -58,7 +58,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
         updatedCartItems.splice(itemToRemoveIndex, 1);
 
         return {
-          ...state,
+          
           cartItems: updatedCartItems,
         };
       }

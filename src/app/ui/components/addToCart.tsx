@@ -24,8 +24,8 @@ const AddToCart: React.FC<AddToCartProps> = ({ product }) => {
   const handleAddToCart = () => {
     addToCart(product, quantity); 
     toast.success(`${product?.name} added to the Cart`, {
-      position: 'top-right', // Position of the toast
-      autoClose: 3000, // Auto-close the toast after 3 seconds
+      position: 'top-center', // Position of the toast
+      autoClose: 1500, // Auto-close the toast after 3 seconds
       hideProgressBar: false, // Show progress bar
       closeOnClick: true, // Close on click
       pauseOnHover: true, // Pause the timer on hover
