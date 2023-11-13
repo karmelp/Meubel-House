@@ -2,35 +2,40 @@
 import React, { useState } from 'react';
 import './sizes.scss'
 
-// const Sizes = ({ sizes }) => {
-//   const [selectedSize, setSelectedSize] = useState(null);
+interface SizesProps {
+  sizes: string[] | undefined; // You can adjust the type accordingly
+}
 
-//   const handleSizeClick = (size) => {
-//     if (selectedSize === size) {
-//       // Deselect the size if it's already selected
-//       setSelectedSize(null);
-//     } else {
-//       // Select the size when clicked
-//       setSelectedSize(size);
-//     }
-//   };
+const Sizes: React.FC<SizesProps> = ({ sizes }) => {
+  const [selectedSize, setSelectedSize] = useState<string | null>(null);
 
-//   return (
-//     <div className="sizes-container">
-//       <div className='title'>Size</div>
-//       <div className='size-options'>
-//         {sizes?.map((size, index) => (
-//           <button
-//             key={index}
-//             className={selectedSize === size ? 'selected' : ''}
-//             onClick={() => handleSizeClick(size)}
-//           >
-//             {size}
-//           </button>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
+  const handleSizeClick = (size: string) => {
+    if (selectedSize === size) {
+      // Deselect the size if it's already selected
+      setSelectedSize(null);
+    } else {
+      // Select the size when clicked
+      setSelectedSize(size);
+    }
+  };
 
-// export default Sizes
+  return (
+    <div className="sizes-container">
+      <div className='title'>Size</div>
+      <div className='size-options'>
+        {sizes?.map((size, index) => (
+          <button
+            key={index}
+            className={selectedSize === size ? 'selected' : ''}
+            onClick={() => handleSizeClick(size)}
+          >
+            {size}
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default Sizes;
+
