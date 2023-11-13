@@ -51,9 +51,9 @@ const Header = (props: Props) => {
       </div>
       <CartSidebar isOpen={isCartOpen} closeCart={closeCart} />
       <div
-      className={`overlay ${isCartOpen ? 'active' : ''}`}
-      onClick={closeCart}
-    ></div>
+        className={`overlay ${isCartOpen ? 'active' : ''}`}
+        onClick={closeCart}
+      ></div>
     </header>
   );
 };

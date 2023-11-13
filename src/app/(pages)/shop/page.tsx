@@ -1,15 +1,17 @@
-"use client"
+'use client';
 import React, { useState,useEffect } from 'react';
-import { Metadata } from 'next'
-import './shop.scss'
+import { Metadata } from 'next';
+import './shop.scss';
 import Hero from '../../ui/components/Hero';
+import heroImage from '@/public/hero-bg.jpg';
 import Pagination from '../../ui/components/Pagination';
 import Link from 'next/link';
 import ProductCard from '@/app/ui/components/ProductCard';
 import InfoSection from '../../ui/components/InfoSection';
+
 const metadata: Metadata = {
   title: 'Shop',
-}
+};
 
 type Props = {}
 
@@ -57,14 +59,14 @@ function Shop() {
       <Hero
         pageTitle="Shop"
         breadcrumbs={breadcrumbs}
+        heroImage={heroImage}
       />
 
       <div className="product-grid">
         {currentProducts?.map((product) => (
-         <Link href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
-
-         <ProductCard product={product} />
-       </Link>
+          <Link href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
+            <ProductCard product={product} />
+          </Link>
         ))}
       </div>
       <Pagination
@@ -78,4 +80,4 @@ function Shop() {
 }
 
 
-export default Shop
+export default Shop;

@@ -1,5 +1,6 @@
-import Hero from '../../ui/components/Hero';
-import InfoSection from '../../ui/components/InfoSection';
+import Hero from '@/app/ui/components/Hero';
+import heroImage from '@/public/hero-bg.jpg';
+import InfoSection from '@/app/ui/components/InfoSection';
 import React from 'react';
 import './checkout.scss';
 
@@ -17,6 +18,7 @@ const Checkout = (props: Props) => {
       <Hero 
         pageTitle="Checkout"
         breadcrumbs={breadcrumbs}
+        heroImage={heroImage}
       />
 
       <InfoSection />

@@ -1,7 +1,8 @@
-"use client"
+'use client';
 import React from 'react';
-import Hero from '../../ui/components/Hero';
-import InfoSection from '../../ui/components/InfoSection';
+import Hero from '@/app/ui/components/Hero';
+import heroImage from '@/public/hero-bg.jpg';
+import InfoSection from '@/app/ui/components/InfoSection';
 import './cart.scss';
 import { useCart } from '@/app/lib/CartContext';
 import { formatNumber } from '@/app/lib/CartContext';
@@ -20,7 +21,7 @@ interface CartItem {
 }
 const Cart = (props: Props) => {
   const { state: cartState,removeFromCart } = useCart();
-  console.log("cart state",cartState)
+  console.log('cart state',cartState);
   function calculateSubtotal(cartItems: CartItem[]): number {
     return cartItems.reduce((subtotal, item) => subtotal + item.product.price * item.quantity, 0);
   }
@@ -34,8 +35,9 @@ const Cart = (props: Props) => {
       <Hero 
         pageTitle="Cart"
         breadcrumbs={breadcrumbs}
+        heroImage={heroImage}
       />
-       <div className="cart-content">
+      <div className="cart-content">
         <div className="cart-table">
           <CartTable cartItems={cartState.cartItems} /> {/* Use the CartTable component */}
         </div>
@@ -52,7 +54,8 @@ const Cart = (props: Props) => {
               {/* Add other totals here (e.g., tax, shipping) */}
             </div>
             <div className="checkout">
-            <button className="checkout-button">Checkout</button></div>
+              <button className="checkout-button">Checkout</button>
+            </div>
           </div>
         </div>       
       </div>

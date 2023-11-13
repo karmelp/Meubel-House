@@ -15,7 +15,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
     <div className="product-card">
       <Image className='image' src={thumbnailSrc} alt="Logo" />
-     {/* <img className='image' src={logo} alt={product.name} /> */}
+      {/* <img className='image' src={logo} alt={product.name} /> */}
       <div className='title'>{product.name}</div>
       <div className='price'>Rs. {product.price}</div>
     </div>

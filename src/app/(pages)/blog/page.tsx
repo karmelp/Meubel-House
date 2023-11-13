@@ -1,5 +1,6 @@
 'use client';
 import Hero from '@/app/ui/components/Hero';
+import heroImage from '@/public/hero-bg.jpg';
 import InfoSection from '@/app/ui/components/InfoSection';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,7 +9,6 @@ import date from '@/public/uis_calender.svg';
 import category from '@/public/ci_tag.svg';
 import search from '@/public/akar-icons_search.svg';
 import './blog.scss';
-import heroImage from '@/public/hero-bg.jpg';
 import LinkBtn from '@/app/ui/components/LinkBtn';
 import Pagination from '@/app/ui/components/Pagination';
 import { useState, useEffect } from 'react';

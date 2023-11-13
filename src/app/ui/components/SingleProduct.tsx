@@ -5,9 +5,9 @@ import './singleProduct.scss';
 import Sizes from './Sizes';
 import Colors from './Colors';
 import AddToCart from './addToCart';
-import fb from '../icons/akar-icons_facebook-fill.svg';
-import linkedIn from '../icons/akar-icons_linkedin-box-fill.svg';
-import twitter from '../icons/ant-design_twitter-circle-filled.svg';
+import fb from '@/public/akar-icons_facebook-fill.svg';
+import linkedIn from '@/public/akar-icons_linkedin-box-fill.svg';
+import twitter from '@/public/ant-design_twitter-circle-filled.svg';
 import Image from 'next/image';
 import Rating from './Rating';
 interface SingleProductProps {
@@ -54,7 +54,7 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
           <div className='price-container'>
             <div className='price'>Rs. {product.price}</div>
             <Image
-              src={require(`@/public/favs.svg`).default}
+              src={require('@/public/favs.svg')}
               alt='Favorite'
               style={favIconStyle}
               onClick={toggleFav}

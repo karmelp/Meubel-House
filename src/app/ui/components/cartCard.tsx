@@ -1,5 +1,5 @@
 import React from 'react';
-import "./cartCard.scss";
+import './cartCard.scss';
 import Image from 'next/image';
 import { formatNumber } from '@/app/lib/CartContext';
 interface CartItemCardProps {
