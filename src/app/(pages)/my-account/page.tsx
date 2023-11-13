@@ -4,6 +4,7 @@ import InfoSection from '@/app/ui/components/InfoSection';
 import LoginRegisterForms from '@/app/ui/components/LoginRegisterForm';
 import Dashboard from '@/app/ui/components/Dashboard';
 import React from 'react';
+import heroImage from '@/public/hero-bg.jpg';
 import { AuthContext } from '@/app/lib/AuthContext';
 import { useContext } from 'react';
 
@@ -22,6 +23,7 @@ const MyAccount = (props: Props) => {
       <Hero 
         pageTitle="My Account"
         breadcrumbs={breadcrumbs}
+        heroImage={heroImage}
       />
             
       {context.isAuthenticated ? (

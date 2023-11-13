@@ -5,4 +5,26 @@
     flex-direction: column;
     gap: 62px;
 
+    .single-blog-post {
+        max-width: 1440px;
+        width: 100%;
+        padding: 0 clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        .meta {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+        
+            .item {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                color: $gray;
+            }
+        }
+    }
 }
