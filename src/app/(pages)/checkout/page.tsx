@@ -7,6 +7,7 @@ import { useCart } from '@/app/lib/CartContext';
 import './checkout.scss';
 import { formatNumber } from '@/app/lib/CartContext';
 import BillingForm from '@/app/ui/components/Billing';
+import BillingInfo from '@/app/ui/components/billing2';
 
 type Props = {}
 interface CartItem {
@@ -34,33 +35,13 @@ const Checkout = (props: Props) => {
   };
 
   return (
-    <div className='checkout-page'>
+    <div>
       <Hero 
         pageTitle="Checkout"
         breadcrumbs={breadcrumbs}
         heroImage={heroImage}
-      />
-      <div className="cart-content">
-        <div className="cart-table">
-         <BillingForm onSubmit={onSubmit}/>
-        </div>
-        <div className="cart-totals">
-          <div className="cart-totals-card">
-            {/* <h2>Cart Totals</h2> */}
-            <div className="totals">
-              <div className="subtotal">
-                Subtotal      Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
-              </div>
-              <div className="subtotal">
-                Total       Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
-              </div>              
-            </div>
-            <div className="checkout">
-            <button className="checkout-button">Checkout</button></div>
-          </div>
-        </div>       
-      </div>
-
+      />      
+      <BillingInfo />
       <InfoSection />
     </div>
   );

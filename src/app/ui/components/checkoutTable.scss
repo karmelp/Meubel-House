@@ -1,0 +1,27 @@
+$light-yellow: #FFF9E5;
+$yellow: #FBEBB5;
+
+table {
+    // width: 80%;
+    border-collapse: collapse;
+    padding-left: 100px;
+  
+    th {
+      width: 80%;
+      background-color: #FBEBB5;
+      text-align: center;
+      padding: 8px;
+    }
+  
+    td {
+      width: 100%;
+      // border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    tr{
+      justify-content: space-between;
+    }
+  
+}
+ 

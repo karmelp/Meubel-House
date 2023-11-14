@@ -43,8 +43,9 @@ const BillingForm: React.FC<BillingFormProps> = ({ onSubmit }) => {
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
-     <div className='title'>
-      <label>Billing Details</label></div>
+     <div className='billing'>
+      <label>Billing Details</label>
+      </div>
       <div className='names'>
       <div className='billing'>
         <label>First Name:</label>
