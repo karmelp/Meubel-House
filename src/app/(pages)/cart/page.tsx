@@ -20,7 +20,7 @@ interface CartItem {
 }
 const Cart = (props: Props) => {
   const { state: cartState,removeFromCart } = useCart();
-  console.log("cart state",cartState)
+  // console.log("cart state",cartState)
   function calculateSubtotal(cartItems: CartItem[]): number {
     return cartItems.reduce((subtotal, item) => subtotal + item.product.price * item.quantity, 0);
   }
