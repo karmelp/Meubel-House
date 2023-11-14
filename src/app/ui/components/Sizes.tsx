@@ -1,6 +1,6 @@
-"use client"
+'use client';
 import React, { useState } from 'react';
-import './sizes.scss'
+import './sizes.scss';
 
 interface SizesProps {
   sizes: string[] | undefined; // You can adjust the type accordingly
@@ -35,7 +35,7 @@ const Sizes: React.FC<SizesProps> = ({ sizes }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Sizes;
 

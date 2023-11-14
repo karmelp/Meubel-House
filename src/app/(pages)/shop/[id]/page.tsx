@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Breadcrumbs from '@/app/ui/components/Breadcrumbs';
 import SingleProduct from '@/app/ui/components/SingleProduct';
-import './singlePage.scss'
+import './singlePage.scss';
 type Props = {};
 
 const SingleProductPage = ({
@@ -32,7 +32,7 @@ const SingleProductPage = ({
     };
 
     fetchData(); // Call the fetchData function when the component mounts
-  }, []);
+  }, [params.id]);
   console.log('params ', params);
 
   const breadcrumbs = [

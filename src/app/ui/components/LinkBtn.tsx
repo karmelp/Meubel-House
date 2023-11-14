@@ -1,6 +1,6 @@
-import React from 'react'
-import Link from 'next/link'
-import './linkBtn.scss'
+import React from 'react';
+import Link from 'next/link';
+import './linkBtn.scss';
 
 type Props = {
     link: string;
@@ -8,11 +8,11 @@ type Props = {
 }
 
 const LinkBtn = (props: Props) => {
-    const { link, text } = props;
+  const { link, text } = props;
 
-    return (
-        <Link className='linkBtn' href={link}>{text}</Link>
-    )
-}
+  return (
+    <Link className='linkBtn' href={link}>{text}</Link>
+  );
+};
 
-export default LinkBtn
+export default LinkBtn;

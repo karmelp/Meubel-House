@@ -1,11 +1,11 @@
-"use client"
+'use client';
 import { AuthContext } from '@/app/lib/AuthContext';
 import React, { useState, useContext } from 'react';
-import './loginRegisterForm.scss'
+import './loginRegisterForm.scss';
 import Link from 'next/link';
 
 const LoginRegisterForms: React.FC = () => {
-  const context = useContext(AuthContext)
+  const context = useContext(AuthContext);
 
   const [activeForm, setActiveForm] = useState<string>('login');
   // const [error, setError] = useState<null | string>(null);

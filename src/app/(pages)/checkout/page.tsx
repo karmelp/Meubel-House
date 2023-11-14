@@ -2,6 +2,7 @@
 import React from 'react';
 import Hero from '../../ui/components/Hero';
 import InfoSection from '../../ui/components/InfoSection';
+import heroImage from '@/public/hero-bg.jpg';
 import { useCart } from '@/app/lib/CartContext';
 import './checkout.scss';
 import { formatNumber } from '@/app/lib/CartContext';
@@ -37,6 +38,7 @@ const Checkout = (props: Props) => {
       <Hero 
         pageTitle="Checkout"
         breadcrumbs={breadcrumbs}
+        heroImage={heroImage}
       />
       <div className="cart-content">
         <div className="cart-table">

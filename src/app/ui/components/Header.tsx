@@ -1,8 +1,8 @@
-"use client"
-import React, { useState } from 'react'
-import Link from 'next/link'
+'use client';
+import React, { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
-import './header.scss'
+import './header.scss';
 import UserAccount from '@/public/mdi_account-alert-outline.svg';
 import Search from '@/public/akar-icons_search.svg';
 import Favourites from '@/public/akar-icons_heart.svg';
@@ -51,11 +51,11 @@ const Header = (props: Props) => {
       </div>
       <CartSidebar isOpen={isCartOpen} closeCart={closeCart} />
       <div
-      className={`overlay ${isCartOpen ? 'active' : ''}`}
-      onClick={closeCart}
-    ></div>
+        className={`overlay ${isCartOpen ? 'active' : ''}`}
+        onClick={closeCart}
+      ></div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

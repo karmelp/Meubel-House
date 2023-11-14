@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Rating: React.FC = () => {
   return (
@@ -31,6 +31,6 @@ const Rating: React.FC = () => {
       />
     </svg>
   );
-}
+};
 
 export default Rating;

@@ -1,5 +1,5 @@
-import React from 'react'
-import './newsletter.scss'
+import React from 'react';
+import './newsletter.scss';
 
 type Props = {}
 
@@ -11,7 +11,7 @@ const Newsletter = (props: Props) => {
       </form>
       <button type='submit'>Subscribe</button>
     </div>
-  )
-}
+  );
+};
 
-export default Newsletter
+export default Newsletter;

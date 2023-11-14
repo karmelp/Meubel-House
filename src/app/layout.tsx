@@ -7,6 +7,7 @@ import AuthProvider from './lib/AuthContext';
 import { CartProvider } from './lib/CartContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 export const metadata: Metadata = {
   title: {
     template: '%s | Meubel House',

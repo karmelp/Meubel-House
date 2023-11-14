@@ -1,65 +1,117 @@
-import Hero from '../../ui/components/Hero';
-import InfoSection from '../../ui/components/InfoSection';
+'use client';
+import Hero from '@/app/ui/components/Hero';
+import heroImage from '@/public/hero-bg.jpg';
+import InfoSection from '@/app/ui/components/InfoSection';
 import Image from 'next/image';
 import Link from 'next/link';
-import thumbnail from '@/public/post1.jpeg';
 import admin from '@/public/dashicons_admin-users.svg';
 import date from '@/public/uis_calender.svg';
 import category from '@/public/ci_tag.svg';
 import search from '@/public/akar-icons_search.svg';
 import './blog.scss';
 import LinkBtn from '@/app/ui/components/LinkBtn';
+import Pagination from '@/app/ui/components/Pagination';
+import { useState, useEffect } from 'react';
 
-export default async function Blog() {
-  // const blogPosts = await fetch(`http://localhost:3001/blogPosts`, {
-  //   cache: "no-store",
-  // });
+const postsPerPage = 3;
 
-  // const data = await blogPosts.json();
+type Blog = {
+  id: number;
+  thumbnail: string;
+  author: string;
+  date: string;
+  category: string;
+  title: string;
+  excerpt: string;
+};
 
+export default function Blog() {
+  // Create breadcrumbs
   const breadcrumbs = [
     { text: 'Home', link: '/' },
     { text: 'Blog', link: '/blog' },
   ];
 
+  const [data, setData] = useState<Blog[]>([]);
+  const [currentPage, setCurrentPage] = useState(1);
+
+  // Fetch all blog posts
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:3001/blogPosts', {
+        cache: 'no-store',
+      });
+
+      const data = await response.json();
+      setData(data);
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  // Pagination
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const currentProducts = data?.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(data?.length / postsPerPage);
+
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+  };
+
+  // Get all the categories
+  const getUniqueCategoriesWithCounts = (posts: Blog[]) => {
+    const categories: Record<string, number> = {};
+    posts.forEach((post) => {
+      if (post.category in categories) {
+        categories[post.category]++;
+      } else {
+        categories[post.category] = 1;
+      }
+    });
+    return categories;
+  };
+
+  const uniqueCategoriesWithCounts = getUniqueCategoriesWithCounts(data);
+
   return (
     <div className="blog-page">
-      <Hero pageTitle="Blog" breadcrumbs={breadcrumbs} />
+      <Hero pageTitle="Blog" breadcrumbs={breadcrumbs} heroImage={heroImage} />
 
       <div className="blog-section">
         <div className="blog-posts">
-          {/* {data.map((post: any) => (
-            <div key={post.id} className="blog-card">
-              <h2>{post.title}</h2>
-            </div>
-          ))} */}
-          <div className="post">
-            <Image src={thumbnail} alt='post' className='thumbnail'/>
-            <div className='post-content'>
-              <div className="meta">
-                <div className="item">
-                  <Image src={admin} alt='Author' />
-                  Admin
+          {currentProducts.map((post) => (
+            <div key={post.id} className="post">
+              <Image src={require(`@/public/${post.thumbnail}`).default} alt='post' width={500} height={500} sizes="(max-width: 1400px) 100%" className='thumbnail'/>
+              <div className='post-content'>
+                <div className="meta">
+                  <div className="item">
+                    <Image src={admin} alt='Author' />
+                    {post.author}
+                  </div>
+                  <div className="item">
+                    <Image src={date} alt='Date' />
+                    {post.date}
+                  </div>
+                  <div className="item">
+                    <Image src={category} alt='Category' />
+                    {post.category}
+                  </div>
                 </div>
-                <div className="item">
-                  <Image src={date} alt='Date' />
-                  14 Oct 2022
+                <div className="content">
+                  <Link href={`/blog/${post.id}`} ><h6 className="title">{post.title}</h6> </Link> 
+                  <div className="excerpt">
+                    {post.excerpt}
+                  </div>
                 </div>
-                <div className="item">
-                  <Image src={category} alt='Category' />
-                  Wood
-                </div>
+                <LinkBtn link={`/blog/${post.id}`} text='Read more' />
               </div>
-              <div className="content">
-                <h6 className="title">Going all-in with millennial design</h6>
-                <div className="excerpt">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.
-                </div>
-              </div>
-              <LinkBtn link="#" text='Read more' />
             </div>
-          </div>
-          
+          ))}
         </div>
         <div className="blog-navi">
           <div className="nav">
@@ -70,14 +122,12 @@ export default async function Blog() {
             <div className="categories">
               <div className='nav-heading'>Categories</div>
               <div className="cats">
-                <Link href="#" className="category">
-                  <p>Crafts</p>
-                  <p>2</p>
-                </Link>
-                <Link href="#" className="category">
-                  <p>Design</p>
-                  <p>8</p>
-                </Link>
+                {Object.entries(uniqueCategoriesWithCounts).map(([category, count]) => (
+                  <Link key={category} href="#" className="category">
+                    <p>{category}</p>
+                    <p>{count}</p>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
@@ -86,6 +136,12 @@ export default async function Blog() {
           </div>
         </div>
       </div>
+
+      <Pagination 
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
 
       <InfoSection />
     </div>

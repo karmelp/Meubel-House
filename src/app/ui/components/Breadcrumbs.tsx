@@ -1,8 +1,8 @@
-import React from 'react'
-import arrow from '@/public/arrow.svg'
-import Image from 'next/image'
-import './breadcrumbs.scss'
-import Link from 'next/link'
+import React from 'react';
+import arrow from '@/public/arrow.svg';
+import Image from 'next/image';
+import './breadcrumbs.scss';
+import Link from 'next/link';
 type BreadcrumbItem = {
   text: string;
   link: string;
@@ -15,7 +15,7 @@ type Props = {
 const Breadcrumbs = ({ items }: Props) => {
   return (
     <div className="breadcrumbs">
-       {items.map((item, index) => (
+      {items.map((item, index) => (
         <span key={index} data-testid={`breadcrumb-${index}`}>
           {index > 0 && <Image src={arrow} alt="Arrow" />}
           {index === items.length - 1 ? (
@@ -26,7 +26,7 @@ const Breadcrumbs = ({ items }: Props) => {
         </span>
       ))}
     </div>
-  )
-}
+  );
+};
 
-export default Breadcrumbs
+export default Breadcrumbs;
