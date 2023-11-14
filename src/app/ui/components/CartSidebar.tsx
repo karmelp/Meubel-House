@@ -72,7 +72,9 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, closeCart }) => {
             <Link href={'/cart'} onClick={closeCart}>
               <button className='cart-button'>View Cart</button>
             </Link>
-            <button className='cart-button' onClick={closeCart}>Checkout</button>
+            <Link href={`/checkout`} onClick={closeCart}>
+            <button className='cart-button'>Checkout</button>
+            </Link>
           </div>
         </div>
       </div>

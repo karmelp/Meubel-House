@@ -27,26 +27,26 @@ const initialState: CartState = {
 const cartReducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
     case 'ADD_TO_CART':
-  const existingCartItemIndex = state.cartItems.findIndex(
-    (item) => item.product.id === action.payload.product.id
-  );
+      const existingCartItemIndex = state.cartItems.findIndex(
+        (item) => item.product.id === action.payload.product.id
+      );
 
-  if (existingCartItemIndex !== -1) {
-    // If the product is in the cart, update the quantity by adding the new quantity
-    const updatedCartItems = [...state.cartItems];
-    updatedCartItems[existingCartItemIndex].quantity += action.payload.quantity;
+      if (existingCartItemIndex !== -1) {
+        // If the product is in the cart, update the quantity by adding the new quantity
+        const updatedCartItems = [...state.cartItems];
+        updatedCartItems[existingCartItemIndex].quantity += action.payload.quantity;
 
-    return {
-     
-      cartItems: updatedCartItems,
-    };
-  } else {
-    // If the product is not in the cart, add it as a new entry
-    return {
-      ...state,
-      cartItems: [...state.cartItems, action.payload],
-    };
-  }
+        return {
+          ...state,
+          cartItems: updatedCartItems,
+        };
+      } else {
+        // If the product is not in the cart, add it as a new entry
+        return {
+          ...state,
+          cartItems: [...state.cartItems, action.payload],
+        };
+      }
 
     case 'REMOVE_FROM_CART':
       const itemToRemoveIndex = state.cartItems.findIndex(
@@ -58,7 +58,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
         updatedCartItems.splice(itemToRemoveIndex, 1);
 
         return {
-          
+          ...state,
           cartItems: updatedCartItems,
         };
       }
@@ -69,6 +69,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
       return state;
   }
 };
+
 
 
 interface CartProviderProps {

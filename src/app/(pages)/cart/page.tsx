@@ -6,6 +6,7 @@ import InfoSection from '@/app/ui/components/InfoSection';
 import './cart.scss';
 import { useCart } from '@/app/lib/CartContext';
 import { formatNumber } from '@/app/lib/CartContext';
+import Link from 'next/link';
 import CartTable from '@/app/ui/components/cartTable';
 type Props = {}
 
@@ -22,6 +23,7 @@ interface CartItem {
 const Cart = (props: Props) => {
   const { state: cartState,removeFromCart } = useCart();
   console.log('cart state',cartState);
+  // console.log("cart state",cartState)
   function calculateSubtotal(cartItems: CartItem[]): number {
     return cartItems.reduce((subtotal, item) => subtotal + item.product.price * item.quantity, 0);
   }
@@ -51,10 +53,11 @@ const Cart = (props: Props) => {
               <div className="subtotal">
                 Total       Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
               </div>
-              {/* Add other totals here (e.g., tax, shipping) */}
+              {/* Add other totals here (e.g., tax, shipping) /checkout */}
             </div>
             <div className="checkout">
-              <button className="checkout-button">Checkout</button>
+            <Link href={`/checkout`}>
+              <button className="checkout-button">Checkout</button></Link>
             </div>
           </div>
         </div>       
