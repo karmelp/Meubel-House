@@ -13,7 +13,7 @@ footer {
     & div:first-child {
         padding-bottom: 48px;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: $tablet) {
             flex-wrap: wrap;
         }
     }

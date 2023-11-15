@@ -35,6 +35,12 @@ header {
                 opacity: 0.6;
             }
         }
+
+        @media screen and (max-width: $mobile) {
+            .favs {
+                display: none;
+            }
+        }
     }
 
     .section {
@@ -59,7 +65,7 @@ header {
         }
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: $mobile) {
         .burger-menu {
             display: flex;
         }
