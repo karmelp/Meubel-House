@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 55px clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem) 38px;
     display: flex;
-    gap: 38px;
+    gap: clamp(1.25rem, -2.125rem + 7.0313vw, 2.375rem);
     justify-content: center;
 
     button {

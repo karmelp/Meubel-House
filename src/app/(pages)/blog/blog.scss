@@ -12,6 +12,10 @@
         gap: 30px;
         padding: 24px $sidePadding;
 
+        @media screen and (max-width: $mobile) {
+            flex-direction: column-reverse;
+        }
+
         .blog-posts {
             flex: 2;
             display: flex;
@@ -25,7 +29,7 @@
 
                 .thumbnail {
                     width: 100%;
-                    height: 500px;
+                    height: clamp(15.625rem, -31.25rem + 97.6563vw, 31.25rem);
                     border-radius: 10px;
                     object-fit: cover;
                 }
@@ -107,7 +111,7 @@
                 }
 
                 .categories {
-                    padding: 43px 25px 61px 36px;
+                    padding: 43px clamp(0rem, -4.6875rem + 9.7656vw, 1.5625rem) 61px clamp(0rem, -6.75rem + 14.0625vw, 2.25rem);
                     display: flex;
                     flex-direction: column;
                     gap: 33px;
@@ -115,11 +119,17 @@
                     .cats {
                         display: flex;
                         flex-direction: column;
-                        gap: 41px;
+                        gap: clamp(1.25rem, -2.6875rem + 8.2031vw, 2.5625rem);
 
                         .category {
                             display: flex;
                             justify-content: space-between;
+
+                            &.active {
+                                p {
+                                    color: $gold;
+                                }
+                            }
          
                             p {
                                 color: $gray;
@@ -135,12 +145,63 @@
 
             .nav-heading {
                 font-weight: 500;
-                font-size: 24px;
+                font-size: clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem);
                 line-height: 150%;
             }
 
             .recent {
-                padding: 0 25px 0 36px;
+                padding: 0 clamp(0rem, -4.6875rem + 9.7656vw, 1.5625rem) 0 clamp(0rem, -6.75rem + 14.0625vw, 2.25rem);
+                display: flex;
+                flex-direction: column;
+                gap: 26px;
+
+                @media screen and (max-width: $mobile) {
+                    display: none;
+                }
+
+                .recent-posts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 39px;
+
+                    .post {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 12px;
+                        
+                        &:hover {
+                            .title {
+                                color: $gold;
+                            }
+                        }
+
+                        .thumbnail {
+                            border-radius: 10px;
+                            object-fit: cover;
+                            width: 100%;
+                            max-width: 80px;
+                        }
+
+                        .info {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            gap: 5px;
+
+                            .title {
+                                font-size: 14px;
+                                max-width: 160px;
+                                line-height: 150%;
+                            }
+
+                            .date {
+                                color: $gray;
+                                font-size: 12px;
+                                line-height: 150%;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -81,7 +81,7 @@
         text-align: center;
         cursor: pointer;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: $tablet) {
             display: flex;
         }
     }
@@ -91,7 +91,7 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $tablet) {
     a.switch {
         display: flex;
     }

@@ -43,7 +43,7 @@ const Header = (props: Props) => {
       <div className='icons section'>
         <Link href="/my-account"><Image src={UserAccount} width={28} height={28} alt="My Account" /></Link>
         <Link href="#"><Image src={Search} width={28} height={28} alt="Search" /></Link>
-        <Link href="#"><Image src={Favourites} width={28} height={28} alt="Favourites" /></Link>
+        <Link href="#" className='favs'><Image src={Favourites} width={28} height={28} alt="Favourites" /></Link>
         {/* <Link href="#"><Image src={ShoppingCart} width={28} height={28} alt="Cart" /></Link> */}
         <button onClick={openCart}>
           <Image src={ShoppingCart} width={28} height={28} alt="Cart" />

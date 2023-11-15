@@ -26,44 +26,16 @@ type Blog = {
 };
 
 export default function Blog() {
-  // Create breadcrumbs
   const breadcrumbs = [
     { text: 'Home', link: '/' },
     { text: 'Blog', link: '/blog' },
   ];
 
   const [data, setData] = useState<Blog[]>([]);
+  const [allCategories, setAllCategories] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
-  // Fetch all blog posts
-  const fetchData = async () => {
-    try {
-      const response = await fetch('http://localhost:3001/blogPosts', {
-        cache: 'no-store',
-      });
-
-      const data = await response.json();
-      setData(data);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // Pagination
-  const startIndex = (currentPage - 1) * postsPerPage;
-  const endIndex = startIndex + postsPerPage;
-  const currentProducts = data?.slice(startIndex, endIndex);
-  const totalPages = Math.ceil(data?.length / postsPerPage);
-
-  const handlePageChange = (newPage: number) => {
-    setCurrentPage(newPage);
-  };
-
-  // Get all the categories
   const getUniqueCategoriesWithCounts = (posts: Blog[]) => {
     const categories: Record<string, number> = {};
     posts.forEach((post) => {
@@ -76,17 +48,66 @@ export default function Blog() {
     return categories;
   };
 
-  const uniqueCategoriesWithCounts = getUniqueCategoriesWithCounts(data);
+  useEffect(() => {
+    const fetchAllData = async () => {
+      try {
+        const response = await fetch('http://localhost:3001/blogPosts', {
+          cache: 'no-store',
+        });
+
+        const allData = await response.json();
+        const uniqueCategories = Object.keys(getUniqueCategoriesWithCounts(allData));
+        setAllCategories(uniqueCategories);
+
+        if (selectedCategory) {
+          fetchAllData();
+        } else {
+          setData(allData);
+        }
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchAllData();
+  }, [selectedCategory]);
+
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+  };
+
+  const handleCategoryClick = (category: string) => {
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
+
+  const handleShowAllPosts = () => {
+    setSelectedCategory(null);
+  };
+
+  const filteredData = selectedCategory ? data.filter((post) => post.category === selectedCategory) : data;
+
+  const startIndex = (currentPage - 1) * postsPerPage;
+  const endIndex = startIndex + postsPerPage;
+  const currentProducts = filteredData.slice(startIndex, endIndex);
+  const totalPages = Math.ceil(filteredData.length / postsPerPage);
+
+  const recentPosts = data
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 5);
 
   return (
     <div className="blog-page">
+      {/* Hero Section */}
       <Hero pageTitle="Blog" breadcrumbs={breadcrumbs} heroImage={heroImage} />
 
+      {/* Blog Section */}
       <div className="blog-section">
+        {/* Blog Posts */}
         <div className="blog-posts">
           {currentProducts.map((post) => (
             <div key={post.id} className="post">
-              <Image src={require(`@/public/${post.thumbnail}`).default} alt='post' width={500} height={500} sizes="(max-width: 1400px) 100%" className='thumbnail'/>
+              <Image src={require(`@/public/${post.thumbnail}`)} alt='post' width={500} height={500} sizes="(max-width: 1400px) 100%" className='thumbnail'/>
               <div className='post-content'>
                 <div className="meta">
                   <div className="item">
@@ -113,36 +134,66 @@ export default function Blog() {
             </div>
           ))}
         </div>
+        
+        {/* Blog Navigation */}
         <div className="blog-navi">
           <div className="nav">
+            {/* Search Bar */}
             <div className="search-bar">
               <input type="text" />
               <Image src={search} alt='Icon' className='search-icon' />
             </div>
+            
+            {/* Categories */}
             <div className="categories">
               <div className='nav-heading'>Categories</div>
               <div className="cats">
-                {Object.entries(uniqueCategoriesWithCounts).map(([category, count]) => (
-                  <Link key={category} href="#" className="category">
+                <Link className="category" href="#" onClick={handleShowAllPosts}>
+                  <p>All Posts</p>
+                  <p>{data.length}</p>
+                </Link>
+                {allCategories.map((category) => (
+                  <Link key={category} href="#" 
+                    className={`category ${selectedCategory === category ? 'active' : ''}`} 
+                    onClick={() => handleCategoryClick(category)}>
                     <p>{category}</p>
-                    <p>{count}</p>
+                    <p>{getUniqueCategoriesWithCounts(data)[category]}</p>
                   </Link>
                 ))}
               </div>
             </div>
           </div>
+
+          {/* Recent Posts */}
           <div className="recent">
             <div className='nav-heading'>Recent Posts</div>
+            <div className="recent-posts">
+              {recentPosts.map((post) => (
+                <div key={post.id}>
+                  <Link className='post' href={`/blog/${post.id}`}>
+                    <Image src={require(`@/public/${post.thumbnail}`)} alt='post' width={80} height={80} className='thumbnail'/>
+                    <div className="info">
+                      <p className="title">{post.title}</p>
+                      <p className='date'>{post.date}</p>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
 
-      <Pagination 
-        currentPage={currentPage}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-      />
+      {/* Pagination */}
+      {filteredData.length > postsPerPage && (
+        <Pagination 
+          currentPage={currentPage}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+        />
+      )}
 
+      {/* Info Section */}
       <InfoSection />
     </div>
   );
