@@ -1,9 +1,7 @@
 @import '@/app/globals.scss';
 
 .blog-post {
-    display: flex;
-    flex-direction: column;
-    gap: 62px;
+    @include page;
 
     .single-blog-post {
         max-width: 1440px;
