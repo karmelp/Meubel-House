@@ -44,9 +44,9 @@ const LoginRegisterForms: React.FC = () => {
             <button onClick={context.login}>Login</button>
             <Link href="#">Lost Your Password?</Link>
           </div>
-          <span className='switch' onClick={(e) => handleSwitchForm(e, 'register')}>
+          <Link href='#' className='switch' onClick={(e) => handleSwitchForm(e, 'register')}>
             Not a user? Click here to register!
-          </span>
+          </Link>
         </form>
       </div>
       <div className={`form-container ${activeForm === 'register' ? 'active' : 'inactive'}`} id="register">
@@ -60,11 +60,11 @@ const LoginRegisterForms: React.FC = () => {
             />
           </div>
           <p>A link to set a new password will be sent to your email address.</p>
-          <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <Link href="/privacy-policies">privacy policy</Link>.</p>
+          <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <Link href="/privacy-policy">privacy policy</Link>.</p>
           <button type="submit">Register</button>
-          <span className='switch' onClick={(e) => handleSwitchForm(e, 'login')}>
+          <Link href='#' className='switch' onClick={(e) => handleSwitchForm(e, 'login')}>
             Already a user? Click here to log in!
-          </span>
+          </Link>
         </form>
       </div>
     </div>
