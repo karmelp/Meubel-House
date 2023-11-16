@@ -9,7 +9,7 @@
 
 }
 
-.cart-content {
+.cart-info {
     display: flex;
     // justify-content: space-between;
     padding-left: 100px;
@@ -59,8 +59,18 @@
         }
 
         .subtotal {
+            display: flex;
+            gap:40px;
             margin-bottom: 10px;
             font-weight: bold;
+            justify-content: space-between;
+        }
+        .price {
+            color: #B88E2F;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
         }
 
         .checkout-button {

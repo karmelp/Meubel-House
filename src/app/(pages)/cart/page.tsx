@@ -34,33 +34,32 @@ const Cart = (props: Props) => {
 
   return (
     <div className='cart-page'>
-      <Hero 
-        pageTitle="Cart"
-        breadcrumbs={breadcrumbs}
-        heroImage={heroImage}
-      />
-      <div className="cart-content">
-        <div className="cart-table">
+      <Hero pageTitle='Cart' breadcrumbs={breadcrumbs} heroImage={heroImage} />
+      <div className='cart-info'>
+        <div className='cart-table'>
           <CartTable cartItems={cartState.cartItems} /> {/* Use the CartTable component */}
         </div>
-        <div className="cart-totals">
-          <div className="cart-totals-card">
+        <div className='cart-totals'>
+          <div className='cart-totals-card'>
             <h2>Cart Totals</h2>
-            <div className="totals">
-              <div className="subtotal">
-                Subtotal      Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
+            <div className='totals'>
+              <div className='subtotal'>
+                <div>Subtotal </div>
+                <div> Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>
               </div>
-              <div className="subtotal">
-                Total       Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
+              <div className='subtotal'>
+                <div>Total</div>
+                <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>{' '}
               </div>
               {/* Add other totals here (e.g., tax, shipping) /checkout */}
             </div>
-            <div className="checkout">
-            <Link href={`/checkout`}>
-              <button className="checkout-button">Checkout</button></Link>
+            <div className='checkout'>
+              <Link href={`/checkout`}>
+                <button className='checkout-button'>Checkout</button>
+              </Link>
             </div>
           </div>
-        </div>       
+        </div>
       </div>
 
       <InfoSection />

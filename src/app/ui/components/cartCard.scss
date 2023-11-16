@@ -4,9 +4,13 @@ $light-yellow: #FFF9E5;
     justify-content: space-between;
     align-items: center;
     // border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
     background-color: #fff;
+    width:90%;
   
     .cart-item-image {
       max-width: 80px;
@@ -42,11 +46,12 @@ $light-yellow: #FFF9E5;
     }
   
     .close-button {
-      background-color: #ff0000;
+      background-color: #ccc;
       color: #fff;
       border: none;
+      margin:1px;
       padding: 5px 10px;
-      border-radius: 5px;
+      border-radius: 25px;
       cursor: pointer;
       font-size: 14px;
       font-weight: bold;

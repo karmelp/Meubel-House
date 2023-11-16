@@ -9,17 +9,19 @@ table {
     th {
       width: 80%;
       background-color: #FBEBB5;
-      text-align: center;
-      padding: 8px;
+      text-align: left;
+      // padding: 8px;
     }
   
     td {
       width: 100%;
       // border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
+      padding-bottom: 8px;
+      text-align: left;
+      // align-items: start;
     }
     tr{
+      // text-align: left;
       justify-content: space-between;
     }
   

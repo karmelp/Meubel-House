@@ -129,10 +129,11 @@ const BillingInfo: React.FC = () => {
             <div className='subtotal'>
               <div>Subtotal </div>
               <div>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>
-            </div>
+            </div>           
             <div className='subtotal'>
               <div>Total </div>
-              <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>
+              <div>
+                <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div></div>
             </div>           
           </div>
           <h4 className='title_table2'>Direct Bank Transfer</h4>
@@ -142,11 +143,11 @@ const BillingInfo: React.FC = () => {
             account
           </p>
           <div className='checkbox'>
-            <input id='remember-me' type='checkbox' />
+            <input id='remember-me' type='radio' />
             <label htmlFor='remember-me'>Direct Bank transfer</label>
           </div>
           <div className='checkbox'>
-            <input id='remember-me' type='checkbox' />
+            <input id='remember-me' type='radio' />
             <label htmlFor='remember-me'>Cash on delivery</label>
           </div>
           <p>

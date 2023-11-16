@@ -29,7 +29,7 @@ const CartItemCard: React.FC<CartItemCardProps> = ({
         </div>
       </div>
       <button className="close-button" onClick={onCloseClick}>
-        Remove
+        X
       </button>
     </div>
   );
