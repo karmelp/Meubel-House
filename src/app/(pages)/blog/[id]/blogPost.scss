@@ -1,9 +1,7 @@
 @import '@/app/globals.scss';
 
 .blog-post {
-    display: flex;
-    flex-direction: column;
-    gap: 62px;
+    @include page;
 
     .single-blog-post {
         max-width: 1440px;
@@ -18,6 +16,12 @@
             display: flex;
             justify-content: center;
             gap: 35px;
+
+            @media screen and (max-width: 450px) {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
         
             .item {
                 display: flex;
@@ -25,6 +29,20 @@
                 gap: 7px;
                 color: $gray;
             }
+        }
+
+        .navigation-links {
+            display: flex;
+            justify-content: space-between;
+
+            .next-post {
+                margin-left: auto;
+                text-align: right;
+            }
+        }
+
+        .content {
+            text-align: justify;
         }
     }
 }

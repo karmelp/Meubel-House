@@ -146,7 +146,7 @@ line-height: normal;
         text-align: center;
         cursor: pointer;
 
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: $tablet) {
             display: flex;
         }
     }
@@ -177,7 +177,7 @@ line-height: normal;
     }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: $tablet) {
     a.switch {
         display: flex;
     }

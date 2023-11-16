@@ -13,9 +13,7 @@ type Props = {}
 const Header = (props: Props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const toggleMenu = () => {
-    setShowMenu(!showMenu);
-  };
+
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
   };
@@ -26,6 +24,24 @@ const Header = (props: Props) => {
   const openCart = () => {
     setIsCartOpen(true);
   };
+
+  const closeMenu = () => {
+    setShowMenu(false);
+  };
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  const handleLinkClick = () => {
+    closeMenu();
+  };
+
+  const handleOverlayClick = () => {
+    closeMenu();
+    closeCart();
+  };
+
   return (
     <header>
       <div className='section'></div>
@@ -35,27 +51,24 @@ const Header = (props: Props) => {
         <div className='bar'></div>
       </button>
       <nav className={`section ${showMenu ? 'show-menu' : ''}`}>
-        <Link href="/">Home</Link>
-        <Link href="/shop">Shop</Link>
-        <Link href="/about">About</Link>
-        <Link href="/contact">Contact</Link>
+        <Link href="/" onClick={handleLinkClick}>Home</Link>
+        <Link href="/shop" onClick={handleLinkClick}>Shop</Link>
+        <Link href="/about" onClick={handleLinkClick}>About</Link>
+        <Link href="/contact" onClick={handleLinkClick}>Contact</Link>
       </nav>
       <div className='icons section'>
         <Link href="/my-account"><Image src={UserAccount} width={28} height={28} alt="My Account" /></Link>
         <Link href="#"><Image src={Search} width={28} height={28} alt="Search" /></Link>
-        <Link href="#"><Image src={Favourites} width={28} height={28} alt="Favourites" /></Link>
-        {/* <Link href="#"><Image src={ShoppingCart} width={28} height={28} alt="Cart" /></Link> */}
-        <button onClick={openCart}>
-          <Image src={ShoppingCart} width={28} height={28} alt="Cart" />
-        </button>
+        <Link href="#" className='favs'><Image src={Favourites} width={28} height={28} alt="Favourites" /></Link>
+        <Link href="#" onClick={openCart}><Image src={ShoppingCart} width={28} height={28} alt="Cart" /></Link>
       </div>
       <CartSidebar isOpen={isCartOpen} closeCart={closeCart} />
       <div
-        className={`overlay ${isCartOpen ? 'active' : ''}`}
-        onClick={closeCart}
+        className={`overlay ${isCartOpen || showMenu ? 'active' : ''}`}
+        onClick={handleOverlayClick}
       ></div>
     </header>
   );
 };
-
+// 
 export default Header;
