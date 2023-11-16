@@ -1,0 +1,23 @@
+@use '../../colors' as c;
+@use '../../fonts' as f;
+
+@import '../../globals.scss';
+
+.roundLinkBtn {
+    width: 255px;
+    height: 64px;
+    border: 1px solid $pink;
+    border-radius: 50px;
+    background: $pink;
+    color: c.$colorBlack;
+    font-family: f.$fontFamily;
+    font-size: f.$font20;
+    font-style: normal;
+    font-weight: f.$fontWeight400;
+    line-height: normal;
+
+    &:hover, &:focus {
+        background: $yellow;
+        color: c.$colorWhite;
+    }
+}

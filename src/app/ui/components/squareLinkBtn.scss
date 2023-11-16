@@ -1,0 +1,22 @@
+@use '../../colors' as c;
+@use '../../fonts' as f;
+
+@import '../../globals.scss';
+
+.squareLinkBtn {
+    width: 255px;
+    height: 64px;
+    border: 1px solid c.$colorBlack;
+    background: $lightYellow;
+    color: c.$colorBlack;
+    font-family: f.$fontFamily;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: f.$fontWeight400;
+    line-height: normal;
+
+    &:hover, &:focus {
+        background: $gold;
+        color: c.$colorWhite;
+    }
+}
