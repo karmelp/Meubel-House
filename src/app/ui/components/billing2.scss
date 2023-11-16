@@ -67,9 +67,23 @@ line-height: normal;
         &[type="checkbox"] {
             width: 20px;
             height: 20px;
-            border-radius: 105px;
+            border-radius: 50%;
             accent-color: #FAF4F4;
         }
+
+        &[type="radio"] {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 2px solid #0f0f0f; /* Green border for active state */
+            outline: none; /* Remove default focus outline */
+            transition: border 0.3s; /* Add transition for a smooth effect */
+          
+            &:checked {
+              border: 2px solid #2196F3; /* Blue border for checked state */
+            }
+          }
+          
     }
 
     .heading {
@@ -165,15 +179,14 @@ line-height: normal;
         display: flex;
         justify-content: space-between;        
         font-weight: 400;
-        font-size: 16px;
-
-        .price {
-            color: #B88E2F;
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
+        font-size: 16px;        
+    }
+    .price {
+        color: #B88E2F;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 }
 
