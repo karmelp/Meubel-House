@@ -53,7 +53,7 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
             <td>Rs.{cartItem.product.price * cartItem.quantity}</td>
             <td>
               <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
-                <FontAwesomeIcon icon={faTrash} className="delete-button"/>
+                <FontAwesomeIcon icon={faTrash} className="delete-button" style={{ color: '#FFF9E5' }}/>
               </button>
             </td>
           </tr>
