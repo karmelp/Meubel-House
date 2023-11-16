@@ -157,13 +157,13 @@ export default function Home() {
                     src={Clock}
                     alt='clock'
                   />{' '}
-                  <span className='time'>{blogPost.time}</span>
+                  <span className='home_section_four_blog_item_info_time'>{blogPost.time}</span>
                   <Image
                     className='home_section_four_blog_item_info_calendar'
                     src={Calendar}
                     alt='calendar'
                   />{' '}
-                  <span className='date'>{blogPost.date}</span>
+                  <span className='home_section_four_blog_item_info_date'>{blogPost.date}</span>
                 </div>
               </div>
             </Link>
