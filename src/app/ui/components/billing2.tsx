@@ -56,7 +56,7 @@ const BillingInfo: React.FC = () => {
 
   return (
     <div className='loginRegisterForms-components'>
-      <div className={`form-container`} id='login'>
+      <div className={'form-container'} id='login'>
         <h4>Billing Details</h4>
         <form>
           <div className='names'>
@@ -118,13 +118,13 @@ const BillingInfo: React.FC = () => {
           </div>
         </form>
       </div>
-      <div className={`form-container `} id='register'>
+      <div className={'form-container '} id='register'>
         <div className='heading'>
           <h4 className='title_table'>Product</h4>
           <h4 className='title_table'>Subtotal</h4>
         </div>
         <form>
-        <CheckoutTable cartItems={cartState.cartItems} /> 
+          <CheckoutTable cartItems={cartState.cartItems} /> 
           <div className='totals'>
             <div className='subtotal'>
               <div>Subtotal </div>
