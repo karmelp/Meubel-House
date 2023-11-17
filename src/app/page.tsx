@@ -129,7 +129,9 @@ export default function Home() {
         <div className='home_section_three_right'>
           <h6 className='home_section_three_right_text'>New Arrivals</h6>
           <h4 className='home_section_three_right_subtext'>Asgaard sofa</h4>
-          <SquareLinkBtn link={'/shop'} text='Order Now' />
+          {products.filter((product) => product.name === 'Asgaard sofa').map((product) => (
+            <SquareLinkBtn link={`/shop/${encodeURIComponent(product.id)}`} text='Shop Now' />
+          ))}
         </div>
       </div>
 
