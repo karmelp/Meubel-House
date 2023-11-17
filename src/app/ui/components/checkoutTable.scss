@@ -1,7 +1,8 @@
 $light-yellow: #FFF9E5;
 $yellow: #FBEBB5;
 
-table {
+.checkout-table{
+  table {
     // width: 80%;
     border-collapse: collapse;
     padding-left: 100px;
@@ -26,4 +27,6 @@ table {
     }
   
 }
+}
+
  

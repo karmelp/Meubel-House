@@ -62,16 +62,16 @@ const BillingInfo: React.FC = () => {
           <div className='names'>
             <div className='input-cont'>
               <label htmlFor='firstname'>First Name</label>
-              <input id='firstname' type='text' placeholder='name' />
+              <input id='firstname' type='text'  />
             </div>
             <div className='input-cont'>
               <label htmlFor='secondname'>Second Name</label>
-              <input id='secondname' type='text' placeholder='name' />
+              <input id='secondname' type='text'  />
             </div>
           </div>
           <div className='input-cont'>
             <label htmlFor='companyname'>Company Name</label>
-            <input id='companyname' type='text' placeholder='Company name' />
+            <input id='companyname' type='text'  />
           </div>
 
           <div className='input-cont'>
@@ -95,7 +95,7 @@ const BillingInfo: React.FC = () => {
           </div> */}
           <div className='input-cont'>
             <label htmlFor='street'>Street address</label>
-            <input id='street' type='text' placeholder='Street address' />
+            <input id='street' type='text'  />
           </div>
           <div className='input-cont'>
             <label htmlFor='province'>Province</label>
@@ -103,15 +103,15 @@ const BillingInfo: React.FC = () => {
           </div>
           <div className='input-cont'>
             <label htmlFor='zipcode'>Zip code</label>
-            <input id='zipcode' type='text' placeholder='Zip code' />
+            <input id='zipcode' type='text'  />
           </div>
           <div className='input-cont'>
             <label htmlFor='phone'>Phone</label>
-            <input id='phone' type='text' placeholder='Phone number' />
+            <input id='phone' type='text'  />
           </div>
           <div className='input-cont'>
             <label htmlFor='email'>Email address</label>
-            <input id='email' type='text' placeholder='Email address' />
+            <input id='email' type='text'  />
           </div>
           <div className='input-cont'>
             <input id='info' type='text' placeholder='Additional Information' />
@@ -120,8 +120,8 @@ const BillingInfo: React.FC = () => {
       </div>
       <div className={'form-container '} id='register'>
         <div className='heading'>
-          <h4 className='title_table'>Product</h4>
-          <h4 className='title_table'>Subtotal</h4>
+          <h5 className='title_table'>Product</h5>
+          <h5 className='title_table'>Subtotal</h5>
         </div>
         <form>
           <CheckoutTable cartItems={cartState.cartItems} /> 
@@ -136,20 +136,20 @@ const BillingInfo: React.FC = () => {
                 <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div></div>
             </div>           
           </div>
-          <h4 className='title_table2'>Direct Bank Transfer</h4>
+          <h6 className='title_table2'>Direct Bank Transfer</h6>
           <p className='text'>
             Make your payments directly into our bank accounts. Please use your Order Id as the
-            payment refrence.Your Order will not be shipped until the funds have clleared in our
+            payment refrence.Your Order will not be shipped until the funds have cleared in our
             account
           </p>
           <div className='checkbox'>
-            <input id='remember-me' type='radio' />
-            <label htmlFor='remember-me'>Direct Bank transfer</label>
-          </div>
-          <div className='checkbox'>
-            <input id='remember-me' type='radio' />
-            <label htmlFor='remember-me'>Cash on delivery</label>
-          </div>
+  <input id='direct-bank-transfer' type='radio' name='payment-method' />
+  <label htmlFor='direct-bank-transfer'>Direct Bank transfer</label>
+</div>
+<div className='checkbox'>
+  <input id='cash-on-delivery' type='radio' name='payment-method' />
+  <label htmlFor='cash-on-delivery'>Cash on delivery</label>
+</div>
           <p>
             Your personal data will be used to support your experience throughout this website, to
             manage access to your account, and for other purposes described in our{' '}

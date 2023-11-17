@@ -22,6 +22,18 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
         }
+        h5{
+            font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+        }
+        h6{
+            font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+        }
     }
 
     label {
@@ -140,6 +152,7 @@ line-height: normal;
         // display: flex;
         align-items: center;
         justify-content: center;
+        color:red;
     }
 
     p {

@@ -27,7 +27,8 @@ const CheckoutTable: React.FC<CartTableProps> = ({ cartItems }) => {
   const { state: cartState, removeFromCart } = useCart();
  
   return (
-    <table>      
+    <div className='checkout-table'>
+    <table >      
       <tbody>
         {cartItems.map((cartItem) => (
           <tr key={cartItem.product.id}>
@@ -40,6 +41,7 @@ const CheckoutTable: React.FC<CartTableProps> = ({ cartItems }) => {
         ))}
       </tbody>
     </table>
+    </div>
   );
 };
 
