@@ -1,0 +1,21 @@
+@import '../../globals.scss';
+
+.roundLinkBtn {
+    width: 255px;
+    height: 64px;
+    border: 1px solid $pink;
+    border-radius: 50px;
+    background: $pink;
+    color: $black;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    &:hover,
+    &:focus {
+        background: $yellow;
+        color: $white;
+    }
+}

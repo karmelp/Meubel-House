@@ -1,0 +1,115 @@
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  width: 417px;
+  min-height: 40%;
+  background-color: #fff;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+  overflow-y: auto; /* Add this property for vertical scrolling if the content is taller than the sidebar */
+  /* If you want a shadow or border, you can add it here */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.cart-content {
+  /* Add your cart content styling here */
+  min-height: 300px;
+  max-height: 300px; /* Set a maximum height for the content */
+  overflow-y: auto;
+}
+
+.cart-footer {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.close-button {
+  /* Style your close button as needed */
+  margin-top: 20px; /* Add some top margin to separate it from the content */
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.cart-title {
+  color: #000; /* Text color for "Shopping cart" */
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cart-close {
+  color: #000; /* Text color for "close" */
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.cart-buttons {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  border-top: 1px solid #D9D9D9;
+}
+
+.cart-button {
+  width: 131px;
+  height: 31px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 31px; /* Center text vertically */
+}
+
+.cart-button:hover {
+  background-color: #ccc;
+}
+
+.cart-totals {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.cart-subtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtotal-label {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.subtotal-amount {
+  color: #B88E2F; /* Text color for the amount */
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}/*# sourceMappingURL=cartSidebar.css.map */

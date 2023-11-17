@@ -1,0 +1,18 @@
+table {
+  border-collapse: collapse;
+  padding-left: 100px;
+}
+table th {
+  width: 80%;
+  background-color: #FBEBB5;
+  text-align: center;
+  padding: 8px;
+}
+table td {
+  width: 100%;
+  padding: 8px;
+  text-align: center;
+}
+table tr {
+  justify-content: space-between;
+}/*# sourceMappingURL=checkoutTable.css.map */
