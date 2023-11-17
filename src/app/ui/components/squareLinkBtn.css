@@ -109,10 +109,9 @@ label {
 .squareLinkBtn {
   width: 255px;
   height: 64px;
-  border: 1px solid #000;
+  border: 1px solid #1A1919;
   background: #FFF9E5;
-  color: #000;
-  font-family: "Poppins", sans-serif;
+  color: #1A1919;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
