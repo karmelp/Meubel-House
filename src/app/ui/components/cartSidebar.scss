@@ -1,8 +1,8 @@
 .cart-sidebar {
   position: fixed;
   top: 0;
-  width: 417px;
-  min-height: 40%;
+  width: 390px;
+  height: 100vh;
   background-color: #fff;
   transition: right 0.3s ease-in-out;
   z-index: 1000;
@@ -19,8 +19,9 @@
 .cart-content {
   /* Add your cart content styling here */
   // padding: 20px; /* Add some padding to the content */
-  min-height: 300px;
-  max-height: 300px; /* Set a maximum height for the content */
+  // min-height: 300px;
+  // max-height: 300px; /* Set a maximum height for the content */
+  height:65vh;
   overflow-y: auto;
   display: flex; /* Use flexbox */
   flex-direction: column;

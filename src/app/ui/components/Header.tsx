@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import './header.scss';
+import { useCart } from '@/app/lib/CartContext';
 import UserAccount from '@/public/mdi_account-alert-outline.svg';
 import Search from '@/public/akar-icons_search.svg';
 import Favourites from '@/public/akar-icons_heart.svg';
@@ -13,6 +14,7 @@ type Props = {}
 const Header = (props: Props) => {
   const [showMenu, setShowMenu] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const { state: cartState,setIsOpen } = useCart();
 
   const toggleCart = () => {
     setIsCartOpen(!isCartOpen);
@@ -20,9 +22,11 @@ const Header = (props: Props) => {
 
   const closeCart = () => {
     setIsCartOpen(false);
+    setIsOpen(false);
   };
   const openCart = () => {
     setIsCartOpen(true);
+    setIsOpen(true);
   };
 
   const closeMenu = () => {
@@ -64,7 +68,7 @@ const Header = (props: Props) => {
       </div>
       <CartSidebar isOpen={isCartOpen} closeCart={closeCart} />
       <div
-        className={`overlay ${isCartOpen || showMenu ? 'active' : ''}`}
+        className={`overlay ${isCartOpen || cartState.isOpen || showMenu ? 'active' : ''}`}
         onClick={handleOverlayClick}
       ></div>
     </header>
