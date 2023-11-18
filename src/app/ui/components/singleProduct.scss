@@ -1,7 +1,15 @@
+@import '../../globals.scss';
+
 .single-product {
     display: flex;
+    flex-flow: row wrap;
     gap: 100px;
+    overflow-x: hidden;
     
+    @media only screen and (max-width: $mobile) {
+        flex-flow: column nowrap;
+    }
+
     .product-data {
 
         h1 {
