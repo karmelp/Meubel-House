@@ -10,15 +10,20 @@ import ProductCard from '@/app/ui/components/ProductCard';
 import InfoSection from '../../ui/components/InfoSection';
 
 const metadata: Metadata = {
-  title: 'Shop',
+  title: 'Shop'
 };
 
-type Props = {}
+interface Product {
+  id: number;
+  thumbnail: string;
+  name: string;
+  price: number;
+}
 
 const productsPerPage = 16;
 
 function Shop() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     // Fetch data from the API
@@ -64,8 +69,8 @@ function Shop() {
 
       <div className="product-grid">
         {currentProducts?.map((product) => (
-          <Link href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
-            <ProductCard product={product} />
+          <Link key={product.id} href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
+            <ProductCard key={product.id}  product={product} />
           </Link>
         ))}
       </div>
