@@ -6,8 +6,7 @@ import heroImage from '@/public/hero-bg.jpg';
 import { useCart } from '@/app/lib/CartContext';
 import './checkout.scss';
 import { formatNumber } from '@/app/lib/CartContext';
-import BillingForm from '@/app/ui/components/Billing';
-import BillingInfo from '@/app/ui/components/billing2';
+import BillingInfo from '@/app/ui/components/billing';
 
 type Props = {}
 interface CartItem {

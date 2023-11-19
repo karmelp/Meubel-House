@@ -24,13 +24,17 @@ interface CartItem {
 const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, closeCart }) => {
   const { state: cartState, removeFromCart } = useCart();
   // console.log("cart state",cartState)
+  const isOpenContext = cartState.isOpen;
+
+  const shouldRenderSidebar = isOpen || isOpenContext;
+
   function calculateSubtotal(cartItems: CartItem[]): number {
     return cartItems.reduce((subtotal, item) => subtotal + item.product.price * item.quantity, 0);
   }
 
   return (
-    isOpen === true && (
-      <div className={`cart-sidebar ${isOpen ? 'open' : ''}`}>
+    shouldRenderSidebar === true && (
+      <div className={`cart-sidebar ${shouldRenderSidebar ? 'open' : ''}`}>
         <div className='cart-header'>
           <h3 className='cart-title'>Shopping cart</h3>
           <h3 className='cart-close' onClick={closeCart}>
@@ -47,14 +51,14 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, closeCart }) => {
               amount={item?.product?.price}
               onCloseClick={() => {
                 removeFromCart(item?.product?.id);
-                toast.success(`${item?.product?.name} removed from  the Cart`, {
-                  position: 'top-center', // Position of the toast
-                  autoClose: 1500, // Auto-close the toast after 3 seconds
-                  hideProgressBar: false, // Show progress bar
-                  closeOnClick: true, // Close on click
-                  pauseOnHover: true, // Pause the timer on hover
-                  draggable: true, // Make the toast draggable
-                });
+                // toast.success(`${item?.product?.name} removed from  the Cart`, {
+                //   position: 'top-center', // Position of the toast
+                //   autoClose: 1500, // Auto-close the toast after 3 seconds
+                //   hideProgressBar: false, // Show progress bar
+                //   closeOnClick: true, // Close on click
+                //   pauseOnHover: true, // Pause the timer on hover
+                //   draggable: true, // Make the toast draggable
+                // });
               }}
             />
           ))}

@@ -1,4 +1,4 @@
-"use client"
+'use client';
 import React, { createContext, useContext, useReducer, ReactNode } from 'react';
 
 interface CartItem {
@@ -8,27 +8,34 @@ interface CartItem {
 
 interface CartState {
   cartItems: CartItem[];
+  isOpen: boolean;
 }
 
 type CartAction =
   | { type: 'ADD_TO_CART'; payload: CartItem }
-  | { type: 'REMOVE_FROM_CART'; payload: string }; // Added REMOVE_FROM_CART action
+  | { type: 'REMOVE_FROM_CART'; payload: string }
+  | { type: 'SET_IS_OPEN'; payload: boolean };
 
-const CartContext = createContext<{
-  state: CartState;
-  addToCart: (product: any, quantity: number) => void;
-  removeFromCart: (productId: string) => void; // Added removeFromCart function
-} | undefined>(undefined);
+const CartContext = createContext<
+  | {
+      state: CartState;
+      addToCart: (product: any, quantity: number) => void;
+      removeFromCart: (productId: string) => void; // Added removeFromCart function
+      setIsOpen: (isOpen: boolean) => void;
+    }
+  | undefined
+>(undefined);
 
 const initialState: CartState = {
   cartItems: [],
+  isOpen: false,
 };
 
 const cartReducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
     case 'ADD_TO_CART':
       const existingCartItemIndex = state.cartItems.findIndex(
-        (item) => item.product.id === action.payload.product.id
+        (item) => item.product.id === action.payload.product.id,
       );
 
       if (existingCartItemIndex !== -1) {
@@ -50,7 +57,7 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 
     case 'REMOVE_FROM_CART':
       const itemToRemoveIndex = state.cartItems.findIndex(
-        (item) => item.product.id === action.payload
+        (item) => item.product.id === action.payload,
       );
 
       if (itemToRemoveIndex !== -1) {
@@ -65,12 +72,15 @@ const cartReducer = (state: CartState, action: CartAction): CartState => {
 
       return state;
 
+    case 'SET_IS_OPEN':
+      return {
+        ...state,
+        isOpen: action.payload,
+      };
     default:
       return state;
   }
 };
-
-
 
 interface CartProviderProps {
   children: ReactNode;
@@ -87,8 +97,12 @@ export const CartProvider: React.FC<CartProviderProps> = ({ children }) => {
     dispatch({ type: 'REMOVE_FROM_CART', payload: productId });
   };
 
+  const setIsOpen = (isOpen: boolean) => {
+    dispatch({ type: 'SET_IS_OPEN', payload: isOpen });
+  };
+
   return (
-    <CartContext.Provider value={{ state, addToCart, removeFromCart }}>
+    <CartContext.Provider value={{ state, addToCart, removeFromCart, setIsOpen }}>
       {children}
     </CartContext.Provider>
   );
@@ -102,7 +116,7 @@ export const useCart = () => {
   return context;
 };
 
-export  function formatNumber(number: number): string {
+export function formatNumber(number: number): string {
   const formatter = new Intl.NumberFormat('en-US', {
     style: 'decimal',
     minimumFractionDigits: 2,
