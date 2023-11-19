@@ -3,81 +3,45 @@
 table {
   border-collapse: collapse;
   width: 817px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
       
   thead {
     tr {
-      background-color: $lightYellow;
-      display: flex;
-      gap: 20px;
-
       th {
-        width: 100%;
         padding: 15px;
-
-        &.product-column {
-          flex: 6;
-          text-align: center;
-        }
-
-        &.price {
-          flex: 2;
-        }
-
-        &.quantity {
-          flex: 2;
-        }
-
-        &.subtotal {
-          flex: 2;
-        }
-
-        &.delete {
-          flex: 0.5;
-        }
+        background-color: $lightYellow;
       }
     }
   }
       
   tbody {
     tr {
-      display: flex;
-      gap: 20px;
-
       td {
+        margin-top: 15px;
         width: 100%;
-        align-self: center;
+        padding-right: 30px;
         
-        .product-column {
-          flex: 6;
+        &.img_card {
+          display: flex;
+          align-items: center;
+          gap: 30px;
 
-          &.img_card {
-            display: flex;
-            align-items: center;
-            gap: 30px;
+          p {
+            color: $gray;
+          }
 
-            p {
-              color: $gray;
-            }
-
-            img {
-              width: 105px;
-              height: 105px;
-              background-color: $yellow;
-              border-radius: 10px;
-            }
+          img {
+            width: 105px;
+            height: 105px;
+            background-color: $yellow;
+            border-radius: 10px;
           }
         }
 
         .price {
-          flex: 2;
           color: $gray;
         }
 
         .quantity {
-          flex: 2;
           width: 32px;
           height: 32px;
           border: 1px solid $gray;
@@ -87,12 +51,7 @@ table {
           align-items: center;
         }
 
-        .subtotal {
-          flex: 2;
-        }
-
         .delete-button {
-          flex: 0.5;
           cursor: pointer;
           background: none;
           border: none;

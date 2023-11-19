@@ -49,11 +49,11 @@ const Cart = (props: Props) => {
             <div className="totals">
               <div className='section'>
                 <p>Subtotal </p>
-                <p className='subtotal-price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</p>
+                <p className='subtotal-price'>Rs. {formatNumber(calculateSubtotal(cartState.cartItems))}</p>
               </div>
               <div className='section'>
                 <p>Total</p>
-                <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>{' '}
+                <div className='price'>Rs. {formatNumber(calculateSubtotal(cartState.cartItems))}</div>{' '}
               </div>
             </div>
             <Link href={'/checkout'}>

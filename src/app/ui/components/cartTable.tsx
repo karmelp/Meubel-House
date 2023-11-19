@@ -32,28 +32,26 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
     <table>
       <thead>
         <tr>
-          <th className='product-column'>Product</th>          
-          <th className='price'>Price</th>
-          <th className='quantity'>Quantity</th>
-          <th className='subtotal'>Subtotal</th>
-          <th className='delete'></th>
+          <th>Product</th>          
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
         {cartItems.map((cartItem) => (
-          <tr className='product-row' key={cartItem.product.id}>
-            <td>
-              <div className='product-column img_card'>
-                <Image 
-                  src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
-                  alt={cartItem.product.name}
-                />
-                <p>{cartItem.product.name}</p>
-              </div>
+          <tr key={cartItem.product.id}>
+            <td className='img_card'>
+              <Image 
+                src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
+                alt={cartItem.product.name}
+              />
+              <p>{cartItem.product.name}</p>
             </td>
             <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
             <td><p className='quantity'>{cartItem.quantity}</p></td>
-            <td><p>Rs.{cartItem.product.price * cartItem.quantity}</p></td>
+            <td className='subtotal'>Rs. {cartItem.product.price * cartItem.quantity}</td>
             <td>
               <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
                 <Image src={Delete} alt='Delete' />
