@@ -43,7 +43,7 @@ const Cart = (props: Props) => {
           <CartTable cartItems={cartState.cartItems} />
         </div>
         
-        <div className='cart-totals'>
+        <div className='cart-git bractotals'>
           <h5>Cart Totals</h5>
           <div className='cart'>
             <div className="totals">
