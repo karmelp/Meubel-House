@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import ProductGallery from './ProductGallery';
-import favsIcon from '../icons/favs.svg';
 import './singleProduct.scss';
 import Sizes from './Sizes';
 import Colors from './Colors';
@@ -10,6 +9,7 @@ import linkedIn from '@/public/akar-icons_linkedin-box-fill.svg';
 import twitter from '@/public/ant-design_twitter-circle-filled.svg';
 import Image from 'next/image';
 import Rating from './Rating';
+import ProductTabs from './ProductTabs';
 interface SingleProductProps {
   product: {
     gallery: string[];
@@ -45,6 +45,12 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
     cursor: 'pointer',
   };
 
+  const tabs = [
+    { name: 'Description', content: <p>Content for Description Tab</p> },
+    { name: 'Additional Information', content: <p>Content for Additional Information Tab</p> },
+    { name: 'Reviews [5]', content: <p>Content for Reviews Tab with [5]</p> },
+  ];
+
   return (
     <div className='single-product'>
       <ProductGallery images={product.gallery} /> {/* Use ProductGallery component */}
@@ -60,12 +66,7 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
               onClick={toggleFav}
             />
           </div>
-          <div
-            className='price-containercodecc
-          
-          
-          '
-          >
+          <div className='price-containercodecc'>
             <div className='rating '>
               <Rating />
             </div>
@@ -105,6 +106,8 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
           </div>
         </div>
       </div>
+      <div className='divider'></div>
+      <ProductTabs tabs={tabs} />
     </div>
   );
 };

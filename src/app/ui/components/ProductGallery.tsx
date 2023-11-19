@@ -12,28 +12,31 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
   const handleThumbnailClick = (index: number) => {
     setCurrentImageIndex(index);
   };
-  console.log('images',images);
+  console.log('images', images);
 
   return (
-    <div className="product-gallery">
-      <div className="thumbnail-container">
-        <div className="thumbnails">
+    <div className='product-gallery'>
+      <div className='thumbnail-container'>
+        <div className='thumbnails'>
           {images?.map((image, index) => (
-            <div
+            <Image
               key={index}
               className={`thumbnail 
               ${currentImageIndex === index ? 'active' : ''}
               `}
               onClick={() => handleThumbnailClick(index)}
-            >
-              <Image className='image' src={require(`@/public/${image}`).default} alt={`Product ${index}`} />
-              {/* <img src={require(`../data/images/${image}`).default} alt={`Product ${index}`} /> */}
-            </div>
+              src={require(`@/public/${image}`).default}
+              alt={`Product ${index}`}
+            />
           ))}
         </div>
       </div>
-      <div className="main-image">
-        <Image className='image' src={require(`@/public/${images[currentImageIndex]}`).default} alt={`Product ${currentImageIndex}`} />
+      <div className='main-image'>
+        <Image
+          className='image'
+          src={require(`@/public/${images[currentImageIndex]}`).default}
+          alt={`Product ${currentImageIndex}`}
+        />
         {/* <img src={require(`../data/images/${images[currentImageIndex]}`).default} alt={`Product ${currentImageIndex}`} /> */}
       </div>
     </div>
