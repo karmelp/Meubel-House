@@ -2,4 +2,18 @@
 
 .about-page {
     @include page;
+
+    .about {
+        max-width: 955px;
+        padding: 67px clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        p {
+            color: $gray;
+            font-size: clamp(1rem, 0.2539rem + 1.5564vw, 1.25rem);
+        }
+    }
 }
