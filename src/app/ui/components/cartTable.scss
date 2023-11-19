@@ -1,50 +1,107 @@
-$light-yellow: #FFF9E5;
-$yellow: #FBEBB5;
+@import '@/app/globals.scss';
 
 table {
-    // width: 80%;
-    border-collapse: collapse;
-    padding-left: 100px;
-  
-    th {
-      width: 80%;
-      background-color: #FBEBB5;
-      text-align: center;
-      padding: 8px;
+  border-collapse: collapse;
+  width: 817px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+      
+  thead {
+    tr {
+      background-color: $lightYellow;
+      display: flex;
+      gap: 20px;
+
+      th {
+        width: 100%;
+        padding: 15px;
+
+        &.product-column {
+          flex: 6;
+          text-align: center;
+        }
+
+        &.price {
+          flex: 2;
+        }
+
+        &.quantity {
+          flex: 2;
+        }
+
+        &.subtotal {
+          flex: 2;
+        }
+
+        &.delete {
+          flex: 0.5;
+        }
+      }
     }
-  
-    td {
-      width: 100%;
-      // border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
+  }
+      
+  tbody {
+    tr {
+      display: flex;
+      gap: 20px;
+
+      td {
+        width: 100%;
+        align-self: center;
+        
+        .product-column {
+          flex: 6;
+
+          &.img_card {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            p {
+              color: $gray;
+            }
+
+            img {
+              width: 105px;
+              height: 105px;
+              background-color: $yellow;
+              border-radius: 10px;
+            }
+          }
+        }
+
+        .price {
+          flex: 2;
+          color: $gray;
+        }
+
+        .quantity {
+          flex: 2;
+          width: 32px;
+          height: 32px;
+          border: 1px solid $gray;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .subtotal {
+          flex: 2;
+        }
+
+        .delete-button {
+          flex: 0.5;
+          cursor: pointer;
+          background: none;
+          border: none;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
     }
-  
-    img {
-      max-width: 100px;
-      background-color: $light-yellow;
-      // width: 112.989px;
-height: 92.022px;
-flex-shrink: 0;
-    }
- 
   }
-  .img_card {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
-    color: #9F9F9F;
-    font-size: 16px;
-    font-style: normal;
-font-weight: 400;
-line-height: normal;
-  }
-  .price{
-    color: #9F9F9F;
-    font-size: 16px;
-    width: 100%;
-  }
-  .delete-button{
-    color: $light-yellow;
-  }
+}
