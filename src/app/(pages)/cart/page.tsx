@@ -58,7 +58,7 @@ const Cart = (props: Props) => {
             </div>
             <div className='checkout'>
               <Link href={'/checkout'}>
-                <button className='checkout-button'>Checkout</button>
+                <BigBtn title="Checkout" />
               </Link>
             </div>
           </div>
