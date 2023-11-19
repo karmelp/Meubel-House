@@ -54,7 +54,7 @@ const Cart = (props: Props) => {
               {/* Add other totals here (e.g., tax, shipping) /checkout */}
             </div>
             <div className='checkout'>
-              <Link href={`/checkout`}>
+              <Link href={'/checkout'}>
                 <button className='checkout-button'>Checkout</button>
               </Link>
             </div>
