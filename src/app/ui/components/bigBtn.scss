@@ -1,3 +1,5 @@
+@import '@/app/globals.scss';
+
 .bigBtn {
     width: 215px;
     height: 64px;
@@ -6,4 +8,9 @@
     border-radius: 15px;
     font-weight: 400;
     font-size: clamp(1rem, 0.867rem + 0.4255vw, 1.25rem);
+
+    &:hover {
+        color: $gold;
+        border-color: $gold;
+    }
 }

@@ -3,6 +3,7 @@ import { AuthContext } from '@/app/lib/AuthContext';
 import React, { useState, useContext } from 'react';
 import './loginRegisterForm.scss';
 import Link from 'next/link';
+import BigBtn from './BigBtn';
 
 const LoginRegisterForms: React.FC = () => {
   const context = useContext(AuthContext);
@@ -41,7 +42,7 @@ const LoginRegisterForms: React.FC = () => {
             <label htmlFor="remember-me">Remember me</label>
           </div>
           <div className="btns">
-            <button onClick={context.login}>Login</button>
+            <BigBtn onClick={context.login} title="Login" />
             <Link href="#">Lost Your Password?</Link>
           </div>
           <Link href='#' className='switch' onClick={(e) => handleSwitchForm(e, 'register')}>
@@ -61,7 +62,7 @@ const LoginRegisterForms: React.FC = () => {
           </div>
           <p>A link to set a new password will be sent to your email address.</p>
           <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <Link href="/privacy-policy">privacy policy</Link>.</p>
-          <button type="submit">Register</button>
+          <BigBtn title="Register" />
           <Link href='#' className='switch' onClick={(e) => handleSwitchForm(e, 'login')}>
             Already a user? Click here to log in!
           </Link>

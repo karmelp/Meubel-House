@@ -2,6 +2,7 @@
 import { AuthContext } from '@/app/lib/AuthContext';
 import { useContext } from 'react';
 import './dashboard.scss';
+import BigBtn from './BigBtn';
 
 type Props = {}
 
@@ -11,7 +12,7 @@ const Dashboard = (props: Props) => {
   return (
     <div className='dashboard-component'>
       <h5>Welcome to Dashboard!</h5>
-      <button onClick={context.logout}>Log out</button>
+      <BigBtn onClick={context.logout} title="Log out" />
     </div>
   );
 };

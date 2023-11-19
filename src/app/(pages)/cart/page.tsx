@@ -8,6 +8,8 @@ import { useCart } from '@/app/lib/CartContext';
 import { formatNumber } from '@/app/lib/CartContext';
 import Link from 'next/link';
 import CartTable from '@/app/ui/components/cartTable';
+import BigBtn from '@/app/ui/components/BigBtn';
+
 type Props = {}
 
 interface CartItem {
@@ -35,29 +37,28 @@ const Cart = (props: Props) => {
   return (
     <div className='cart-page'>
       <Hero pageTitle='Cart' breadcrumbs={breadcrumbs} heroImage={heroImage} />
+
       <div className='cart-info'>
         <div className='cart-table'>
-          <CartTable cartItems={cartState.cartItems} /> {/* Use the CartTable component */}
+          <CartTable cartItems={cartState.cartItems} />
         </div>
+        
         <div className='cart-totals'>
-          <div className='cart-totals-card'>
-            <h2>Cart Totals</h2>
-            <div className='totals'>
-              <div className='subtotal'>
-                <div>Subtotal </div>
-                <div> Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>
+          <h5>Cart Totals</h5>
+          <div className='cart'>
+            <div className="totals">
+              <div className='section'>
+                <p>Subtotal </p>
+                <p className='subtotal-price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</p>
               </div>
-              <div className='subtotal'>
-                <div>Total</div>
+              <div className='section'>
+                <p>Total</p>
                 <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>{' '}
               </div>
-              {/* Add other totals here (e.g., tax, shipping) /checkout */}
             </div>
-            <div className='checkout'>
-              <Link href={`/checkout`}>
-                <button className='checkout-button'>Checkout</button>
-              </Link>
-            </div>
+            <Link href={'/checkout'}>
+              <BigBtn title="Checkout" />
+            </Link>
           </div>
         </div>
       </div>
