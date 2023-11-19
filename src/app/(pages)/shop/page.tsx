@@ -13,10 +13,6 @@ import FilterBtn from '@/public/system-uicons_filtering.svg';
 import Grid from '@/public/ci_grid-big-round.svg';
 import List from '@/public/bi_view-list.svg';
 
-const metadata: Metadata = {
-  title: 'Shop'
-};
-
 interface Product {
   id: number;
   thumbnail: string;

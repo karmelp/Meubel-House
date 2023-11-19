@@ -1,7 +1,10 @@
 import React from 'react';
 import './cartCard.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 import { formatNumber } from '@/app/lib/CartContext';
+import Remove from '@/public/deleteItem.svg';
+
 interface CartItemCardProps {
   imageSrc: string;
   productName: string;
@@ -19,18 +22,18 @@ const CartItemCard: React.FC<CartItemCardProps> = ({
 }) => {
   return (
     <div className="cart-item-card">
-      <Image src={require(`@/public/${imageSrc}`).default} alt="Product" className="cart-item-image" />
+      <Image src={require(`@/public/${imageSrc}`)} alt="Product" className="cart-item-image" />
       <div className="cart-item-details">
-        <h3 className="product-name">{productName}</h3>
+        <p>{productName}</p>
         <div className="cart-item-info">
-          <span className="quantity"> {quantity}</span>
-          <span className="quantity">X</span>
+          <p className="quantity"> {quantity}</p>
+          <p className="quantity">X</p>
           <span className="amount">Rs. {formatNumber(amount)}</span>
         </div>
       </div>
-      <button className="close-button" onClick={onCloseClick}>
-        X
-      </button>
+      <Link href="#" className="close-button" onClick={onCloseClick}>
+        <Image src={Remove} alt='Remove item' />
+      </Link>
     </div>
   );
 };
