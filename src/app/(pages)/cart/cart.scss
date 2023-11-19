@@ -11,10 +11,16 @@
         margin: 0 auto;
         display: flex;
         gap: 30px;
+
+        @media screen and (max-width: 1142px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+        }
     
         .cart-totals {
             background-color: $lightYellow;
-            padding: 15px 75px 80px;
+            padding: 15px clamp(1.5625rem, -6.1298rem + 12.0192vw, 4.6875rem) 80px;
             width: 393px;
             display: flex;
             flex-direction: column;
