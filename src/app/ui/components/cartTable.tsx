@@ -5,6 +5,8 @@ import { formatNumber } from '@/app/lib/CartContext';
 import { useCart } from '@/app/lib/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import Delete from '@/public/ant-design_delete-filled.svg';
+import { Link } from 'react-router-dom';
 
 interface CartItem {
   product: {
@@ -30,30 +32,31 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
     <table>
       <thead>
         <tr>
-          <th>Product</th>          
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-          <th></th>
+          <th className='product-column'>Product</th>          
+          <th className='price'>Price</th>
+          <th className='quantity'>Quantity</th>
+          <th className='subtotal'>Subtotal</th>
+          <th className='delete'></th>
         </tr>
       </thead>
       <tbody>
         {cartItems.map((cartItem) => (
-          <tr key={cartItem.product.id}>
-            <td className='img_card'>
-              <Image 
-                src={require(`@/public/${cartItem.product.gallery?.[0]}`).default}
-                // src={cartItem.product.image}
-                alt={cartItem.product.name}
-              />
-              {cartItem.product.name}
+          <tr className='product-row' key={cartItem.product.id}>
+            <td>
+              <div className='product-column img_card'>
+                <Image 
+                  src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
+                  alt={cartItem.product.name}
+                />
+                <p>{cartItem.product.name}</p>
+              </div>
             </td>
-            <td className='price'>Rs .{formatNumber(cartItem.product.price)}</td>
-            <td>{cartItem.quantity}</td>
-            <td>Rs.{cartItem.product.price * cartItem.quantity}</td>
+            <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
+            <td><p className='quantity'>{cartItem.quantity}</p></td>
+            <td><p>Rs.{cartItem.product.price * cartItem.quantity}</p></td>
             <td>
               <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
-                <FontAwesomeIcon icon={faTrash} className="delete-button" style={{ color: '#FFF9E5' }}/>
+                <Image src={Delete} alt='Delete' />
               </button>
             </td>
           </tr>
