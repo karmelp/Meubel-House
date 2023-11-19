@@ -29,13 +29,7 @@ header {
         display: flex;
         justify-content: end;
         gap: 45px;
-
-        a:hover {
-            img {
-                opacity: 0.6;
-            }
-        }
-
+        
         @media screen and (max-width: $mobile) {
             .favs {
                 display: none;
