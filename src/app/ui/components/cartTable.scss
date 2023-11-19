@@ -2,7 +2,8 @@
 
 table {
   border-collapse: collapse;
-  width: 817px;
+  max-width: 817px;
+  width: 100%;
       
   thead {
     tr {
@@ -18,7 +19,11 @@ table {
       td {
         margin-top: 15px;
         width: 100%;
-        padding-right: 30px;
+        padding-right: 15px;
+      
+        &:not(:first-child) {
+          padding-left: 15px;
+        }
         
         &.img_card {
           display: flex;
