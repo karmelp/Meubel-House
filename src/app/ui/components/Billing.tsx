@@ -8,31 +8,20 @@ import { Country } from './Country';
 import { useCart } from '@/app/lib/CartContext';
 import { formatNumber } from '@/app/lib/CartContext';
 import CheckoutTable from './checkoutTable';
+import BigBtn from './BigBtn';
+
 interface CartItem {
   product: {
     id: number;
     name: string;
     price: number;
-    // Add other properties as needed
   };
   quantity: number;
-  // Add other properties as needed
 }
 const BillingInfo: React.FC = () => {
-  const context = useContext(AuthContext);
 
-  const [activeForm, setActiveForm] = useState<string>('login');
-  // const [error, setError] = useState<null | string>(null);
-
-  const handleSwitchForm = (
-    event: React.MouseEvent<HTMLElement>,
-    targetForm: 'login' | 'register',
-  ) => {
-    event.preventDefault();
-    // setError(null);
-    setActiveForm(targetForm);
-  };
   const [countries, setCountries] = useState<Country[]>([]);
+  const [selectedPaymentMethod, setSelectedPaymentMethod] = useState<string>('');
 
   useEffect(() => {
     // Fetch countries data from an API
@@ -41,47 +30,50 @@ const BillingInfo: React.FC = () => {
       setCountries(response.data);
     });
   }, []);
-  const { state: cartState, removeFromCart } = useCart();
-  // console.log("cart state",cartState)
+  
+  const { state: cartState } = useCart();
+
   function calculateSubtotal(cartItems: CartItem[]): number {
     return cartItems.reduce((subtotal, item) => subtotal + item.product.price * item.quantity, 0);
   }
-  const breadcrumbs = [
-    { text: 'Home', link: '/' },
-    { text: 'Checkout', link: '/checkout' },
-  ];
+
+  const handlePaymentMethodChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedPaymentMethod(event.target.id);
+  };
+
   const onSubmit = (data: any) => {
-    console.log(data); // Handle form submission logic here
+    console.log(data);
+
+    if (selectedPaymentMethod === 'direct-bank-transfer') {
+      console.log('You\'ve chosen to pay by direct bank transfer');
+    } else if (selectedPaymentMethod === 'cash-on-delivery') {
+      console.log('You\'ve chosen to pay with cash on delivery');
+    }
   };
 
   return (
-    <div className='loginRegisterForms-components'>
-      <div className={'form-container'} id='login'>
+    <div className='billing-info'>
+      <div className='billing-details'>
         <h4>Billing Details</h4>
         <form>
           <div className='names'>
             <div className='input-cont'>
               <label htmlFor='firstname'>First Name</label>
-              <input id='firstname' type='text'  />
+              <input id='firstname' type='text' />
             </div>
             <div className='input-cont'>
               <label htmlFor='secondname'>Second Name</label>
-              <input id='secondname' type='text'  />
+              <input id='secondname' type='text' />
             </div>
           </div>
           <div className='input-cont'>
             <label htmlFor='companyname'>Company Name</label>
-            <input id='companyname' type='text'  />
+            <input id='companyname' type='text' />
           </div>
-
           <div className='input-cont'>
             <label htmlFor='country'>Country</label>
-            {/* <input
-              type="password"
-              id="password"
-            /> */}
             <select>
-              <option value=''>Select a country</option>
+              <option value='' disabled selected >Select a country</option>
               {countries.map((country) => (
                 <option key={country?.name?.common} value={country?.name?.common}>
                   {country?.name?.common}
@@ -89,10 +81,6 @@ const BillingInfo: React.FC = () => {
               ))}
             </select>
           </div>
-          {/* <div className="checkbox">
-            <input id="remember-me" type="checkbox" />
-            <label htmlFor="remember-me">Remember me</label>
-          </div> */}
           <div className='input-cont'>
             <label htmlFor='street'>Street address</label>
             <input id='street' type='text'  />
@@ -118,49 +106,82 @@ const BillingInfo: React.FC = () => {
           </div>
         </form>
       </div>
-      <div className={'form-container '} id='register'>
-        <div className='heading'>
-          <h5 className='title_table'>Product</h5>
-          <h5 className='title_table'>Subtotal</h5>
+
+      <div className='totals-cont'>
+        <div className='headings'>
+          <span>Product</span>
+          <span>Subtotal</span>
         </div>
-        <form>
+        <div>
           <CheckoutTable cartItems={cartState.cartItems} /> 
           <div className='totals'>
-            <div className='subtotal'>
-              <div>Subtotal </div>
-              <div>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div>
+            <div className='total'>
+              <p>Subtotal</p>
+              <p className='subtotal-price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</p>
             </div>           
-            <div className='subtotal'>
-              <div>Total </div>
-              <div>
-                <div className='price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</div></div>
+            <div className='total'>
+              <p>Total</p>
+              <span className='total-price'>Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}</span>
             </div>           
           </div>
-          <h6 className='title_table2'>Direct Bank Transfer</h6>
-          <p className='text'>
-            Make your payments directly into our bank accounts. Please use your Order Id as the
-            payment refrence.Your Order will not be shipped until the funds have cleared in our
-            account
-          </p>
-          <div className='checkbox'>
-  <input id='direct-bank-transfer' type='radio' name='payment-method' />
-  <label htmlFor='direct-bank-transfer'>Direct Bank transfer</label>
-</div>
-<div className='checkbox'>
-  <input id='cash-on-delivery' type='radio' name='payment-method' />
-  <label htmlFor='cash-on-delivery'>Cash on delivery</label>
-</div>
-          <p>
+          <div className="divider"></div>
+
+          <div className="payment-methods">
+            <div className='radio'>
+              <input
+                id='direct-bank-transfer'
+                type='radio'
+                name='payment-method'
+                checked={selectedPaymentMethod === 'direct-bank-transfer'}
+                onChange={handlePaymentMethodChange}
+              />
+              <label htmlFor='direct-bank-transfer' className={selectedPaymentMethod === 'direct-bank-transfer' ? 'active' : ''}>
+                Direct Bank transfer
+              </label>
+            </div>
+            {selectedPaymentMethod === 'direct-bank-transfer' && (
+              <p className='method-explanation'>
+                Make your payments directly into our bank accounts. Please use your Order Id as the
+                payment reference. Your Order will not be shipped until the funds have cleared in our
+                account.
+              </p>
+            )}
+            <div className='radio'>
+              <input
+                id='credit-card'
+                type='radio'
+                name='payment-method'
+                checked={selectedPaymentMethod === 'credit-card'}
+                onChange={handlePaymentMethodChange}
+              />
+              <label htmlFor='credit-card' className={selectedPaymentMethod === 'credit-card' ? 'active' : ''}>
+                Credit Card
+              </label>
+            </div>
+            <div className='radio'>
+              <input
+                id='cash-on-delivery'
+                type='radio'
+                name='payment-method'
+                checked={selectedPaymentMethod === 'cash-on-delivery'}
+                onChange={handlePaymentMethodChange}
+              />
+              <label htmlFor='cash-on-delivery' className={selectedPaymentMethod === 'cash-on-delivery' ? 'active' : ''}>
+                Cash On Delivery
+              </label>
+            </div>
+          </div>
+          <p className='privacy'>
             Your personal data will be used to support your experience throughout this website, to
             manage access to your account, and for other purposes described in our{' '}
-            <Link href='/privacy-policies'>privacy policy</Link>.
+            <Link href='/privacy-policy'>privacy policy</Link>.
           </p>
-          <div className='order-button'>
-            <button type='submit' onClick={onSubmit}>
-              Place Order
-            </button>
+          <div className="place-order">
+            <Link href="#" onClick={onSubmit}>
+              <BigBtn title="Place Order" />
+            </Link>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   );
