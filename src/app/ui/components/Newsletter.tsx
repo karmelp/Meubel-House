@@ -7,7 +7,7 @@ const Newsletter = (props: Props) => {
   return (
     <div className='newsletter-component'>
       <form method='post'>
-        <input id='member[email]' className='revue-form-field' placeholder='Enter Your Email Address' required />
+        <input id='member[email]' placeholder='Enter Your Email Address' required />
       </form>
       <button type='submit'>Subscribe</button>
     </div>

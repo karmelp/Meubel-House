@@ -27,7 +27,7 @@
       line-height: 150%;
       flex: 3;
       padding-bottom: 26px;
-      border-bottom: 1px solid #D9D9D9;
+      border-bottom: 1px solid $lightGray;
     }
 
     a {
@@ -62,7 +62,7 @@
     justify-content: space-evenly;
     padding: 26px;
     gap: 20px;
-    border-top: 1px solid #D9D9D9;
+    border-top: 1px solid $lightGray;
 
     a {
       .cart-button {

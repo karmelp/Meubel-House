@@ -97,9 +97,9 @@ form {
     gap: 36px;
 }
 
-input::placeholder {
-    color: $gray;
-    font-family: 'Poppins', sans-serif;
+.checkbox {
+    display: flex;
+    gap: 20px;
 }
 
 textarea {

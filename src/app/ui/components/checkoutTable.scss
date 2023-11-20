@@ -1,32 +1,23 @@
-$light-yellow: #FFF9E5;
-$yellow: #FBEBB5;
+@import '@/app/globals.scss';
 
-.checkout-table{
-  table {
-    // width: 80%;
-    border-collapse: collapse;
-    padding-left: 100px;
+.checkout-table{ 
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 22px;
   
-    th {
-      width: 80%;
-      background-color: #FBEBB5;
-      text-align: left;
-      // padding: 8px;
+  .product-details {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      color: $gray;
     }
-  
-    td {
-      width: 100%;
-      // border: 1px solid #ddd;
-      padding-bottom: 8px;
-      text-align: left;
-      // align-items: start;
+
+    .product-price {
+      font-weight: 300;
     }
-    tr{
-      // text-align: left;
-      justify-content: space-between;
-    }
-  
-}
+  }
 }
 
  

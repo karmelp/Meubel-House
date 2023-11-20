@@ -18,16 +18,16 @@
         gap: 36px;
     }
 
-    label[for='remember-me'] {
-        font-weight: 400;
-    }
-
-    input {
+    input, select {
         border: 1px solid #9F9F9F;
         border-radius: 10px;
         height: 75px;
         padding: 20px;
-    
+
+        &::placeholder {
+            color: $gray;
+        }
+
         &[type="checkbox"] {
             width: 30px;
             height: 27px;
@@ -36,9 +36,8 @@
         }
     }
 
-    .checkbox {
-        display: flex;
-        gap: 20px;
+    label[for='remember-me'] {
+        font-weight: 400;
     }
 
     .btns {
