@@ -20,6 +20,8 @@
   min-height: 300px;
   max-height: 300px; /* Set a maximum height for the content */
   overflow-y: auto;
+  display: flex; /* Use flexbox */
+  flex-direction: column;
 }
 
 .cart-footer {
@@ -50,12 +52,13 @@
 }
 
 .cart-close {
-  color: #000; /* Text color for "close" */
+  color: #ccc; /* Text color for "close" */
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
+  border: 1px solid #ccc;
   line-height: normal;
 }
 

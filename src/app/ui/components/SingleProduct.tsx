@@ -10,9 +10,15 @@ import twitter from '@/public/ant-design_twitter-circle-filled.svg';
 import Image from 'next/image';
 import Rating from './Rating';
 import ProductTabs from './ProductTabs';
+import ProductDescription from './ProductDescription';
+import ProductAdditonalInformation from './ProductAdditionalInformation';
+import ProductReviews from './ProductReviews';
 interface SingleProductProps {
   product: {
+    id : number;
     gallery: string[];
+    additionalInformation: string;
+    thumbnail: string;
     name: string;
     price: number;
     description: string;
@@ -21,6 +27,14 @@ interface SingleProductProps {
     SKU: string;
     category: string;
     tags?: string[];
+    reviews: {
+      id: number;
+      name: string;
+      comment: string;
+      rating: number;
+      image: string;
+      date: string;
+    }[];
   };
 }
 
@@ -46,9 +60,9 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
   };
 
   const tabs = [
-    { name: 'Description', content: <p>Content for Description Tab</p> },
-    { name: 'Additional Information', content: <p>Content for Additional Information Tab</p> },
-    { name: 'Reviews [5]', content: <p>Content for Reviews Tab with [5]</p> },
+    { name: 'Description', content: <ProductDescription product={product} /> },
+    { name: 'Additional Information', content: <ProductAdditonalInformation product={product} /> },
+    { name: 'Reviews [5]', content: <ProductReviews product={product} /> },
   ];
 
   return (
@@ -108,6 +122,7 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
       </div>
       <div className='divider'></div>
       <ProductTabs tabs={tabs} />
+      <div className='divider'></div>
     </div>
   );
 };

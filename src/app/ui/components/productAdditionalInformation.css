@@ -106,37 +106,18 @@ label {
   line-height: 24px;
 }
 
-.tabs {
-  position: relative;
-  top: -50px;
-  margin: 0 auto;
-  overflow: hidden;
+.product-additional-info {
+  width: 100%;
 }
-.tabs .tabButtons {
-  width: 767px;
-  display: flex;
-  flex-direction: row;
+.product-additional-info .product-additional-info-text {
+  width: 80%;
   margin: 0 auto;
 }
-.tabs .tabButtons .btn {
-  flex: 1;
-  padding: 10px;
-  background-color: #FFFFFF;
-  border: none;
-  outline: none;
-  cursor: pointer;
+.product-additional-info .product-additional-info-text p {
   color: #9F9F9F;
-  font-size: 24px;
-  font-style: normal;
+  text-align: justify;
   font-weight: 400;
   line-height: normal;
-}
-.tabs .tabButtons .btn:hover {
-  color: #1A1919;
-}
-.tabs .tabButtons .btn.active {
-  color: #1A1919;
-}
-.tabs .tabContent {
-  padding: 20px 0;
-}/*# sourceMappingURL=productTabs.css.map */
+  font-size: 16px;
+  font-style: normal;
+}/*# sourceMappingURL=productAdditionalInformation.css.map */
