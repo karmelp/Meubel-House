@@ -1,64 +1,191 @@
 @import '@/app/globals.scss';
 
-.billing {
-    align-items: center;
-    margin-Bottom: '10px';
-    // display:"col";
-    
-    // font-size:20px;
-    // color: red;
+.billing-info {
+    max-width: 1440px;
+    width: 100%;
+    padding: 67px clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+    margin: 0 auto;
     display: flex;
-    text-align: left;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-    input, select{
-        width: 453px;
-height: 75px;
-flex-shrink: 0;
-        border-radius: 10px;
-border: 1px solid #9F9F9F;
-background: #FFF;
-      }
-      label{
-        padding-top: 10px;
-    padding-bottom: 10px;
-    color: #000;
-// align-items: start;
-text-align: left;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-      }
-}
-.names {
-    align-items: center;
-    margin-Bottom: '10px';
-    display:"col";
-    justify-content: center;
-    gap:10px;
-    // font-size:20px;
-    // color: red;
-    display: flex;
-    flex-direction: row;
-    
-    // background-color: green;
-    input {
-        width: 211px;
-height: 75px;
-flex-shrink: 0;
-border-radius: 10px;
-border: 1px solid #9F9F9F;
-background: #FFF;
-        // Add any additional styling for your input
-      }
-}
-.title{
-    color: #000;
-font-size: 36px;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+    justify-content: space-evenly;
+    gap: 30px;
+
+    @media screen and (max-width: $tablet) {
+        flex-direction: column;
+    }
+
+    .billing-details {
+        flex: 1;
+        width: 100%;
+        padding: 35px clamp(0rem, -5.5rem + 11.4583vw, 4.8125rem) 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        .names {
+            display: flex;
+            gap: 30px;
+
+            @media screen and (max-width: $mobile) {
+                flex-direction: column;
+            }
+
+            .input-cont {
+                width: 50%;
+
+                @media screen and (max-width: $mobile) {
+                    width: 100%;
+                }
+            }
+        }
+
+        form {
+            input,
+            select {
+                border: 1px solid #9F9F9F;
+                border-radius: 10px;
+                height: 75px;
+                padding: 20px;
+            
+                &::placeholder {
+                    color: $gray;
+                }
+            
+                &[type="radio"] {
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 2px solid #0f0f0f;
+                    outline: none;
+            
+                    &:checked {
+                        border: 2px solid #2196F3;
+                    }
+                }
+            }
+        }
+    }
+
+    .totals-cont {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 87px clamp(1.25rem, -1.8269rem + 4.8077vw, 2.5rem);
+
+        @media screen and (max-width: $tablet) {
+            padding-top: 0;
+        }
+
+        .headings {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 14px;
+
+            span {
+                font-size: clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem);
+                line-height: 150%;
+                font-weight: 500;
+            }
+        }
+
+        .totals {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            .total {
+                display: flex;
+                justify-content: space-between;
+                gap: 15px;
+                align-items: center;
+
+                .subtotal-price {
+                    font-weight: 300;
+                }
+
+                .total-price {
+                    font-size: clamp(1.25rem, 0.5rem + 1.5625vw, 1.5rem);
+                    line-height: 150%;
+                    font-weight: 700;
+                    color: $gold;
+                }
+            }
+        }
+
+        .divider {
+            border-bottom: 1px solid $lightGray;
+            margin: 33px 0 22px;
+        }
+
+        .payment-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+
+            .radio {
+                display: flex;
+                gap:15px;
+
+                input[type='radio'] {
+                    position: relative;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        background-color: $white;
+                        width: 14px;
+                        height: 14px;
+                        border-radius: 14px;
+                        border: 1px solid $gray;
+                        top: 3px;
+                        left: -2px;
+                    }
+
+                    &:checked {
+                        &:after {
+                            background-color: $black;
+                            border-color: $black;
+                        }
+                    }
+                }
+
+                label {
+                    color: $gray;
+
+                    &.active {
+                        color: $black;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+            .method-explanation {
+                color: $gray;
+                font-weight: 300;
+                padding-bottom: 14px;
+            }
+        }
+
+        .privacy {
+            font-weight: 300;
+            text-align: justify;
+            padding: 22px 0 39px;
+            
+            a {
+                font-weight: 600;
+            }
+        }
+
+        .place-order {
+            display: flex;
+            justify-content: center;
+
+            .bigBtn {
+                width: 318px;
+
+                @media screen and (max-width: $mobile)  {
+                    width: 200px
+                }
+            }
+        }
+    }
 }

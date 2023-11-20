@@ -12,14 +12,14 @@
         padding: 0 $sidePadding;
         align-items: center;
 
-        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop) {
             flex-flow: column nowrap;
             justify-content: center;
             padding: 0 $sidePadding;
             align-items: center;
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @media only screen and (min-width: $mobile) and (max-width: $tablet) {
             flex-flow: column nowrap;
             justify-content: center;
             padding: 0 $sidePadding;
@@ -40,14 +40,14 @@
             gap: 5px;
             align-items: flex-start;
 
-            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                 align-items: flex-start;
                 position: relative;
                 top: 5%;
                 left: 0%;
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                 align-items: flex-start;
                 position: relative;
                 top: 5%;
@@ -73,13 +73,13 @@
         &_image {
             height: 100vh;
 
-            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                 position: relative;
                 top: 5%;
                 height: 70%;
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                 position: relative;
                 top: 5%;
                 height: 60%;
@@ -101,14 +101,14 @@
         justify-content: center;
         min-height: 600px;
 
-        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+        @media only screen and (min-width: $tablet) and (max-width: $desktop) {
             flex-flow: row nowrap;
             gap: 10px;
             justify-content: space-evenly;
             align-items: center;
         }
 
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @media only screen and (min-width: $mobile) and (max-width: $tablet) {
             flex-flow: row wrap;
             gap: 10px;
             justify-content: space-evenly;
@@ -129,13 +129,13 @@
                 height: 500px;
                 margin-top: -50px;
 
-                @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                     width: auto;
                     height: auto;
                     margin-top: -70px;
                 }
 
-                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                     width: auto;
                     height: auto;
                     margin-top: -70px;
@@ -195,28 +195,14 @@
         }
 
         &_product {
+            max-width: 1440px;
             width: 100%;
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-
-            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-            }
-
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-            }
-
-            @media only screen and (max-width: 767px) {
-                flex-flow: column nowrap;
-                justify-content: center;
-                align-items: center;
-            }
+            padding: 0 clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(287px, 1fr));
+            gap: 30px;
+            justify-items: center;
         }
 
         &_view_more {
@@ -255,12 +241,12 @@
             flex-direction: column;
             justify-content: start;
 
-            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                 width: 100%;
                 height: 50%;
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                 width: 100%;
                 height: 50%;
             }
@@ -277,13 +263,13 @@
                 position: relative;
                 top: -26%;
 
-                @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                     width: 100%;
                     height: 499px;
                     top: -20%;
                 }
 
-                @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                     width: 100%;
                     height: 499px;
                     top: -20%;
@@ -304,12 +290,12 @@
             justify-content: center;
             align-items: center;
 
-            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                 width: 100%;
                 height: 50%;
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                 width: 100%;
                 height: 50%;
             }
@@ -348,13 +334,14 @@
         padding: 3% $sidePadding;
 
         &_header {
+            width: 100%;
             text-align: center;
 
-            @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                 margin-bottom: 20px;
             }
 
-            @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                 margin-bottom: 20px;
             }
 
@@ -399,14 +386,14 @@
                     border-radius: 10px;
                     object-fit: cover;
 
-                    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                    @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                         width: 96vw;
                         height: 40vh;
                         object-fit: cover;
                         border-radius: 10px;
                     }
 
-                    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                         width: 98vw;
                         height: 40vh;
                         object-fit: cover;
@@ -439,12 +426,12 @@
                     font-weight: 500;
                     line-height: normal;
 
-                    @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                    @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                         position: relative;
                         top: -12px;
                     }
 
-                    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                    @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                         position: relative;
                         top: -12px;
                     }
@@ -479,12 +466,12 @@
                         font-weight: 300;
                         line-height: normal;
 
-                        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                        @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                             position: relative;
                             top: 2px;
                         }
 
-                        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                        @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                             position: relative;
                             top: 2px;
                         }
@@ -508,12 +495,12 @@
                         font-weight: 300;
                         line-height: normal;
 
-                        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+                        @media only screen and (min-width: $tablet) and (max-width: $desktop) {
                             position: relative;
                             top: 2px;
                         }
 
-                        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+                        @media only screen and (min-width: $mobile) and (max-width: $tablet) {
                             position: relative;
                             top: 2px;
                         }

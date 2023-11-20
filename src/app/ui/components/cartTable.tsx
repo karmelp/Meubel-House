@@ -5,6 +5,8 @@ import { formatNumber } from '@/app/lib/CartContext';
 import { useCart } from '@/app/lib/CartContext';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
+import Delete from '@/public/ant-design_delete-filled.svg';
+import { Link } from 'react-router-dom';
 
 interface CartItem {
   product: {
@@ -42,18 +44,17 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
           <tr key={cartItem.product.id}>
             <td className='img_card'>
               <Image 
-                src={require(`@/public/${cartItem.product.gallery?.[0]}`).default}
-                // src={cartItem.product.image}
+                src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
                 alt={cartItem.product.name}
               />
-              {cartItem.product.name}
+              <p>{cartItem.product.name}</p>
             </td>
-            <td className='price'>Rs .{formatNumber(cartItem.product.price)}</td>
-            <td>{cartItem.quantity}</td>
-            <td>Rs.{cartItem.product.price * cartItem.quantity}</td>
+            <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
+            <td><p className='quantity'>{cartItem.quantity}</p></td>
+            <td className='subtotal'>Rs. {cartItem.product.price * cartItem.quantity}</td>
             <td>
               <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
-                <FontAwesomeIcon icon={faTrash} className="delete-button" style={{ color: '#FFF9E5' }}/>
+                <Image src={Delete} alt='Delete' />
               </button>
             </td>
           </tr>

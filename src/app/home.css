@@ -117,6 +117,7 @@ label {
   padding: 0 clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
   align-items: center;
 }
+
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   .home_hero {
     flex-flow: column nowrap;
@@ -125,6 +126,7 @@ label {
     align-items: center;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home_hero {
     flex-flow: column nowrap;
@@ -300,6 +302,7 @@ label {
   line-height: normal;
 }
 .home_section_two_product {
+  max-width: 1440px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -390,6 +393,7 @@ label {
     top: -20%;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .home_section_three_left_image {
     width: 100%;
@@ -454,6 +458,7 @@ label {
   padding: 3% clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
 }
 .home_section_four_header {
+  width: 100%;
   text-align: center;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {

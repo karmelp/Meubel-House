@@ -9,7 +9,7 @@ interface AddToCartProps {
 
 const AddToCart: React.FC<AddToCartProps> = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
-  const { addToCart } = useCart(); // Access the addToCart function from the cart context
+  const { addToCart, setIsOpen } = useCart(); // Access the addToCart function from the cart context
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
@@ -23,14 +23,15 @@ const AddToCart: React.FC<AddToCartProps> = ({ product }) => {
 
   const handleAddToCart = () => {
     addToCart(product, quantity); 
-    toast.success(`${product?.name} added to the Cart`, {
-      position: 'top-center', // Position of the toast
-      autoClose: 1500, // Auto-close the toast after 3 seconds
-      hideProgressBar: false, // Show progress bar
-      closeOnClick: true, // Close on click
-      pauseOnHover: true, // Pause the timer on hover
-      draggable: true, // Make the toast draggable
-    });// Add the product to the cart with the selected quantity
+    setIsOpen(true);
+    // toast.success(`${product?.name} added to the Cart`, {
+    //   position: 'top-center', // Position of the toast
+    //   autoClose: 1500, // Auto-close the toast after 3 seconds
+    //   hideProgressBar: false, // Show progress bar
+    //   closeOnClick: true, // Close on click setIsOpen(True);
+    //   pauseOnHover: true, // Pause the timer on hover
+    //   draggable: true, // Make the toast draggable
+    // });// Add the product to the cart with the selected quantity
   };
 
   return (

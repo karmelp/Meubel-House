@@ -2,23 +2,28 @@
 import React, { useState,useEffect } from 'react';
 import { Metadata } from 'next';
 import './shop.scss';
-import Hero from '../../ui/components/Hero';
+import Hero from '@/app/ui/components/Hero';
 import heroImage from '@/public/hero-bg.jpg';
-import Pagination from '../../ui/components/Pagination';
+import Pagination from '@/app/ui/components/Pagination';
 import Link from 'next/link';
+import Image from 'next/image';
 import ProductCard from '@/app/ui/components/ProductCard';
-import InfoSection from '../../ui/components/InfoSection';
+import InfoSection from '@/app/ui/components/InfoSection';
+import FilterBtn from '@/public/system-uicons_filtering.svg';
+import Grid from '@/public/ci_grid-big-round.svg';
+import List from '@/public/bi_view-list.svg';
 
-const metadata: Metadata = {
-  title: 'Shop',
-};
-
-type Props = {}
-
-const productsPerPage = 16;
+interface Product {
+  id: number;
+  thumbnail: string;
+  name: string;
+  price: number;
+}
 
 function Shop() {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [productsPerPage, setProductsPerPage] = useState<number>(16);
+
 
   useEffect(() => {
     // Fetch data from the API
@@ -62,10 +67,43 @@ function Shop() {
         heroImage={heroImage}
       />
 
+      <div className="filter-bar">
+        <div className="content">
+          <div className="left">
+            <Link href="#" className="filters">
+              <Image src={FilterBtn} alt="Filters" /> Filter
+            </Link>
+            <div className="views">
+              <Link href="#"><Image src={Grid} alt="Grid view" /></Link>
+              <Link href="#"><Image src={List} alt="List view" /></Link>
+            </div>
+            
+            <div className="divider"></div>
+            Showing {startIndex + 1}-{endIndex > products.length ? products.length : endIndex} of {products.length} results
+          </div>
+          <div className="right">
+            <div className="show">
+              Show
+              <input
+                type="number"
+                value={productsPerPage}
+                onChange={(e) => setProductsPerPage(Math.max(1, Number(e.target.value)))}
+              />
+            </div>
+            <div className="sort">
+              Sort by
+              <select>
+                <option value="">Default</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="product-grid">
         {currentProducts?.map((product) => (
-          <Link href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
-            <ProductCard product={product} />
+          <Link key={product.id} href={`/shop/${encodeURIComponent((product as any)?.id)}`}>
+            <ProductCard key={product.id}  product={product} />
           </Link>
         ))}
       </div>
@@ -78,6 +116,5 @@ function Shop() {
     </div>
   );
 }
-
 
 export default Shop;
