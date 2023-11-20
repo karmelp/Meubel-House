@@ -1,9 +1,0 @@
-.bigBtn {
-  width: 215px;
-  height: 64px;
-  background-color: transparent;
-  border: 1px solid #000;
-  border-radius: 15px;
-  font-weight: 400;
-  font-size: clamp(1rem, 0.867rem + 0.4255vw, 1.25rem);
-}/*# sourceMappingURL=bigBtn.css.map */

@@ -1,5 +1,5 @@
-import React from 'react';
 import Image from 'next/image';
+
 import Star from '@/public/dashicons_star-filled.svg';
 import EmptyStar from '@/public/dashicons_empty-filled-star.svg';
 
@@ -17,7 +17,7 @@ const StarRating: React.FC<StarRatingProps> = ({ rating }) => {
         <Image key={index} src={Star} alt="Filled Star" className="star" />
       ))}
       {[...Array(emptyStars)].map((_, index) => (
-        <img key={index} src={EmptyStar} alt="Empty Star" className="star" />
+        <Image key={index} src={EmptyStar} alt="Empty Star" className="star" />
       ))}
     </div>
   );

@@ -1,16 +1,22 @@
-import Hero from '@/app/ui/components/Hero';
+import { Metadata } from 'next';
+
+import Hero from '@/app/ui/components/hero/Hero';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+
 import heroImage from '@/public/hero-bg.jpg';
-import InfoSection from '@/app/ui/components/InfoSection';
-import React from 'react';
+
 import './about.scss';
 
-type Props = {}
+export const metadata: Metadata = {
+  title: 'About'
+};
 
-const About = (props: Props) => {
-  const breadcrumbs = [
-    { text: 'Home', link: '/' },
-    { text: 'About', link: '/about' },
-  ];
+const breadcrumbs = [
+  { text: 'Home', link: '/' },
+  { text: 'About', link: '/about' },
+];
+
+const About = () => {
 
   return (
     <div className='about-page'>

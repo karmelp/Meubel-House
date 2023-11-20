@@ -1,39 +1,40 @@
 'use client';
-import React from 'react';
-import Hero from '@/app/ui/components/Hero';
-import heroImage from '@/public/hero-bg.jpg';
-import InfoSection from '@/app/ui/components/InfoSection';
-import './cart.scss';
+import Link from 'next/link';
+
 import { useCart } from '@/app/lib/CartContext';
 import { formatNumber } from '@/app/lib/CartContext';
-import Link from 'next/link';
-import CartTable from '@/app/ui/components/cartTable';
-import BigBtn from '@/app/ui/components/BigBtn';
 
-type Props = {}
+import Hero from '@/app/ui/components/hero/Hero';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+import CartTable from '@/app/ui/components/cartTable/CartTable';
+import BigBtn from '@/app/ui/components/bigBtn/BigBtn';
+
+import heroImage from '@/public/hero-bg.jpg';
+
+import './cart.scss';
 
 interface CartItem {
   product: {
     id: number;
     name: string;
     price: number;
-    // Add other properties as needed
   };
   quantity: number;
-  // Add other properties as needed
 }
-const Cart = (props: Props) => {
-  const { state: cartState,removeFromCart } = useCart();
+
+const breadcrumbs = [
+  { text: 'Home', link: '/' },
+  { text: 'Cart', link: '/cart' },
+];
+
+const Cart = () => {
+  const { state: cartState } = useCart();
   
   const isCartEmpty = cartState.cartItems.length === 0;
 
   function calculateSubtotal(cartItems: CartItem[]): number {
     return cartItems.reduce((subtotal, item) => subtotal + item.product.price * item.quantity, 0);
   }
-  const breadcrumbs = [
-    { text: 'Home', link: '/' },
-    { text: 'Cart', link: '/cart' },
-  ];
 
   return (
     <div className='cart-page'>

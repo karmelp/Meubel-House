@@ -1,17 +1,25 @@
 'use client';
-import React, { useState,useEffect } from 'react';
+import { useState,useEffect } from 'react';
 import { Metadata } from 'next';
-import './shop.scss';
-import Hero from '@/app/ui/components/Hero';
-import heroImage from '@/public/hero-bg.jpg';
-import Pagination from '@/app/ui/components/Pagination';
 import Link from 'next/link';
 import Image from 'next/image';
-import ProductCard from '@/app/ui/components/ProductCard';
-import InfoSection from '@/app/ui/components/InfoSection';
+
+import Hero from '@/app/ui/components/hero/Hero';
 import FilterBtn from '@/public/system-uicons_filtering.svg';
+import Pagination from '@/app/ui/components/pagination/Pagination';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+import ProductCard from '@/app/ui/components/productCard/ProductCard';
+
 import Grid from '@/public/ci_grid-big-round.svg';
 import List from '@/public/bi_view-list.svg';
+
+import heroImage from '@/public/hero-bg.jpg';
+
+import './shop.scss';
+
+// export const metadata: Metadata = {
+//   title: 'Shop'
+// };
 
 interface Product {
   id: number;

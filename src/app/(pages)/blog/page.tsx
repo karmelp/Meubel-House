@@ -1,17 +1,21 @@
 'use client';
-import Hero from '@/app/ui/components/Hero';
-import heroImage from '@/public/hero-bg.jpg';
-import InfoSection from '@/app/ui/components/InfoSection';
+import { Metadata, ResolvingMetadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+
+import Hero from '@/app/ui/components/hero/Hero';
+import LinkBtn from '@/app/ui/components/linkBtn/LinkBtn';
+import Pagination from '@/app/ui/components/pagination/Pagination';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+
+import heroImage from '@/public/hero-bg.jpg';
 import admin from '@/public/dashicons_admin-users.svg';
 import date from '@/public/uis_calender.svg';
 import category from '@/public/ci_tag.svg';
 import search from '@/public/akar-icons_search.svg';
+
 import './blog.scss';
-import LinkBtn from '@/app/ui/components/LinkBtn';
-import Pagination from '@/app/ui/components/Pagination';
-import { useState, useEffect } from 'react';
 
 const postsPerPage = 3;
 
@@ -25,12 +29,12 @@ type Blog = {
   excerpt: string;
 };
 
-export default function Blog() {
-  const breadcrumbs = [
-    { text: 'Home', link: '/' },
-    { text: 'Blog', link: '/blog' },
-  ];
+const breadcrumbs = [
+  { text: 'Home', link: '/' },
+  { text: 'Blog', link: '/blog' },
+];
 
+export default function Blog() {
   const [data, setData] = useState<Blog[]>([]);
   const [allCategories, setAllCategories] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -98,12 +102,9 @@ export default function Blog() {
 
   return (
     <div className="blog-page">
-      {/* Hero Section */}
       <Hero pageTitle="Blog" breadcrumbs={breadcrumbs} heroImage={heroImage} />
 
-      {/* Blog Section */}
       <div className="blog-section">
-        {/* Blog Posts */}
         <div className="blog-posts">
           {currentProducts.map((post) => (
             <div key={post.id} className="post">
@@ -135,16 +136,12 @@ export default function Blog() {
           ))}
         </div>
         
-        {/* Blog Navigation */}
         <div className="blog-navi">
           <div className="nav">
-            {/* Search Bar */}
             <div className="search-bar">
               <input type="text" />
               <Image src={search} alt='Icon' className='search-icon' />
             </div>
-            
-            {/* Categories */}
             <div className="categories">
               <div className='nav-heading'>Categories</div>
               <div className="cats">
@@ -163,8 +160,6 @@ export default function Blog() {
               </div>
             </div>
           </div>
-
-          {/* Recent Posts */}
           <div className="recent">
             <div className='nav-heading'>Recent Posts</div>
             <div className="recent-posts">
@@ -184,7 +179,6 @@ export default function Blog() {
         </div>
       </div>
 
-      {/* Pagination */}
       {filteredData.length > postsPerPage && (
         <Pagination 
           currentPage={currentPage}
@@ -193,7 +187,6 @@ export default function Blog() {
         />
       )}
 
-      {/* Info Section */}
       <InfoSection />
     </div>
   );

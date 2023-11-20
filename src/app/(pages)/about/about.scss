@@ -4,10 +4,11 @@
     @include page;
 
     .about {
-        max-width: 955px;
+        max-width: $tablet;
         padding: 67px clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
         margin: 0 auto;
         display: flex;
+        text-align: justify;
         flex-direction: column;
         gap: 20px;
         

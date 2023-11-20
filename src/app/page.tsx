@@ -1,18 +1,22 @@
 'use client';
-import './home.scss';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import ProductCard from './ui/components/ProductCard';
 import Image from 'next/image';
+
+import LinkBtn from './ui/components/linkBtn/LinkBtn';
+import SquareLinkBtn from './ui/components/squareLinkBtn/SquareLinkBtn';
+import RoundLinkBtn from './ui/components/roundLinkBtn/RoundLinkBtn';
+import ProductCard from './ui/components/productCard/ProductCard';
+
 import hero from '@/public/Rocket single seater 1.svg';
 import Prod1 from '@/public/Granite-square-side-table.svg';
 import Prod2 from '@/public/Round-coffee-table_color-2.svg';
 import NewArrivalImg from '@/public/Asgaard-sofa.svg';
-import LinkBtn from './ui/components/LinkBtn';
-import SquareLinkBtn from './ui/components/SquareLinkBtn';
+
 import Clock from '@/public/clock_outline.svg';
 import Calendar from '@/public/uil_calender.svg';
-import RoundLinkBtn from './ui/components/RoundLinkBtn';
+
+import './home.scss';
 
 type Product = {
   id: number;
@@ -58,7 +62,7 @@ export default function Home() {
       }
     };
 
-    fetchData(); // Call the fetchData function when the component mounts
+    fetchData();
   }, []);
 
   useEffect(() => {
@@ -112,7 +116,7 @@ export default function Home() {
         </div>
         <div className='home_section_two_product'>
           {products.slice(0, 4).map((product) => (
-            <Link href={`/shop/${encodeURIComponent(product.id)}`}>
+            <Link key={product.id} href={`/shop/${encodeURIComponent(product.id)}`}>
               <ProductCard product={product} />
             </Link>
           ))}
@@ -130,7 +134,7 @@ export default function Home() {
           <h6 className='home_section_three_right_text'>New Arrivals</h6>
           <h4 className='home_section_three_right_subtext'>Asgaard sofa</h4>
           {products.filter((product) => product.name === 'Asgaard sofa').map((product) => (
-            <SquareLinkBtn link={`/shop/${encodeURIComponent(product.id)}`} text='Shop Now' />
+            <SquareLinkBtn key={product.id} link={`/shop/${encodeURIComponent(product.id)}`} text='Shop Now' />
           ))}
         </div>
       </div>
@@ -144,7 +148,7 @@ export default function Home() {
         </div>
         <div className='home_section_four_blog'>
           {blogPosts.slice(0, 3).map((blogPost) => (
-            <Link href={`/blog/${encodeURIComponent(blogPost.id)}`}>
+            <Link key={blogPost.id} href={`/blog/${encodeURIComponent(blogPost.id)}`}>
               <div className='home_section_four_blog_item'>
                 <Image
                   className='home_section_four_blog_item_image'

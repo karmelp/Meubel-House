@@ -1,17 +1,16 @@
-import Hero from '@/app/ui/components/Hero';
+import Hero from '@/app/ui/components/hero/Hero';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+
 import heroImage from '@/public/hero-bg.jpg';
-import InfoSection from '@/app/ui/components/InfoSection';
-import React from 'react';
+
 import './privacy.scss';
 
-type Props = {}
+const breadcrumbs = [
+  { text: 'Home', link: '/' },
+  { text: 'Privacy Policy', link: '/privacy-policy' },
+];
 
-const About = (props: Props) => {
-  const breadcrumbs = [
-    { text: 'Home', link: '/' },
-    { text: 'Privacy Policy', link: '/privacy-policy' },
-  ];
-
+const PrivacyPolicy = () => {
   return (
     <div className='privacy-page'>
       <Hero 
@@ -25,4 +24,4 @@ const About = (props: Props) => {
   );
 };
 
-export default About;
+export default PrivacyPolicy;

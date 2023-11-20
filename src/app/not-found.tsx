@@ -1,8 +1,10 @@
-import BigBtn from '@/app/ui/components/BigBtn';
 import Link from 'next/link';
+
+import BigBtn from '@/app/ui/components/bigBtn/BigBtn';
+
 import './notFound.scss';
 
-export default function FourOhFour() {
+export default function NotFound() {
   return (
     <div className='not-found'>
       <h1>404</h1>

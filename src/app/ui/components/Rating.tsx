@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Rating: React.FC = () => {
   return (
     <svg

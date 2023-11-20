@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useReducer, ReactNode } from 'react';
 
 interface CartItem {
-  product: any; // Replace 'any' with the actual type of your product
+  product: any;
   quantity: number;
 }
 
@@ -22,63 +22,85 @@ const CartContext = createContext<
       addToCart: (product: any, quantity: number) => void;
       removeFromCart: (productId: string) => void; // Added removeFromCart function
       setIsOpen: (isOpen: boolean) => void;
-    }
-  | undefined
->(undefined);
+        } | undefined >(undefined);
 
 const initialState: CartState = {
-  cartItems: [],
+  cartItems:
+    window.localStorage.getItem('cartItems') !== null
+      ? JSON.parse(window.localStorage.getItem('cartItems') as string).cartItems
+      : [],
   isOpen: false,
 };
 
 const cartReducer = (state: CartState, action: CartAction): CartState => {
   switch (action.type) {
-    case 'ADD_TO_CART':
-      const existingCartItemIndex = state.cartItems.findIndex(
-        (item) => item.product.id === action.payload.product.id,
-      );
+  case 'ADD_TO_CART':
+    const existingCartItemIndex = state.cartItems.findIndex(
+      (item) => item.product.id === action.payload.product.id,
+    );
 
-      if (existingCartItemIndex !== -1) {
-        // If the product is in the cart, update the quantity by adding the new quantity
-        const updatedCartItems = [...state.cartItems];
-        updatedCartItems[existingCartItemIndex].quantity += action.payload.quantity;
+    if (existingCartItemIndex !== -1) {
+      const updatedCartItems = [...state.cartItems];
+      updatedCartItems[existingCartItemIndex].quantity += action.payload.quantity;
 
-        return {
+      localStorage.setItem(
+        'cartItems',
+        JSON.stringify({
           ...state,
           cartItems: updatedCartItems,
-        };
-      } else {
-        // If the product is not in the cart, add it as a new entry
-        return {
-          ...state,
-          cartItems: [...state.cartItems, action.payload],
-        };
-      }
-
-    case 'REMOVE_FROM_CART':
-      const itemToRemoveIndex = state.cartItems.findIndex(
-        (item) => item.product.id === action.payload,
+        }),
       );
 
-      if (itemToRemoveIndex !== -1) {
-        const updatedCartItems = [...state.cartItems];
-        updatedCartItems.splice(itemToRemoveIndex, 1);
-
-        return {
-          ...state,
-          cartItems: updatedCartItems,
-        };
-      }
-
-      return state;
-
-    case 'SET_IS_OPEN':
       return {
         ...state,
-        isOpen: action.payload,
+        cartItems: updatedCartItems,
       };
-    default:
-      return state;
+    } else {
+      localStorage.setItem(
+        'cartItems',
+        JSON.stringify({
+          ...state,
+          cartItems: [...state.cartItems, action.payload],
+        }),
+      );
+      return {
+        ...state,
+        cartItems: [...state.cartItems, action.payload],
+      };
+    }
+
+  case 'REMOVE_FROM_CART':
+    const itemToRemoveIndex = state.cartItems.findIndex(
+      (item) => item.product.id === action.payload,
+    );
+
+    if (itemToRemoveIndex !== -1) {
+      const updatedCartItems = [...state.cartItems];
+      updatedCartItems.splice(itemToRemoveIndex, 1);
+
+      localStorage.setItem(
+        'cartItems',
+        JSON.stringify({
+          ...state,
+          cartItems: updatedCartItems,
+        }),
+      );
+
+      return {
+        ...state,
+        cartItems: updatedCartItems,
+      };
+    }
+
+    return state;
+
+  case 'SET_IS_OPEN':
+    return {
+      ...state,
+      isOpen: action.payload,
+    };
+  default:
+    return state;
   }
 };
 

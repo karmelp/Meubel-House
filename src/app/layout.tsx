@@ -1,12 +1,13 @@
-import '@/app/globals.scss';
 import { Metadata } from 'next';
-import { poppins } from './ui/fonts';
-import Header from './ui/components/Header';
-import Footer from './ui/components/Footer';
-import AuthProvider from './lib/AuthContext';
-import { CartProvider } from './lib/CartContext';
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+
+import AuthProvider from '@/app/lib/AuthContext';
+import { CartProvider } from '@/app/lib/CartContext';
+
+import { poppins } from '@/app/ui/fonts';
+import Header from '@/app/ui/components/header/Header';
+import Footer from '@/app/ui/components/footer/Footer';
+
+import '@/app/globals.scss';
 
 export const metadata: Metadata = {
   title: {
@@ -25,7 +26,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <AuthProvider>{children}</AuthProvider>
           <Footer />
         </CartProvider>
-        <ToastContainer />
       </body>
     </html>
   );

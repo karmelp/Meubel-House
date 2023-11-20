@@ -1,0 +1,71 @@
+@import '@/app/globals.scss';
+
+table {
+  border-collapse: collapse;
+  max-width: 817px;
+  width: 100%;
+      
+  thead {
+    tr {
+      th {
+        padding: 15px;
+        background-color: $lightYellow;
+        font-weight: 500;
+      }
+    }
+  }
+      
+  tbody {
+    tr {
+      td {
+        margin-top: 15px;
+        padding-right: 15px;
+      
+        &:not(:first-child) {
+          padding-left: 15px;
+        }
+        
+        &.img_card {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+
+          p {
+            color: $gray;
+          }
+
+          img {
+            width: 105px;
+            height: 105px;
+            background-color: $yellow;
+            border-radius: 10px;
+          }
+        }
+
+        .price {
+          color: $gray;
+        }
+
+        .quantity {
+          width: 32px;
+          height: 32px;
+          border: 1px solid $gray;
+          border-radius: 5px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .delete-button {
+          cursor: pointer;
+          background: none;
+          border: none;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+}

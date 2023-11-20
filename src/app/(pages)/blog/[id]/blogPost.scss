@@ -4,7 +4,7 @@
     @include page;
 
     .single-blog-post {
-        max-width: 955px;
+        max-width: $tablet;
         width: 100%;
         padding: 0 clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
         margin: 0 auto;

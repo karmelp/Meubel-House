@@ -1,24 +1,22 @@
-import Hero from '@/app/ui/components/Hero';
-import heroImage from '@/public/hero-bg.jpg';
-import InfoSection from '@/app/ui/components/InfoSection';
-import React from 'react';
 import Image from 'next/image';
+
+import Hero from '@/app/ui/components/hero/Hero';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+import BigBtn from '@/app/ui/components/bigBtn/BigBtn';
+
+import heroImage from '@/public/hero-bg.jpg';
 import Pin from '@/public/pin.svg';
 import Phone from '@/public/bxs_phone.svg';
 import Clock from '@/public/bi_clock-fill.svg';
+
 import './contact.scss';
-import { svgPathData } from '@fortawesome/free-solid-svg-icons/fa2';
-import BigBtn from '@/app/ui/components/BigBtn';
 
-type Props = {}
+const breadcrumbs = [
+  { text: 'Home', link: '/' },
+  { text: 'Contact', link: '/contact' },
+];
 
-const Contact = (props: Props) => {
-
-  const breadcrumbs = [
-    { text: 'Home', link: '/' },
-    { text: 'Contact', link: '/contact' },
-  ];
-
+const Contact = () => {
   return (
     <div className='contact-page'>
       <Hero 

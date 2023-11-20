@@ -1,12 +1,14 @@
-import Hero from '../../../ui/components/Hero';
-import InfoSection from '../../../ui/components/InfoSection';
-import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
+
+import Hero from '@/app/ui/components/hero/Hero';
+import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+
 import admin from '@/public/dashicons_admin-users.svg';
 import date from '@/public/uis_calender.svg';
 import category from '@/public/ci_tag.svg';
+
 import './blogPost.scss';
-import Link from 'next/link';
 
 interface BlogPost {
   id: string;
@@ -28,7 +30,6 @@ const blogPost = async ({ params }: {
     id: string,
   }
 }) => {
-
   // Fetch current post
   const response = await fetch(`${process.env.API_URL}/blogPosts/${params.id}`);
   const post: BlogPost = await response.json();
