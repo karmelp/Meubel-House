@@ -120,56 +120,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -229,56 +179,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -342,56 +242,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -451,56 +301,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -564,56 +364,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -673,56 +423,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -786,56 +486,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -895,56 +545,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -1008,56 +608,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -1117,56 +667,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -1230,56 +730,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -1339,56 +789,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -1452,56 +852,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -1561,56 +911,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -1674,56 +974,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -1783,56 +1033,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -1896,56 +1096,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -2005,56 +1155,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -2118,56 +1218,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -2227,56 +1277,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -2340,56 +1340,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -2449,56 +1399,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -2562,56 +1462,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -2671,56 +1521,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -2784,56 +1584,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -2893,56 +1643,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
@@ -3006,56 +1706,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -3117,56 +1767,6 @@
           "date": "3 months ago"
         }
       ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
-        }
-      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -3226,56 +1826,6 @@
           "comment": "Nice product and affordable quality.",
           "image": "user2.jpeg",
           "date": "3 months ago"
-        }
-      ],
-      "reviews": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user1.jpeg",
-          "date": "2 days ago"
-        },
-        {
-          "id": 1,
-          "name": "Lane Garne",
-          "rating": 5,
-          "comment": "A nice product.",
-          "image": "user2.jpeg",
-          "date": "1 week ago"
-        },
-        {
-          "id": 1,
-          "name": "Jake Goe",
-          "rating": 5,
-          "comment": "Perfect and great product.",
-          "image": "user3.jpeg",
-          "date": "2 weeks ago"
-        },
-        {
-          "id": 1,
-          "name": "Pace Fie",
-          "rating": 5,
-          "comment": "This is a really great product.",
-          "image": "user1.jpeg",
-          "date": "1 month ago"
-        },
-        {
-          "id": 1,
-          "name": "Lhon Dye",
-          "rating": 5,
-          "comment": "Nice product and affordable quality.",
-          "image": "user2.jpeg",
-          "date": "3 months ago"
-        },
-        {
-          "id": 1,
-          "name": "Jane Lee",
-          "rating": 5,
-          "comment": "This is a great product.",
-          "image": "user3.jpeg",
-          "date": "5 months ago"
         }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
