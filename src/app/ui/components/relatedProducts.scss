@@ -1,0 +1,74 @@
+@import '../../globals.scss';
+
+.related_products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    min-height: 600px;
+    background-color: $white;
+
+    &_header {
+        text-align: center;
+
+        &_title {
+            color: $black;
+            font-size: clamp(1.875rem, 1.743rem + 0.5634vw, 2.25rem); /*36px*/
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &_subtitle {
+            color: $gray;
+            font-size: clamp(0.8125rem, 0.7465rem + 0.2817vw, 1rem); /* 16px */
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+    &_grid {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+
+        @media only screen and (min-width: 1025px) and (max-width: 1440px) {
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: 767px) {
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &_view_more {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 3% 0;
+        z-index: 10;
+
+        a {
+            color: $black;
+            font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem);  /*24px*/
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+
+}

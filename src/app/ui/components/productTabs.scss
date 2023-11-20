@@ -2,7 +2,7 @@
 
 .tabs {
     position: relative;
-    top: -50px;
+    top: -10px;
     margin: 0 auto;
     overflow: hidden;
 
@@ -36,6 +36,6 @@
     }
     
     .tabContent {
-        padding: 20px 0;
+        padding-top: 20px;
     }
 }

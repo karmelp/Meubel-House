@@ -13,6 +13,8 @@ import ProductTabs from './ProductTabs';
 import ProductDescription from './ProductDescription';
 import ProductAdditonalInformation from './ProductAdditionalInformation';
 import ProductReviews from './ProductReviews';
+import RelatedProducts from './RelatedProducts';
+
 interface SingleProductProps {
   product: {
     id : number;
@@ -62,7 +64,7 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
   const tabs = [
     { name: 'Description', content: <ProductDescription product={product} /> },
     { name: 'Additional Information', content: <ProductAdditonalInformation product={product} /> },
-    { name: 'Reviews [5]', content: <ProductReviews product={product} /> },
+    { name: `Reviews [${product.reviews.length}] `, content: <ProductReviews product={product} /> },
   ];
 
   return (
@@ -123,6 +125,7 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
       <div className='divider'></div>
       <ProductTabs tabs={tabs} />
       <div className='divider'></div>
+      <RelatedProducts />
     </div>
   );
 };

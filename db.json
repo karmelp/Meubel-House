@@ -8,8 +8,8 @@
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
         "Trenton-modular-sofa_3 1.svg",
-        "Cloud_sofa_ three_seater_ottoman_1_1.png",
-        "Cloud_sofa_three_seater_ottoman_2_1.png",
+        "Outdoor-bar-table-and-stool.svg",
+        "Reclaimed-teak-coffee-table.svg",
         "Granite-dining-table-with-dining-chair.svg"
       ],
       "size": ["XS", "L", "XL"],
@@ -18,12 +18,46 @@
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
       "reviews": [
-        {"id": 1, "name": "John Doe", "rating": 5, "comment": "This is a great product.", "image": "user1.jpeg", "date": "2 days ago"},
-        {"id": 1, "name": "Lane Garne", "rating": 5, "comment": "A nice product.", "image": "user2.jpeg", "date": "1 week ago"},
-        {"id": 1, "name": "Jake Goe", "rating": 5, "comment": "Perfect and great product.", "image": "user3.jpeg", "date": "2 weeks ago"},
-        {"id": 1, "name": "Pace Fie", "rating": 5, "comment": "This is a really great product.", "image": "user1.jpeg", "date": "1 month ago"},
-        {"id": 1, "name": "Lhon Dye", "rating": 5, "comment": "Nice product and affordable quality.", "image": "user2.jpeg", "date": "3 months ago"},
-        {"id": 1, "name": "Jane Lee", "rating": 5, "comment": "This is a great product.", "image": "user3.jpeg", "date": "5 months ago"}
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
       ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
@@ -35,7 +69,7 @@
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
         "Granite-dining-table-with-dining-chair.svg",
-        "Granite-dining-table-with-dining-chair.svg",
+        "Trenton-modular-sofa_3 1.svg",
         "Outdoor-bar-table-and-stool.svg",
         "Reclaimed-teak-coffee-table.svg"
       ],
@@ -44,6 +78,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -63,6 +189,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -82,6 +300,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -101,6 +411,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -120,6 +522,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -139,6 +633,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -158,6 +744,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -177,6 +855,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -196,6 +966,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -215,6 +1077,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -234,6 +1188,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -253,6 +1299,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -272,6 +1410,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -291,6 +1521,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -310,6 +1632,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -329,6 +1743,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -348,6 +1854,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -367,6 +1965,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -386,6 +2076,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -405,6 +2187,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -424,6 +2298,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -443,6 +2409,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -462,6 +2520,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -481,6 +2631,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -500,6 +2742,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -519,6 +2853,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -538,6 +2964,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -557,6 +3075,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     },
     {
@@ -576,6 +3186,98 @@
       "SKU": "SS001",
       "category": "Sofas",
       "tags": ["Sofa", "Chair", "Home", "Shop"],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 2,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 3,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 4,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 5,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        }
+      ],
+      "reviews": [
+        {
+          "id": 1,
+          "name": "John Doe",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user1.jpeg",
+          "date": "2 days ago"
+        },
+        {
+          "id": 1,
+          "name": "Lane Garne",
+          "rating": 5,
+          "comment": "A nice product.",
+          "image": "user2.jpeg",
+          "date": "1 week ago"
+        },
+        {
+          "id": 1,
+          "name": "Jake Goe",
+          "rating": 5,
+          "comment": "Perfect and great product.",
+          "image": "user3.jpeg",
+          "date": "2 weeks ago"
+        },
+        {
+          "id": 1,
+          "name": "Pace Fie",
+          "rating": 5,
+          "comment": "This is a really great product.",
+          "image": "user1.jpeg",
+          "date": "1 month ago"
+        },
+        {
+          "id": 1,
+          "name": "Lhon Dye",
+          "rating": 5,
+          "comment": "Nice product and affordable quality.",
+          "image": "user2.jpeg",
+          "date": "3 months ago"
+        },
+        {
+          "id": 1,
+          "name": "Jane Lee",
+          "rating": 5,
+          "comment": "This is a great product.",
+          "image": "user3.jpeg",
+          "date": "5 months ago"
+        }
+      ],
       "additionalInformation": "These product details can be one sentence, a short paragraph or bulleted. They can be serious, funny or quirky. They can be located right next to or underneath product titles and product images. They can be scannable selling points or have strong readability. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting. There are multiple styles and ways to make product descriptions work for your ecommerce store, but there’s much more to them than simple copywriting."
     }
   ],

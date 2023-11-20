@@ -106,37 +106,71 @@ label {
   line-height: 24px;
 }
 
-.tabs {
-  position: relative;
-  top: -10px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.tabs .tabButtons {
-  width: 767px;
+.related_products {
   display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-}
-.tabs .tabButtons .btn {
-  flex: 1;
-  padding: 10px;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  min-height: 600px;
   background-color: #FFFFFF;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: #9F9F9F;
-  font-size: 24px;
+}
+.related_products_header {
+  text-align: center;
+}
+.related_products_header_title {
+  color: #1A1919;
+  font-size: clamp(1.875rem, 1.743rem + 0.5634vw, 2.25rem); /*36px*/
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
 }
-.tabs .tabButtons .btn:hover {
-  color: #1A1919;
+.related_products_header_subtitle {
+  color: #9F9F9F;
+  font-size: clamp(0.8125rem, 0.7465rem + 0.2817vw, 1rem); /* 16px */
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
-.tabs .tabButtons .btn.active {
-  color: #1A1919;
+.related_products_grid {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
-.tabs .tabContent {
-  padding-top: 20px;
-}/*# sourceMappingURL=productTabs.css.map */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+  .related_products_grid {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .related_products_grid {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .related_products_grid {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.related_products_view_more {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 3% 0;
+  z-index: 10;
+}
+.related_products_view_more a {
+  color: #1A1919;
+  font-size: clamp(1.125rem, 0.993rem + 0.5634vw, 1.5rem); /*24px*/
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}/*# sourceMappingURL=relatedProducts.css.map */
