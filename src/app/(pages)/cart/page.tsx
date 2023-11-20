@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 import { useCart } from '@/app/lib/CartContext';
 import { formatNumber } from '@/app/lib/CartContext';

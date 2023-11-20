@@ -17,10 +17,6 @@ import heroImage from '@/public/hero-bg.jpg';
 
 import './shop.scss';
 
-// export const metadata: Metadata = {
-//   title: 'Shop'
-// };
-
 interface Product {
   id: number;
   thumbnail: string;

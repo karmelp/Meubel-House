@@ -1,9 +1,11 @@
 'use client';
+import { Metadata, ResolvingMetadata } from 'next';
 import React, { useState, useEffect } from 'react';
+
 import Breadcrumbs from '@/app/ui/components/breadcrumbs/Breadcrumbs';
 import SingleProduct from '@/app/ui/components/singleProduct/SingleProduct';
+
 import './singlePage.scss';
-type Props = {};
 
 const SingleProductPage = ({
   params,

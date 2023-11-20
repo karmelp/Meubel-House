@@ -1,9 +1,15 @@
+import { Metadata } from 'next';
+
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
 
 import heroImage from '@/public/hero-bg.jpg';
 
 import './privacy.scss';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy'
+};
 
 const breadcrumbs = [
   { text: 'Home', link: '/' },

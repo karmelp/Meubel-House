@@ -1,4 +1,5 @@
 'use client';
+import { Metadata } from 'next';
 import { useContext } from 'react';
 import { AuthContext } from '@/app/lib/AuthContext';
 

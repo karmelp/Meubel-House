@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { Metadata } from 'next';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
@@ -10,6 +11,10 @@ import Phone from '@/public/bxs_phone.svg';
 import Clock from '@/public/bi_clock-fill.svg';
 
 import './contact.scss';
+
+export const metadata: Metadata = {
+  title: 'Contact'
+};
 
 const breadcrumbs = [
   { text: 'Home', link: '/' },

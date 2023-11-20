@@ -1,4 +1,5 @@
 'use client';
+import { Metadata } from 'next';
 
 import Hero from '../../ui/components/hero/Hero';
 import InfoSection from '../../ui/components/infoSection/InfoSection';
