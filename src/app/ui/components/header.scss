@@ -51,7 +51,7 @@ header {
         flex-direction: column;
         cursor: pointer;
         z-index: 102;
-        position: fixed;
+        position: sticky;
 
         .bar {
             width: 30px;
