@@ -22,12 +22,19 @@
             flex-direction: column;
         }
 
-        .product-desc-img-container {
+        .img-container {
             flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             background-color: $lightYellow;
+
+            img {
+                max-width: 348px;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
         }
     }
 

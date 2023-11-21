@@ -71,12 +71,13 @@ header {
         nav {
             display: none;
             flex-direction: column;
-            background-color: $yellow;
+            background: $yellow;
+            background: linear-gradient(90deg, rgba(251, 235, 181, 1) 0%, rgba(251, 235, 181, 0) 100%);
             position: absolute;
             top: 0;
             left: 0;
             height: 100vh;
-            width: 150px;
+            width: 100%;
             padding: 10px;
             z-index: 101;
 

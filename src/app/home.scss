@@ -155,6 +155,7 @@
 
         .blog-section {
             display: flex;
+            width: 100%;
             gap: 31px;
 
             @media screen and (max-width: $tablet) {
@@ -170,9 +171,13 @@
 
                 .thumbnail {
                     width: 100%;
-                    height: clamp(15.625rem, -11.1875rem + 55.8594vw, 24.5625rem);
+                    height: clamp(18.20875rem, 2.5687rem + 24.4375vw, 24.5625rem);
                     border-radius: 10px;
                     object-fit: cover;
+
+                    @media screen and (max-width: $tablet) {
+                        height: clamp(12.5rem, -6.5372rem + 38.7034vw, 18.20875rem);
+                    }
                 }
 
                 .info {

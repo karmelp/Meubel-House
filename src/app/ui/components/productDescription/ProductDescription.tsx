@@ -16,7 +16,7 @@ const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
       <div className='description'>{product.description}</div>
       <div className='gallery'>
         {product.gallery.slice(0, 2).map((image) => (
-          <div className="product-desc-img-container" key={product.id}>
+          <div className="img-container" key={product.id}>
             <Image
               key={product.id}
               src={require(`@/public/${image}`)}

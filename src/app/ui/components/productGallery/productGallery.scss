@@ -17,6 +17,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 10px;
+        padding: 20px;
 
         img {
             max-width: 423px;
@@ -47,11 +48,13 @@
         }
 
         .thumbnail {
-            width: 100%;
+            width: auto;
+            padding: 10px;
             height: 100%;
             background-color: $lightYellow;
             cursor: pointer;
             border-radius: 10px;
+            align-self: center;
 
             &.active {
                 background-color: $yellow;
