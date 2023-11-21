@@ -33,7 +33,7 @@ const SingleProductPage = ({
       }
     };
 
-    fetchData(); // Call the fetchData function when the component mounts
+    fetchData();
   }, [params.id]);
   console.log('params ', params);
 

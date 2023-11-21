@@ -1,20 +1,12 @@
 @import '@/app/globals.scss';
 
 .product-additional-info {
-    width: 100%;
+    display: flex;
+    justify-content: center;
 
-    .product-additional-info-text {
-
-        width: 80%;
-        margin: 0 auto;
-
-        p {
-            color: $gray;
-            text-align: justify;
-            font-weight: 400;
-            line-height: normal;
-            font-size: 16px;
-            font-style: normal;
-        }
+    p {
+        max-width: $tablet;
+        color: $gray;
+        text-align: justify;
     }
 }

@@ -19,14 +19,6 @@ type Product = {
     SKU: string;
     category: string;
     tags?: string[];
-    reviews: {
-      id: number;
-      name: string;
-      comment: string;
-      rating: number;
-      image: string;
-      date: string;
-    }[];
 };
 
 const RelatedProducts = () => {
@@ -51,20 +43,16 @@ const RelatedProducts = () => {
   }, []);
 
   return (
-    <div className='related_products'>
-      <div className='related_products_header'>
-        <h4 className='related_products_header_title'>Related Products</h4>
-      </div>
-      <div className='related_products_grid'>
+    <div className='related-products'>
+      <h4>Related Products</h4>
+      <div className='product-grid'>
         {products.slice(0, 4).map((product) => (
           <Link key={product.id} href={`/shop/${encodeURIComponent(product.id)}`}>
             <ProductCard product={product} />
-          </Link>
+          </Link>  
         ))}
       </div>
-      <div className='related_products_view_more'>
-        <LinkBtn link={'/shop'} text='View more' />
-      </div>
+      <LinkBtn link={'/shop'} text='View more' />
     </div>
   );
 };

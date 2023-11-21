@@ -9,7 +9,7 @@ interface ProductAdditonalInformationProps {
 const ProductAdditonalInformation: React.FC<ProductAdditonalInformationProps> = ({ product }) => {
   return (
     <div className='product-additional-info'>
-      <div className='product-additional-info-text'><p>{product.additionalInformation}</p></div>
+      <p>{product.additionalInformation}</p>
     </div>
   );
 };

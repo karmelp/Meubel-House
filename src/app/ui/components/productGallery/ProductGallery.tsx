@@ -17,20 +17,16 @@ const ProductGallery: React.FC<ProductGalleryProps> = ({ images }) => {
 
   return (
     <div className='product-gallery'>
-      <div className='thumbnail-container'>
-        <div className='thumbnails'>
-          {images?.map((image, index) => (
-            <Image
-              key={index}
-              className={`thumbnail 
-              ${currentImageIndex === index ? 'active' : ''}
-              `}
-              onClick={() => handleThumbnailClick(index)}
-              src={require(`@/public/${image}`).default}
-              alt={`Product ${index}`}
-            />
-          ))}
-        </div>
+      <div className='thumbnails'>
+        {images?.map((image, index) => (
+          <Image
+            key={index}
+            className={`thumbnail ${currentImageIndex === index ? 'active' : ''}`}
+            onClick={() => handleThumbnailClick(index)}
+            src={require(`@/public/${image}`).default}
+            alt={`Product ${index}`}
+          />
+        ))}
       </div>
       <div className='main-image'>
         <Image
