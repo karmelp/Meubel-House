@@ -11,7 +11,7 @@ import ProductDescription from '@/app/ui/components/productDescription/ProductDe
 import ProductAdditonalInformation from '@/app/ui/components/productAdditionalInformation/ProductAdditionalInformation';
 import ProductReviews from '@/app/ui/components/productReviews/ProductReviews';
 import RelatedProducts from '@/app/ui/components/relatedProducts/RelatedProducts';
-
+import { formatNumber } from '@/app/lib/CartContext';
 import fb from '@/public/akar-icons_facebook-fill.svg';
 import linkedIn from '@/public/akar-icons_linkedin-box-fill.svg';
 import twitter from '@/public/ant-design_twitter-circle-filled.svg';
@@ -71,7 +71,7 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
         <h1>{product.name}</h1>
         <div className='info'>
           <div className='price-container'>
-            <div className='price'>Rs. {product.price}</div>
+            <div className='price'>Rs. {formatNumber(product.price)}</div>
             <Image
               src={require('@/public/favs.svg')}
               alt='Favorite'

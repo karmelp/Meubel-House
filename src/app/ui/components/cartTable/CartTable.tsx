@@ -50,7 +50,7 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
             </td>
             <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
             <td><p className='quantity'>{cartItem.quantity}</p></td>
-            <td className='subtotal'>Rs. {cartItem.product.price * cartItem.quantity}</td>
+            <td className='subtotal'>Rs. {formatNumber(cartItem.product.price * cartItem.quantity)}</td>
             <td>
               <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
                 <Image src={Delete} alt='Delete' />

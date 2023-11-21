@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import { formatNumber } from '@/app/lib/CartContext';
 import './productCard.scss';
 
 interface ProductCardProps {
@@ -17,7 +17,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
     <div className="product-card" key={product.id}>
       <Image className='image' src={thumbnailSrc} alt="Logo" />
       <div className='title'>{product.name}</div>
-      <div className='price'>Rs. {product.price}</div>
+      <div className='price'>Rs. {formatNumber(product.price)}</div>
     </div>
   );
 };
