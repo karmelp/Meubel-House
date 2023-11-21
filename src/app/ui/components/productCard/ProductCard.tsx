@@ -15,8 +15,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const thumbnailSrc = require(`@/public/${product.thumbnail}`);
   return (
     <div className="product-card" key={product.id}>
-      <Image className='image' src={thumbnailSrc} alt="Logo" />
-      <div className='title'>{product.name}</div>
+      <div className="image">
+        <Image src={thumbnailSrc} alt="Logo" />
+      </div>
+      <p>{product.name}</p>
       <div className='price'>Rs. {formatNumber(product.price)}</div>
     </div>
   );
