@@ -13,14 +13,13 @@ interface ProductDescriptionProps {
 const ProductDescription: React.FC<ProductDescriptionProps> = ({ product }) => {
   return (
     <div className='product-description'>
-      <div className='product-description-text'><p>{product.description}</p></div>
-      <div className='product-description-gallery'>
-        {product.gallery.slice(0, 2).map((image, index) => (
+      <div className='description'>{product.description}</div>
+      <div className='gallery'>
+        {product.gallery.slice(0, 2).map((image) => (
           <div className="product-desc-img-container" key={product.id}>
             <Image
               key={product.id}
-              className='image'
-              src={require(`@/public/${image}`).default}
+              src={require(`@/public/${image}`)}
               alt={image}
             />
           </div>

@@ -21,7 +21,6 @@ interface ProductReviewsProps {
 const ProductReviews: React.FC<ProductReviewsProps> = ({ product }) => {
   return (
     <div className="reviews-container">
-      <h2>Customer Reviews</h2>
       {product.reviews.map((review) => (
         <div key={review.id} className="review-item">
           <div className="user-info">

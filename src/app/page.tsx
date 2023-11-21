@@ -125,7 +125,9 @@ export default function Home() {
         </div>
         <div className='product-grid'>
           {products.slice(0, 4).map((product) => (
-            <ProductCard key={product.id}  product={product} />
+            <Link key={product.id} href={`/shop/${encodeURIComponent(product.id)}`}>
+              <ProductCard product={product} />
+            </Link>  
           ))}
         </div>
         <LinkBtn link={'/shop'} text='View more' />

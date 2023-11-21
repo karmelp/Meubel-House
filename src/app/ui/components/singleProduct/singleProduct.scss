@@ -2,45 +2,56 @@
 
 .single-product {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     gap: 50px;
     overflow-x: hidden;
-    
-    @media only screen and (max-width: $mobile) {
-        flex-flow: column nowrap;
-        gap: 30px;
-    }
 
-    .product-data {
+    .upper {
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
+        display: flex;
+        gap: clamp(1.875rem, -8.8942rem + 16.8269vw, 6.25rem);
 
-        h1 {
-            font-size: clamp(1.75rem, 0.7528rem + 2.0802vw, 2.625rem);
-            font-weight: 400;
+        @media screen and (max-width: $tablet) {
+            flex-direction: column;
         }
 
-        .info {
+        .product-data {
+            flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 15px;
-            max-width: 424px;
-            padding-bottom: 60px;
 
-            .price-container {
-                display: flex;
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                flex-direction: row;
+                align-items: center;
                 justify-content: space-between;
+            }
 
-                .price {
-                    font-size: clamp(1.25rem, 0.9651rem + 0.5944vw, 1.5rem);
-                    color: $gray;
-                    font-weight: 500;
+            .info {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                max-width: 424px;
+                padding-bottom: 60px;
+        
+                .price-container {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    .price {
+                        font-size: clamp(1.25rem, 0.9651rem + 0.5944vw, 1.5rem);
+                        color: $gray;
+                        font-weight: 500;
+                    }
+                }
+    
+                p {
+                    font-size: 13px;
                 }
             }
-
-            p {
-                font-size: 13px;
-            }
         }
-        
     }
 
     .details {
@@ -49,6 +60,11 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+
+        @media screen and (min-width: $mobile) and (max-width: $tablet) {
+            padding-top: 0;
+            border: none;
+        }
 
         .item {
             font-size: clamp(0.875rem, 0.7325rem + 0.2972vw, 1rem);
@@ -72,13 +88,14 @@
                 &:last-child {
                     display: flex;
                     gap: 25px;
+                    align-items: center;
                 }
 
                 img {
                     cursor: pointer;
 
                     &:hover {
-                        filter: opacity(.8);
+                        filter: opacity(.7);
                     }
                 }
             }
@@ -89,7 +106,6 @@
         width: 100%;
         border-top: 1px solid $lightGray;
     }
-
 }
 
 

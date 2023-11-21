@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 
+import { formatNumber } from '@/app/lib/CartContext';
+
 import ProductGallery from '@/app/ui/components/productGallery/ProductGallery';
 import Sizes from '@/app/ui/components/sizes/Sizes';
 import Colors from '@/app/ui/components/colors/Colors';
@@ -11,7 +13,7 @@ import ProductDescription from '@/app/ui/components/productDescription/ProductDe
 import ProductAdditonalInformation from '@/app/ui/components/productAdditionalInformation/ProductAdditionalInformation';
 import ProductReviews from '@/app/ui/components/productReviews/ProductReviews';
 import RelatedProducts from '@/app/ui/components/relatedProducts/RelatedProducts';
-import { formatNumber } from '@/app/lib/CartContext';
+
 import fb from '@/public/akar-icons_facebook-fill.svg';
 import linkedIn from '@/public/akar-icons_linkedin-box-fill.svg';
 import twitter from '@/public/ant-design_twitter-circle-filled.svg';
@@ -66,53 +68,58 @@ const SingleProduct: React.FC<SingleProductProps> = ({ product }) => {
 
   return (
     <div className='single-product'>
-      <ProductGallery images={product.gallery} />
-      <div className='product-data'>
-        <h1>{product.name}</h1>
-        <div className='info'>
-          <div className='price-container'>
-            <div className='price'>Rs. {formatNumber(product.price)}</div>
-            <Image
-              src={require('@/public/favs.svg')}
-              alt='Favorite'
-              onClick={toggleFav}
-            />
-          </div>
-          <div className='price-containercodecc'>
-            <div className='rating '>
-              <Rating />
+      <div className="upper">
+        <ProductGallery images={product.gallery} />
+
+        <div className='product-data'>
+          <div className="prod">
+            <h3>{product.name}</h3>
+            <div className='info'>
+              <div className='price-container'>
+                <div className='price'>Rs. {formatNumber(product.price)}</div>
+                <Image
+                  src={require('@/public/favs.svg')}
+                  alt='Favorite'
+                  onClick={toggleFav}
+                />
+              </div>
+              <div className='price-containercodecc'>
+                <div className='rating '>
+                  <Rating />
+                </div>
+                <p className='review-count '>5 customer reviews</p>
+              </div>
+              <p>{product.description}</p>
+              {hasSizeOptions && <Sizes sizes={product.size} />}
+              {hasColorOptions && <Colors colors={product.colors} />}
+              <AddToCart product={product} />          
             </div>
-            <p className='review-count '>5 customer reviews</p>
           </div>
-          <p>{product.description}</p>
-          {hasSizeOptions && <Sizes sizes={product.size} />}
-          {hasColorOptions && <Colors colors={product.colors} />}
-          <AddToCart product={product} />          
-        </div>
-        <div className='details'>
-          <div className='item'>
-            <span>SKU</span>
-            <span>:</span>
-            <span>{product.SKU}</span>
-          </div>
-          <div className='item'>
-            <span>Category</span>
-            <span>:</span>
-            <span>{product.category}</span>
-          </div>
-          <div className='item'>
-            <span>Tags</span>
-            <span>:</span>
-            <span>{product.tags?.join(', ')}</span>
-          </div>
-          <div className='item'>
-            <span>Share</span>
-            <span>:</span>
-            <span>
-              <Image src={fb} alt='Share to Facebook' />
-              <Image src={linkedIn} alt='Share to LinkedIn' />
-              <Image src={twitter} alt='Share to Twitter' />
-            </span>
+          <div className='details'>
+            <div className='item'>
+              <span>SKU</span>
+              <span>:</span>
+              <span>{product.SKU}</span>
+            </div>
+            <div className='item'>
+              <span>Category</span>
+              <span>:</span>
+              <span>{product.category}</span>
+            </div>
+            <div className='item'>
+              <span>Tags</span>
+              <span>:</span>
+              <span>{product.tags?.join(', ')}</span>
+            </div>
+            <div className='item'>
+              <span>Share</span>
+              <span>:</span>
+              <span>
+                <Image src={fb} alt='Share to Facebook' />
+                <Image src={linkedIn} alt='Share to LinkedIn' />
+                <Image src={twitter} alt='Share to Twitter' />
+              </span>
+            </div>
           </div>
         </div>
       </div>

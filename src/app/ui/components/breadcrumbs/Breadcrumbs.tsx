@@ -18,7 +18,7 @@ const Breadcrumbs = ({ items }: Props) => {
   return (
     <div className="breadcrumbs">
       {items.map((item, index) => (
-        <span key={index} data-testid={`breadcrumb-${index}`}>
+        <span key={index}>
           {index > 0 && <Image src={arrow} alt="Arrow" />}
           {index === items.length - 1 ? (
             <span>{item.text}</span>
