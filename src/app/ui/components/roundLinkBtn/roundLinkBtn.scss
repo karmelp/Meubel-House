@@ -3,19 +3,18 @@
 .roundLinkBtn {
     width: 255px;
     height: 64px;
-    border: 1px solid $pink;
+    border: none;
     border-radius: 50px;
     background: $pink;
-    color: $black;
 
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 150%;
+
+    box-shadow: 0px 20px 20px 0px #0000001A;
 
     &:hover,
     &:focus {
-        background: $yellow;
-        color: $white;
+        box-shadow: 0px 5px 5px 0px #0000001A;
     }
 }

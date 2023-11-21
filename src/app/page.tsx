@@ -8,10 +8,9 @@ import SquareLinkBtn from './ui/components/squareLinkBtn/SquareLinkBtn';
 import RoundLinkBtn from './ui/components/roundLinkBtn/RoundLinkBtn';
 import ProductCard from './ui/components/productCard/ProductCard';
 
-import hero from '@/public/Rocket single seater 1.svg';
-import Prod1 from '@/public/Granite-square-side-table.svg';
-import Prod2 from '@/public/Round-coffee-table_color-2.svg';
-import NewArrivalImg from '@/public/Asgaard-sofa.svg';
+import hero from '@/public/Rocket single seater 1.png';
+import Prod1 from '@/public/Granite-square-side-table.png';
+import NewArrivalImg from '@/public/Asgaard-sofa.png';
 
 import Clock from '@/public/clock_outline.svg';
 import Calendar from '@/public/uil_calender.svg';
@@ -85,104 +84,105 @@ export default function Home() {
 
   return (
     <main className='home'>
-      <div className='home_hero'>
-        <div className='home_hero_info'>
-          <h1>Rocket single seater</h1>
-          <LinkBtn link={'/shop'} text='Shop Now' />
+      <div className='hero'>
+        <div className="content">
+          <div className='info-section'>
+            <h1>Rocket single seater</h1>
+            <LinkBtn link={'/shop'} text='Shop Now' />
+          </div>
+          <Image src={hero} alt='Rocket single seater' />
         </div>
-        <Image className='home_hero_image' src={hero} alt='Rocket single seater' />
+        
       </div>
 
-      <div className='home_section_one'>
-        <div className='home_section_one_prod'>
-          <Image className='home_section_one_prod_side_table' src={Prod1} alt='Side table' />
-          <h4>Side table</h4>
-          <LinkBtn link={'/shop'} text='View more' />
+      <div className='section_one'>
+        <div className="content">
+          <div className='product'>
+            <div className="image">
+              <Image src={Prod1} alt='Side table' />
+            </div>
+            <h6>Side table</h6>
+            <LinkBtn link={'/shop'} text='View more' />
+          </div>
+          <div className='product'>
+            <div className="image">
+              <Image src={Prod1} alt='Side table' />
+            </div>
+            <h6>Side table</h6>
+            <LinkBtn link={'/shop'} text='View more' />
+          </div>
         </div>
-        <div className='home_section_one_prod'>
-          <Image className='home_section_one_prod_side_table' src={Prod2} alt='Side table' />
-          <h4>Side table</h4>
-          <LinkBtn link={'/shop'} text='View more' />
-        </div>
+
       </div>
 
-      <div className='home_section_two'>
-        <div className='home_section_two_header'>
-          <h4 className='home_section_two_header_title'>Top Picks For You</h4>
-          <h6 className='home_section_two_header_subtitle'>
+      <div className='section_two'>
+        <div className='section-title'>
+          <h4>Top Picks For You</h4>
+          <p>
             Find a bright ideal to suit your taste with our great selection of suspension, floor and
             table lights.
-          </h6>
+          </p>
         </div>
-        <div className='home_section_two_product'>
+        <div className='product-grid'>
           {products.slice(0, 4).map((product) => (
-            <Link key={product.id} href={`/shop/${encodeURIComponent(product.id)}`}>
-              <ProductCard product={product} />
-            </Link>
+            <ProductCard key={product.id}  product={product} />
           ))}
         </div>
-        <div className='home_section_two_view_more'>
-          <LinkBtn link={'/shop'} text='View more' />
-        </div>
+        <LinkBtn link={'/shop'} text='View more' />
       </div>
 
-      <div className='home_section_three'>
-        <div className='home_section_three_left'>
-          <Image className='home_section_three_left_image' src={NewArrivalImg} alt='new arrival' />
+      <div className='section_three'>
+        <div className="content">
+          <div className='image'>
+            <Image src={NewArrivalImg} alt='New arrival' />
+          </div>
+          <div className='info'>
+            <div className='new-arrivals'>New Arrivals</div>
+            <h2>Asgaard sofa</h2>
+            {products.filter((product) => product.name === 'Asgaard sofa').map((product) => (
+              <SquareLinkBtn key={product.id} link={`/shop/${encodeURIComponent(product.id)}`} text='Shop Now' />
+            ))}
+          </div>
         </div>
-        <div className='home_section_three_right'>
-          <h6 className='home_section_three_right_text'>New Arrivals</h6>
-          <h4 className='home_section_three_right_subtext'>Asgaard sofa</h4>
-          {products.filter((product) => product.name === 'Asgaard sofa').map((product) => (
-            <SquareLinkBtn key={product.id} link={`/shop/${encodeURIComponent(product.id)}`} text='Shop Now' />
-          ))}
-        </div>
+        
       </div>
 
-      <div className='home_section_four'>
-        <div className='home_section_four_header'>
-          <h4 className='home_section_four_header_title'>Our Blogs</h4>
-          <h6 className='home_section_four_header_subtitle'>
-            Find a bright ideal to suit your taste with our great selection
-          </h6>
+      <div className='section_four'>
+        <div className='section-title'>
+          <h4>Our Blogs</h4>
+          <p>Find a bright ideal to suit your taste with our great selection</p>
         </div>
-        <div className='home_section_four_blog'>
+        <div className='blog-section'>
           {blogPosts.slice(0, 3).map((blogPost) => (
-            <Link key={blogPost.id} href={`/blog/${encodeURIComponent(blogPost.id)}`}>
-              <div className='home_section_four_blog_item'>
-                <Image
-                  className='home_section_four_blog_item_image'
-                  src={require(`@/public/${blogPost.thumbnail}`)}
-                  alt='post'
-                />
-                <h6 className='home_section_four_blog_item_title'>{blogPost.title}</h6>
+            <Link className='blog-post' key={blogPost.id} href={`/blog/${encodeURIComponent(blogPost.id)}`}>
+              <Image
+                className='thumbnail'
+                src={require(`@/public/${blogPost.thumbnail}`)}
+                alt='post'
+              />
+              <div className="info">
+                <p>{blogPost.title}</p>
                 <LinkBtn link={`/blog/${encodeURIComponent(blogPost.id)}`} text='Read more' />
-                <div className='home_section_four_blog_item_info'>
-                  <Image
-                    className='home_section_four_blog_item_info_clock'
-                    src={Clock}
-                    alt='clock'
-                  />{' '}
-                  <span className='home_section_four_blog_item_info_time'>{blogPost.time}</span>
-                  <Image
-                    className='home_section_four_blog_item_info_calendar'
-                    src={Calendar}
-                    alt='calendar'
-                  />{' '}
-                  <span className='home_section_four_blog_item_info_date'>{blogPost.date}</span>
+                <div className='meta'>
+                  <div className="item">
+                    <Image src={Clock} alt='clock' />
+                    <span>{blogPost.time}</span>
+                  </div>
+                  <div className="item">
+                    <Image src={Calendar} alt='calendar' />
+                    <span>{blogPost.date}</span>
+                  </div>
                 </div>
               </div>
             </Link>
           ))}
         </div>
-        <div className='home_section_four_view_all'>
-          <LinkBtn link={'/blog'} text='View All Post' />
-        </div>
+        <LinkBtn link={'/blog'} text='View All Post' />
       </div>
 
-      <div className='home_section_five'>
-        <h4 className='home_section_five_title'>Our Instagram</h4>
-        <h6 className='home_section_five_subtitle'>Follow our store on Instagram</h6>
+      <div className='section_five'>
+        <div className='heading'>Our Instagram</div>
+        <p>Follow our store on Instagram</p>
         <RoundLinkBtn link={'/'} text='Follow' />
       </div>
     </main>

@@ -7,11 +7,13 @@ header {
     height: 100px;
     max-width: 1440px;
     width: 100%;
-    padding: 0 clamp(0.625rem, -5.7857rem + 13.373vw, 6.25rem);
-    margin: 0 auto;
+    padding: 0 $sidePadding;
     position: absolute;
     top: 0;
     z-index: 100;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 
     .section:first-child {
         @media screen and (max-width: 1150px) {

@@ -1,3 +1,5 @@
+@import '@/app/globals.scss';
+
 .product-card {
     max-width: 287px;
     width: 100%;
@@ -6,19 +8,20 @@
     gap: 10px;
 
     .image {
+        max-width: 287px;
         height: 287px;
         margin-bottom: 14px;
-    }
+        display: flex;
+        align-items: center;
 
-    .title {
-        font-size: 16px;
-        font-weight: 400;
-        color: #000;
+        img {
+            max-width: 287px;
+            height: auto;
+        }
     }
 
     .price {
         font-size: clamp(1.25rem, 0.9651rem + 0.5944vw, 1.5rem);
         font-weight: 500;
-        color: #000;
     }
 }
