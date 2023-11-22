@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
@@ -26,9 +26,26 @@ interface BlogPostWithNavigation extends BlogPost {
   prevPost?: { id: string; title: string };
 }
 
+type Props = {
+  params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata(
+  { params }: Props,
+): Promise<Metadata> {
+  // Fetch current post
+  const response = await fetch(`${process.env.API_URL}/blogPosts/${params.id}`);
+  const post: BlogPost = await response.json();
+
+  return {
+    title: post.title,
+  };
+}
+
 const blogPost = async ({ params }: {
   params: {
-    id: string,
+    id: string
   }
 }) => {
   // Fetch current post

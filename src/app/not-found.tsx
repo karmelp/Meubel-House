@@ -1,8 +1,13 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 import BigBtn from '@/app/ui/components/bigBtn/BigBtn';
 
 import './notFound.scss';
+
+export const metadata: Metadata = {
+  title: '404 - Not Found'
+};
 
 export default function NotFound() {
   return (
