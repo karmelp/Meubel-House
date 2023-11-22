@@ -3,6 +3,7 @@
 .home {
     .hero {
         background-color: $yellow;
+        height: auto;
 
         .content {
             max-width: 1440px;
@@ -24,6 +25,7 @@
                 flex-direction: column;
                 align-items: start;
                 gap: clamp(0.625rem, -3.1055rem + 7.7821vw, 1.875rem);
+                background-color: transparent;
 
                 @media screen and (max-width: $tablet) {
                     min-width: 100px;
