@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server": "json-server --watch db.json --port 3001"
+    "json-server": "json-server --watch db.json --port 3001",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.4.2",
@@ -24,14 +26,24 @@
     "sass": "^1.69.5"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/nextjs": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-storybook": "^0.6.15",
     "json-server": "^0.17.4",
     "prettier": "^3.0.3",
+    "storybook": "^7.5.3",
     "typescript": "^5"
   }
 }
