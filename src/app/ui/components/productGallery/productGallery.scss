@@ -20,7 +20,6 @@
         border-radius: 10px;
 
         @media only screen and (max-width: $mobile) {
-            width: 100%;
             height: clamp(21.875rem, 14.0063rem + 35.9712vw, 31.25rem);
         }
 
