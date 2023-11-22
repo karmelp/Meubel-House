@@ -20,6 +20,7 @@
 
         @media screen and (max-width: $mobile) {
             flex-direction: column;
+            height: auto;
         }
 
         .img-container {
@@ -32,8 +33,15 @@
             img {
                 max-width: 348px;
                 width: 100%;
-                height: auto;
+                max-height: 348px;
+                height: 100%;
                 padding: 20px;
+                object-fit: contain;
+
+                @media screen and (max-width: $mobile) {
+                    max-height: 250px;
+                    height: 100%;
+                }
             }
         }
     }
