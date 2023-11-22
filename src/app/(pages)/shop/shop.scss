@@ -80,11 +80,17 @@
                         border: none;
                         color: $gray;
                         text-align: center;
+                        background-color: $white;
 
                         &::-webkit-outer-spin-button,
                         &::-webkit-inner-spin-button {
                             -webkit-appearance: none;
                             margin: 0;
+                        }
+
+                        &[type=number] {
+                            -moz-appearance: textfield;
+                            appearance: textfield;
                         }
                     }
                 }
@@ -100,6 +106,7 @@
                         border: none;
                         color: $gray;
                         padding: 0 clamp(0.625rem, -3.1055rem + 7.7821vw, 1.875rem);
+                        background-color: $white;
                     }
                 }
             }

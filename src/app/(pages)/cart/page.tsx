@@ -50,10 +50,7 @@ const Cart = () => {
         </div>
       ) : (
         <div className='cart-info'>
-          <div className='cart-table'>
-            <CartTable cartItems={cartState.cartItems} />
-          </div>
-          
+          <CartTable cartItems={cartState.cartItems} />
           <div className='cart-totals'>
             <h5>Cart Totals</h5>
             <div className='cart'>

@@ -9,7 +9,7 @@
       "gallery": [
         "Trenton-modular-sofa_3 1.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg",
+        "Reclaimed-teak-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png"
       ],
       "size": ["XS", "L", "XL"],
@@ -71,7 +71,7 @@
         "Granite-dining-table-with-dining-chair.png",
         "Trenton-modular-sofa_3 1.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "S", "M"],
       "colors": ["Yellow", "Red", "Blue"],
@@ -132,7 +132,7 @@
         "Outdoor-bar-table-and-stool.png",
         "Granite-dining-table-with-dining-chair.png",
         "Trenton-modular-sofa_3 1.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -187,13 +187,13 @@
       "id": 4,
       "name": "Plain console with teak mirror",
       "price": 250000.0,
-      "thumbnail": "Plain-console-with-teak-mirror.svg",
+      "thumbnail": "Plain-console-with-teak-mirror.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Plain-console-with-teak-mirror.svg",
+        "Plain-console-with-teak-mirror.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -248,13 +248,13 @@
       "id": 5,
       "name": "Grain coffee table",
       "price": 250000.0,
-      "thumbnail": "Grain-coffee-table.svg",
+      "thumbnail": "Grain-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Grain-coffee-table.svg",
+        "Grain-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -309,13 +309,13 @@
       "id": 6,
       "name": "Kent coffee table",
       "price": 250000.0,
-      "thumbnail": "Kent-coffee-table.svg",
+      "thumbnail": "Kent-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Kent-coffee-table.svg",
+        "Kent-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -376,7 +376,7 @@
         "Round-coffee-table_color-2.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -431,10 +431,10 @@
       "id": 8,
       "name": "Reclaimed teak coffee table",
       "price": 250000.0,
-      "thumbnail": "Reclaimed-teak-coffee-table.svg",
+      "thumbnail": "Reclaimed-teak-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Reclaimed-teak-coffee-table.svg",
+        "Reclaimed-teak-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
         "Trenton-modular-sofa_3 1.png"
@@ -492,13 +492,13 @@
       "id": 9,
       "name": "Plain console_",
       "price": 250000.0,
-      "thumbnail": "Plain-console_.svg",
+      "thumbnail": "Plain-console_.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Plain-console_.svg",
+        "Plain-console_.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -553,10 +553,10 @@
       "id": 10,
       "name": "Reclaimed teak Sideboard",
       "price": 250000.0,
-      "thumbnail": "Reclaimed-teak-Sideboard.svg",
+      "thumbnail": "Reclaimed-teak-Sideboard.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Reclaimed-teak-Sideboard.svg",
+        "Reclaimed-teak-Sideboard.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
         "Trenton-modular-sofa_3 1.png"
@@ -614,13 +614,13 @@
       "id": 11,
       "name": "SJP_0825",
       "price": 250000.0,
-      "thumbnail": "SJP_0825.svg",
+      "thumbnail": "SJP_0825.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "SJP_0825.svg",
+        "SJP_0825.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -675,13 +675,13 @@
       "id": 12,
       "name": "Bella chair and table",
       "price": 250000.0,
-      "thumbnail": "Bella-chair-and-table.svg",
+      "thumbnail": "Bella-chair-and-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Bella-chair-and-table.svg",
+        "Bella-chair-and-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -742,7 +742,7 @@
         "Granite-square-side-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -803,7 +803,7 @@
         "Asgaard-sofa.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -858,13 +858,13 @@
       "id": 15,
       "name": "Maya sofa three seater",
       "price": 250000.0,
-      "thumbnail": "Maya-sofa-three-seater.svg",
+      "thumbnail": "Maya-sofa-three-seater.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Maya-sofa-three-seater.svg",
+        "Maya-sofa-three-seater.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -919,13 +919,13 @@
       "id": 16,
       "name": "Outdoor sofa set",
       "price": 250000.0,
-      "thumbnail": "Outdoor-sofa-set.svg",
+      "thumbnail": "Outdoor-sofa-set.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Outdoor-sofa-set.svg",
+        "Outdoor-sofa-set.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -986,7 +986,7 @@
         "Granite-dining-table-with-dining-chair.png",
         "Trenton-modular-sofa_3 1.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1047,7 +1047,7 @@
         "Trenton-modular-sofa_3 1.png",
         "Outdoor-bar-table-and-stool.png",
         "Granite-dining-table-with-dining-chair.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1108,7 +1108,7 @@
         "Outdoor-bar-table-and-stool.png",
         "Granite-dining-table-with-dining-chair.png",
         "Trenton-modular-sofa_3 1.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1163,10 +1163,10 @@
       "id": 20,
       "name": "Reclaimed teak coffee table",
       "price": 250000.0,
-      "thumbnail": "Reclaimed-teak-coffee-table.svg",
+      "thumbnail": "Reclaimed-teak-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Reclaimed-teak-coffee-table.svg",
+        "Reclaimed-teak-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
         "Trenton-modular-sofa_3 1.png"
@@ -1224,13 +1224,13 @@
       "id": 21,
       "name": "Grain coffee table",
       "price": 250000.0,
-      "thumbnail": "Grain-coffee-table.svg",
+      "thumbnail": "Grain-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Grain-coffee-table.svg",
+        "Grain-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1285,13 +1285,13 @@
       "id": 22,
       "name": "Plain console with teak mirror",
       "price": 250000.0,
-      "thumbnail": "Plain-console-with-teak-mirror.svg",
+      "thumbnail": "Plain-console-with-teak-mirror.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Plain-console-with-teak-mirror.svg",
+        "Plain-console-with-teak-mirror.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1346,13 +1346,13 @@
       "id": 23,
       "name": "Kent coffee table",
       "price": 250000.0,
-      "thumbnail": "Kent-coffee-table.svg",
+      "thumbnail": "Kent-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Kent-coffee-table.svg",
+        "Kent-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1407,10 +1407,10 @@
       "id": 24,
       "name": "Reclaimed teak Sideboard",
       "price": 250000.0,
-      "thumbnail": "Reclaimed-teak-Sideboard.svg",
+      "thumbnail": "Reclaimed-teak-Sideboard.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Reclaimed-teak-Sideboard.svg",
+        "Reclaimed-teak-Sideboard.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
         "Trenton-modular-sofa_3 1.png"
@@ -1468,13 +1468,13 @@
       "id": 25,
       "name": "SJP_0825",
       "price": 250000.0,
-      "thumbnail": "SJP_0825.svg",
+      "thumbnail": "SJP_0825.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "SJP_0825.svg",
+        "SJP_0825.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1535,7 +1535,7 @@
         "Round-coffee-table_color-2.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1590,10 +1590,10 @@
       "id": 27,
       "name": "Reclaimed teak coffee table",
       "price": 250000.0,
-      "thumbnail": "Reclaimed-teak-coffee-table.svg",
+      "thumbnail": "Reclaimed-teak-coffee-table.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Reclaimed-teak-coffee-table.svg",
+        "Reclaimed-teak-coffee-table.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
         "Trenton-modular-sofa_3 1.png"
@@ -1651,13 +1651,13 @@
       "id": 28,
       "name": "Plain console_",
       "price": 250000.0,
-      "thumbnail": "Plain-console_.svg",
+      "thumbnail": "Plain-console_.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Plain-console_.svg",
+        "Plain-console_.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1712,13 +1712,13 @@
       "id": 29,
       "name": "Maya sofa three seater",
       "price": 250000.0,
-      "thumbnail": "Maya-sofa-three-seater.svg",
+      "thumbnail": "Maya-sofa-three-seater.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Maya-sofa-three-seater.svg",
+        "Maya-sofa-three-seater.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],
@@ -1773,13 +1773,13 @@
       "id": 30,
       "name": "Outdoor sofa set",
       "price": 250000.0,
-      "thumbnail": "Outdoor-sofa-set.svg",
+      "thumbnail": "Outdoor-sofa-set.png",
       "description": "Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound.",
       "gallery": [
-        "Outdoor-sofa-set.svg",
+        "Outdoor-sofa-set.png",
         "Granite-dining-table-with-dining-chair.png",
         "Outdoor-bar-table-and-stool.png",
-        "Reclaimed-teak-coffee-table.svg"
+        "Reclaimed-teak-coffee-table.png"
       ],
       "size": ["XS", "L", "XL"],
       "colors": ["#816DFA", "#000000", "#CDBA7B"],

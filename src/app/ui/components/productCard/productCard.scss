@@ -7,6 +7,10 @@
     flex-direction: column;
     gap: 10px;
 
+    &:hover p {
+        color: $gold;
+    }
+
     .image {
         max-width: 287px;
         height: 287px;

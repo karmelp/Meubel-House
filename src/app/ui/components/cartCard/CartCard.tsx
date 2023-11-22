@@ -28,7 +28,7 @@ const CartItemCard: React.FC<CartItemCardProps> = ({
       <div className="cart-item-details">
         <p>{productName}</p>
         <div className="cart-item-info">
-          <p className="quantity"> {quantity}</p>
+          <p className="quantity">{quantity}</p>
           <p className="quantity">X</p>
           <span className="amount">Rs. {formatNumber(amount)}</span>
         </div>
