@@ -17,9 +17,9 @@ import search from '@/public/akar-icons_search.svg';
 
 import './blog.scss';
 
-export const metadata: Metadata = {
-  title: 'Shop'
-};
+// export const metadata: Metadata = {
+//   title: 'Shop'
+// };
 
 const postsPerPage = 3;
 
