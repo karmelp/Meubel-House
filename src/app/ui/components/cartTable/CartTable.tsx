@@ -28,38 +28,61 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
   const { state: cartState, removeFromCart } = useCart();
  
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Product</th>          
-          <th>Price</th>
-          <th>Quantity</th>
-          <th>Subtotal</th>
-          <th></th>
-        </tr>
-      </thead>
-      <tbody>
+    <div className="cart-table">
+      <table>
+        <thead>
+          <tr>
+            <th>Product</th>          
+            <th style={{ textAlign: 'start'}}>Price</th>
+            <th>Quantity</th>
+            <th style={{ textAlign: 'start'}}>Subtotal</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {cartItems.map((cartItem) => (
+            <tr key={cartItem.product.id}>
+              <td className='img_card'>
+                <Image 
+                  src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
+                  alt={cartItem.product.name}
+                />
+                <p>{cartItem.product.name}</p>
+              </td>
+              <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
+              <td><p className='quantity'>{cartItem.quantity}</p></td>
+              <td className='subtotal'>Rs. {formatNumber(cartItem.product.price * cartItem.quantity)}</td>
+              <td>
+                <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
+                  <Image src={Delete} alt='Delete' />
+                </button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      
+      <div className="mobile-view">
         {cartItems.map((cartItem) => (
-          <tr key={cartItem.product.id}>
-            <td className='img_card'>
+          <div className='product' key={cartItem.product.id}>
+            <div className='img_card'>
               <Image 
                 src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
                 alt={cartItem.product.name}
               />
-              <p>{cartItem.product.name}</p>
-            </td>
-            <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
-            <td><p className='quantity'>{cartItem.quantity}</p></td>
-            <td className='subtotal'>Rs. {formatNumber(cartItem.product.price * cartItem.quantity)}</td>
-            <td>
-              <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
-                <Image src={Delete} alt='Delete' />
-              </button>
-            </td>
-          </tr>
+              <div className="details">
+                <p className='name'>{cartItem.product.name}</p>
+                <div className='total'>
+                  <p className='amount'>{cartItem.quantity} x</p>
+                  <p>Rs. {formatNumber(cartItem.product.price)}</p>
+                </div>
+              </div> 
+            </div>
+            <Image className='remove' onClick={() => removeFromCart(cartItem.product.id)} src={Delete} alt='Delete' />
+          </div>
         ))}
-      </tbody>
-    </table>
+      </div>
+    </div>
   );
 };
 
