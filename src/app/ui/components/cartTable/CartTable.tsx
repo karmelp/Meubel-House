@@ -42,18 +42,20 @@ const CartTable: React.FC<CartTableProps> = ({ cartItems }) => {
         <tbody>
           {cartItems.map((cartItem) => (
             <tr key={cartItem.product.id}>
-              <td className='img_card'>
-                <Image 
-                  src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
-                  alt={cartItem.product.name}
-                />
-                <p>{cartItem.product.name}</p>
-              </td>
-              <td><p className='price'>Rs .{formatNumber(cartItem.product.price)}</p></td>
-              <td><p className='quantity'>{cartItem.quantity}</p></td>
-              <td className='subtotal'>Rs. {formatNumber(cartItem.product.price * cartItem.quantity)}</td>
               <td>
-                <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button">
+                <div className="img_card margin">
+                  <Image 
+                    src={require(`@/public/${cartItem.product.gallery?.[0]}`)}
+                    alt={cartItem.product.name}
+                  />
+                  <p>{cartItem.product.name}</p>
+                </div>
+              </td>
+              <td><p className='price margin'>Rs. {formatNumber(cartItem.product.price)}</p></td>
+              <td><p className='quantity margin'>{cartItem.quantity}</p></td>
+              <td><p className='margin'>Rs. {formatNumber(cartItem.product.price * cartItem.quantity)}</p></td>
+              <td>
+                <button onClick={() => removeFromCart(cartItem.product.id)} className="delete-button margin">
                   <Image src={Delete} alt='Delete' />
                 </button>
               </td>
