@@ -1,31 +1,12 @@
-'use client';
 import { Metadata } from 'next';
+import CheckoutPage from '@/app/ui/components/checkout/Checkout';
 
-import Hero from '../../ui/components/hero/Hero';
-import InfoSection from '../../ui/components/infoSection/InfoSection';
-import BillingInfo from '@/app/ui/components/billing/Billing';
-
-import heroImage from '@/public/hero-bg.jpg';
-
-import './checkout.scss';
-
-const breadcrumbs = [
-  { text: 'Home', link: '/' },
-  { text: 'Checkout', link: '/checkout' },
-];
+export const metadata: Metadata = {
+  title: 'Checkout'
+};
 
 const Checkout = () => {
-  return (
-    <div>
-      <Hero 
-        pageTitle="Checkout"
-        breadcrumbs={breadcrumbs}
-        heroImage={heroImage}
-      />      
-      <BillingInfo />
-      <InfoSection />
-    </div>
-  );
+  return <CheckoutPage />;
 };
 
 export default Checkout;

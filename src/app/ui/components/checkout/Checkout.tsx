@@ -1,33 +1,30 @@
-import { Metadata } from 'next';
+'use client';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
+import BillingInfo from '@/app/ui/components/billing/Billing';
 
 import heroImage from '@/public/hero-bg.jpg';
 
-import './privacy.scss';
-
-export const metadata: Metadata = {
-  title: 'Privacy Policy'
-};
+import './checkout.scss';
 
 const breadcrumbs = [
   { text: 'Home', link: '/' },
-  { text: 'Privacy Policy', link: '/privacy-policy' },
+  { text: 'Checkout', link: '/checkout' },
 ];
 
-const PrivacyPolicy = () => {
+const Checkout = () => {
   return (
-    <div className='privacy-page'>
+    <div>
       <Hero 
-        pageTitle="Privacy Policy"
+        pageTitle="Checkout"
         breadcrumbs={breadcrumbs}
         heroImage={heroImage}
-      />
-
+      />      
+      <BillingInfo />
       <InfoSection />
     </div>
   );
 };
 
-export default PrivacyPolicy;
+export default Checkout;

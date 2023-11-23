@@ -28,7 +28,7 @@
             align-items: center;
             gap: 80px;
         }
-    
+
         .cart-totals {
             background-color: $lightYellow;
             padding: 15px clamp(1.5625rem, -6.1298rem + 12.0192vw, 4.6875rem) 80px;
@@ -40,7 +40,7 @@
             h5 {
                 text-align: center;
             }
-    
+
             .cart {
                 display: flex;
                 flex-direction: column;
@@ -54,7 +54,7 @@
                     .section {
                         display: flex;
                         justify-content: space-between;
-                        
+
                         p {
                             font-weight: 500;
                         }
@@ -76,7 +76,7 @@
                 a {
                     display: flex;
                     justify-content: center;
-                    
+
                     .bigBtn {
                         height: 58px;
                     }
