@@ -55,7 +55,7 @@ export default function Blog() {
   useEffect(() => {
     const fetchAllData = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/api/json-server/blogPosts`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/blogPosts`, {
           cache: 'no-store',
         });
 

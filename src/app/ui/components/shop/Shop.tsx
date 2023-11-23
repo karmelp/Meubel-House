@@ -33,7 +33,7 @@ function Shop() {
     // Fetch data from the API
     const fetchData = async () => {
       try {
-        const productsFetch = await fetch(`${API_BASE_URL}/api/json-server/products`, {
+        const productsFetch = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products`, {
           cache: 'no-store',
         });
         const Products1 = await productsFetch.json();
