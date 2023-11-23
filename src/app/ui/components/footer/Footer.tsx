@@ -24,9 +24,9 @@ const Footer = () => {
         <div>
           <h6>Help</h6>
           <nav>
-            <Link href="#">Payment Options</Link>
-            <Link href="#">Returns</Link>
-            <Link href="#">Privacy Policies</Link>
+            <Link href="/payment-options">Payment Options</Link>
+            <Link href="/returns">Returns</Link>
+            <Link href="/privacy-policy">Privacy Policies</Link>
           </nav>
         </div>
         <div className="newsletter">
