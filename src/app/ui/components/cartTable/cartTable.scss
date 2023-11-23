@@ -12,6 +12,7 @@
       max-width: 1142px;
     }
 
+
     @media screen and (max-width: $mobile) {
       display: none;
     }
@@ -78,7 +79,6 @@
               opacity: 0.7;
             }
           }
-
           .margin {
             margin-top: 55px;
           }

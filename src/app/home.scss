@@ -67,6 +67,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: start;
+                justify-content: space-between;
 
                 @media screen and (max-width: $mobile) {
                     align-items: center;
@@ -76,11 +77,19 @@
                     max-width: 445px;
                     display: flex;
                     align-items: center;
+                    width: 100%;
+                    padding: 20px;
             
                     img {
                         width: 100%;
                         height: auto;
                     }
+                }
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         }

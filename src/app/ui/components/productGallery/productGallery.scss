@@ -14,6 +14,7 @@
         width: 100%;
         background-color: $lightYellow;
         display: flex;
+        max-height: 500px;
         justify-content: center;
         align-items: center;
         border-radius: 10px;
@@ -21,6 +22,7 @@
         object-fit: contain;
 
         img {
+            padding: 20px;
             max-width: 423px;
             width: 100%;
             height: auto;
