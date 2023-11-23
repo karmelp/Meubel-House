@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { AuthContext } from '@/app/lib/AuthContext';
-import { useRouter } from 'next/router';
+import { useRouter, NextRouter } from 'next/router';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
@@ -8,8 +8,6 @@ import LoginRegisterForms from '@/app/ui/components/loginRegisterForm/LoginRegis
 import Dashboard from '@/app/ui/components/dashboard/Dashboard';
 
 import heroImage from '@/public/hero-bg.jpg';
-
-import './myAccount.scss';
 
 interface MyAccountPageProps {
   router: ReturnType<typeof useRouter>;

@@ -1,14 +1,12 @@
+'use client';
 import dynamic from 'next/dynamic';
-import { useRouter } from 'next/router';
 
 const MyAccountPage = dynamic(() => import('@/app/ui/components/myAccount/MyAccount'), {
-  ssr: false,
+  ssr: false, // Set ssr to false to ensure it's a client-side component
 });
 
 const MyAccountClientWrapper: React.FC = () => {
-  const router = useRouter();
-
-  return <MyAccountPage router={router} />;
+  return <MyAccountPage />;
 };
 
 export default MyAccountClientWrapper;
