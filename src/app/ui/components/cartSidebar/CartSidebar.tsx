@@ -64,7 +64,7 @@ const CartSidebar: React.FC<CartSidebarProps> = ({ isOpen, closeCart }) => {
           <div className='cart-subtotal'>
             <p>SubTotal</p>
             <p className='subtotal-amount'>
-              Rs.{formatNumber(calculateSubtotal(cartState.cartItems))}
+              Rs. {formatNumber(calculateSubtotal(cartState.cartItems))}
             </p>
           </div>
         )}

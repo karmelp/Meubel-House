@@ -26,7 +26,7 @@ const CartContext = createContext<
 
 const initialState: CartState = {
   cartItems:
-    window.localStorage.getItem('cartItems') !== null
+    typeof window !== 'undefined' && window.localStorage.getItem('cartItems') !== null
       ? JSON.parse(window.localStorage.getItem('cartItems') as string).cartItems
       : [],
   isOpen: false,
