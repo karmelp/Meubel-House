@@ -2,7 +2,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import { API_BASE_URL } from '@/app/api/config';
+import { API_BASE_URL } from '@/api/config';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import LinkBtn from '@/app/ui/components/linkBtn/LinkBtn';
@@ -55,7 +55,7 @@ export default function Blog() {
   useEffect(() => {
     const fetchAllData = async () => {
       try {
-        const response = await fetch(`${API_BASE_URL}/app/api/json-server/blogPosts`, {
+        const response = await fetch(`${API_BASE_URL}/api/json-server/blogPosts`, {
           cache: 'no-store',
         });
 
