@@ -1,23 +1,53 @@
 'use client';
-import React from 'react';
-import { createContext, useState } from 'react';
+import React, { createContext, useContext, useState } from 'react';
+import { login, logout } from '@/app/services/authServices';
 
-export const AuthContext = createContext({
+interface AuthContextProps {
+  isAuthenticated: boolean;
+  authenticate: (email: string, password: string) => void;
+  signout: () => void;
+}
+
+export const AuthContext = createContext<AuthContextProps>({
   isAuthenticated: false,
-  login: () => {},
-  logout: () => {}
+  authenticate: () => {},
+  signout: () => {},
 });
 
-export default function AuthProvider( {children}:{children:React.ReactNode} ) {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  
-  function login() {
-    setIsAuthenticated(true);
-  }
-
-  function logout() {
-    setIsAuthenticated(false);
-  }
-
-  return <AuthContext.Provider value={{isAuthenticated, login, logout}}> {children} </AuthContext.Provider>;
+interface AuthProviderProps {
+  children: React.ReactNode;
 }
+
+export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
+  const [isAuthenticated, setIsAuthenticated] = useState(
+    localStorage.getItem('accessToken') ? true : false
+  );
+
+  const authenticate = async (email: string, password: string) => {
+    try {
+      const response = await login(email, password);
+      localStorage.setItem('accessToken', response['access_token']);
+      setIsAuthenticated(true);
+    } catch (error) {
+      console.error('Authentication Error: ', error);
+    }
+  };
+
+  const signout = async () => {
+    try {
+      await logout();
+      localStorage.removeItem('accessToken');
+      setIsAuthenticated(false);
+    } catch (error) {
+      console.error('Sign Out Error: ', error);
+    }
+  };
+
+  return (
+    <AuthContext.Provider value={{ isAuthenticated, authenticate, signout }}>
+      {children}
+    </AuthContext.Provider>
+  );
+};
+
+export const useAuth = (): AuthContextProps => useContext(AuthContext);

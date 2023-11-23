@@ -1,9 +1,10 @@
 'use client';
-import { useState, useContext } from 'react';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
 import { NextRouter } from 'next/router';
+import { useRouter } from 'next/router';
 
-import { AuthContext } from '@/app/lib/AuthContext';
+import { useAuth } from '@/app/lib/AuthContext';
 
 import BigBtn from '../bigBtn/BigBtn';
 
@@ -13,11 +14,14 @@ interface LoginRegisterFormsProps {
   router: NextRouter;
 }
 
-const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = ({ router }) => {
-  const { login } = useContext(AuthContext);
+const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = () => {
+  const router = useRouter();
+  const [formState, setFormState] = useState({
+    email: '',
+    password: ''
+  });
+  const { authenticate, isAuthenticated } = useAuth();
   const [rememberMe, setRememberMe] = useState(false);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
   const [usernameTouched, setUsernameTouched] = useState(false);
   const [passwordTouched, setPasswordTouched] = useState(false);
   const [email, setEmail] = useState('');
@@ -30,36 +34,17 @@ const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = ({ router }) => {
     setActiveForm(targetForm);
   };
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
     setUsernameTouched(true);
     setPasswordTouched(true);
 
-    if (!username) {
+    if (!formState.email || !formState.password) {
       return;
     }
 
-    if (!password) {
-      return;
-    }
-
-    try {
-      // Mock response for demonstration purposes
-      const res = {
-        data: { jwt: 'asdasdfdasfadf', refreshToken: 'adfasdfasdfasdfadsf' }
-      };
-
-      const { jwt } = res.data;
-
-      login();
-
-      console.log('Remember Me:', rememberMe);
-
-      router.push('/my-account');
-    } catch (err) {
-      setError('Incorrect username or password');
-    }
+    authenticate(formState.email, formState.password);
   };
 
   // Clear the error message when the user starts typing
@@ -73,32 +58,38 @@ const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = ({ router }) => {
       setPasswordTouched(true);
     }
   };
-  
+
   const handleLoginClick = () => {
     // Call the handleSubmit function without passing any arguments
-    handleSubmit({
+    handleFormSubmit({
       preventDefault: () => {},
     } as React.FormEvent<HTMLFormElement>);
   };
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      router.push('/my-account');
+    }
+  }, [isAuthenticated, router]);
 
   return (
     <div className="loginRegisterForms-components">
       <div className={`form-container ${activeForm === 'login' ? 'active' : 'inactive'}`} id="login">
         <h4>Login</h4>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleFormSubmit}>
           <div className="input-cont">
             <label htmlFor="username">Username or email address</label>
             <input
               id='username'
               type="text"
-              value={username}
-              onChange={(event) => {
+              value='username'
+              onChange={(e) => {
                 handleInputChange('username');
-                setUsername(event.target.value);
+                setFormState({ ...formState, email: e.target.value });
               }}
               required
             />
-            {usernameTouched && !username && <p className="error">Username is required</p>}
+            {usernameTouched && !formState.email && <p className="error">Username is required</p>}
           </div>
 
           <div className="input-cont">
@@ -106,14 +97,14 @@ const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = ({ router }) => {
             <input
               type="password"
               id="password"
-              value={password}
-              onChange={(event) => {
+              value='password'
+              onChange={(e) => {
                 handleInputChange('password');
-                setPassword(event.target.value);
+                setFormState({ ...formState, password: e.target.value });
               }}
               required
             />
-            {passwordTouched && !password && <p className="error">Password is required</p>}
+            {passwordTouched && !formState.password && <p className="error">Password is required</p>}
           </div>
           <div className="checkbox">
             <input 
@@ -129,7 +120,7 @@ const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = ({ router }) => {
             <Link href="#">Lost Your Password?</Link>
           </div>
           <Link href='#' className='switch' onClick={(e) => handleSwitchForm(e, 'register')}>
-            Not a user? Click here to register!
+                Not a user? Click here to register!
           </Link>
         </form>
       </div>
@@ -149,7 +140,7 @@ const LoginRegisterForms: React.FC<LoginRegisterFormsProps> = ({ router }) => {
           <p>Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <Link href="/privacy-policy">privacy policy</Link>.</p>
           <BigBtn title="Register" />
           <Link href='#' className='switch' onClick={(e) => handleSwitchForm(e, 'login')}>
-            Already a user? Click here to log in!
+              Already a user? Click here to log in!
           </Link>
         </form>
       </div>

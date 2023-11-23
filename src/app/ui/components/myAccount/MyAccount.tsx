@@ -1,6 +1,4 @@
-import { useContext } from 'react';
-import { AuthContext } from '@/app/lib/AuthContext';
-import { useRouter, NextRouter } from 'next/router';
+import { useAuth } from '@/app/lib/AuthContext';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
@@ -9,17 +7,13 @@ import Dashboard from '@/app/ui/components/dashboard/Dashboard';
 
 import heroImage from '@/public/hero-bg.jpg';
 
-interface MyAccountPageProps {
-  router: ReturnType<typeof useRouter>;
-}
-
 const breadcrumbs = [
   { text: 'Home', link: '/' },
   { text: 'My Account', link: '/my-account' },
 ];
 
-const MyAccountPage: React.FC<MyAccountPageProps> = ({ router }) => {
-  const context = useContext(AuthContext);
+const MyAccountPage: React.FC = () => {
+  const { isAuthenticated } = useAuth();
 
   return (
     <div>
@@ -29,10 +23,10 @@ const MyAccountPage: React.FC<MyAccountPageProps> = ({ router }) => {
         heroImage={heroImage}
       />
             
-      {context.isAuthenticated ? (
+      {isAuthenticated ? (
         <Dashboard />
       ) : (
-        <LoginRegisterForms router={router} />
+        <LoginRegisterForms />
       )}
 
       <InfoSection />
