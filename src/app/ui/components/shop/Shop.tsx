@@ -2,6 +2,7 @@
 import { useState,useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { API_BASE_URL } from '@/app/api/config';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import FilterBtn from '@/public/system-uicons_filtering.svg';
@@ -32,7 +33,7 @@ function Shop() {
     // Fetch data from the API
     const fetchData = async () => {
       try {
-        const productsFetch = await fetch('http://localhost:3001/products', {
+        const productsFetch = await fetch(`${API_BASE_URL}/products`, {
           cache: 'no-store',
         });
         const Products1 = await productsFetch.json();
