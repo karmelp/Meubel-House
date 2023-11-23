@@ -68,7 +68,7 @@
                         }
                     }
                 }
-            }  
+            }
         }
 
         .blog-navi {
@@ -81,7 +81,7 @@
             .nav {
                 .search-bar {
                     position: relative;
-                  
+
                     input {
                         padding: 12px clamp(2.25rem, 0.7554rem + 5.9783vw, 3.625rem) 12px clamp(1.5rem, 0.9565rem + 2.1739vw, 2rem);
                         width: 100%;
@@ -128,7 +128,7 @@
                                     color: $gold;
                                 }
                             }
-         
+
                             p {
                                 color: $gray;
                             }
@@ -166,7 +166,7 @@
                         display: flex;
                         flex-direction: row;
                         gap: 12px;
-                        
+
                         &:hover {
                             .title {
                                 color: $gold;

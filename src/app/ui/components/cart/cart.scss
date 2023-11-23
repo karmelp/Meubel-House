@@ -28,29 +28,33 @@
             align-items: center;
             gap: 80px;
         }
-    
+
         .cart-totals {
             background-color: $lightYellow;
             padding: 15px clamp(1.5625rem, -6.1298rem + 12.0192vw, 4.6875rem) 80px;
             width: 393px;
             display: flex;
+            align-items: center;
             flex-direction: column;
-            gap: clamp(1.875rem, -4.125rem + 12.5vw, 3.875rem);
+            gap: clamp(1.875rem, -1.9753rem + 8.0214vw, 3.75rem);
 
             @media screen and (max-width: 1142px) {
-                width: 100%;
                 padding: 40px clamp(1.5625rem, -6.1298rem + 12.0192vw, 4.6875rem);
+                width: 100%;
+
             }
 
             h5 {
                 text-align: center;
             }
-    
+
             .cart {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 gap: 40px;
+                max-width: 393px;
+                width: 100%;
 
                 .totals {
                     display: flex;
@@ -62,7 +66,7 @@
                     .section {
                         display: flex;
                         justify-content: space-between;
-                        
+
                         p {
                             font-weight: 500;
                         }
@@ -84,7 +88,7 @@
                 a {
                     display: flex;
                     justify-content: center;
-                    
+
                     .bigBtn {
                         height: 58px;
                     }
