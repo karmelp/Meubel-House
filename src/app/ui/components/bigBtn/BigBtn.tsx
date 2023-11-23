@@ -13,11 +13,4 @@ const BigBtn: React.FC<Props> = ({ title, onClick }) => {
   );
 };
 
-// BigBtn.propTypes = {
-//   // The text to display inside the button
-//   title: PropTypes.string.isRequired,
-//   // The color of the button
-//   color: PropTypes.string.isRequired,
-// };
-
 export default BigBtn;

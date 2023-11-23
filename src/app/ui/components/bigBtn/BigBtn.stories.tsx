@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {
-    title: { control: 'text', defaultValue: 'View More' },
+    title: { control: 'text', defaultValue: 'Submit' },
     onClick: { action: 'clicked' },
   },
 } satisfies Meta<typeof BigBtn>;
