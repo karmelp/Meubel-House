@@ -35,7 +35,7 @@
             width: 393px;
             display: flex;
             flex-direction: column;
-            gap: 60px;
+            gap: clamp(1.875rem, -4.125rem + 12.5vw, 3.875rem);
 
             @media screen and (max-width: 1142px) {
                 width: 100%;

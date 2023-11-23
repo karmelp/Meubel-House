@@ -13,7 +13,7 @@
         width: 200px;
         border: none;
         border-radius: none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $black;
         padding-bottom: 5px;
 
         &:focus {
@@ -36,7 +36,12 @@
         text-transform: uppercase;
         background-color: transparent;
         border: none;
-        border-bottom: 1px solid #000;
+        border-bottom: 1px solid $black;
         font-weight: 500;
+
+        &:hover {
+            color: $gold;
+            border-color: $gold;
+        }
     }
 }

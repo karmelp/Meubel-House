@@ -10,6 +10,7 @@ import ProductCard from './ui/components/productCard/ProductCard';
 
 import hero from '@/public/Rocket single seater 1.png';
 import Prod1 from '@/public/Granite-square-side-table.png';
+import Prod2 from '@/public/Outdoor-bar-table-and-stool.png';
 import NewArrivalImg from '@/public/Asgaard-sofa.png';
 
 import Clock from '@/public/clock_outline.svg';
@@ -101,18 +102,21 @@ export default function Home() {
             <div className="image">
               <Image src={Prod1} alt='Side table' />
             </div>
-            <h6>Side table</h6>
-            <LinkBtn link={'/shop'} text='View more' />
+            <div className="info">
+              <h6>Side table</h6>
+              <LinkBtn link={'/shop'} text='View more' />
+            </div>
           </div>
           <div className='product'>
             <div className="image">
-              <Image src={Prod1} alt='Side table' />
+              <Image src={Prod2} alt='Side table' />
             </div>
-            <h6>Side table</h6>
-            <LinkBtn link={'/shop'} text='View more' />
+            <div className="info">
+              <h6>Side table</h6>
+              <LinkBtn link={'/shop'} text='View more' />
+            </div>
           </div>
         </div>
-
       </div>
 
       <div className='section_two'>
