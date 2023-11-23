@@ -5,6 +5,9 @@ import BigBtn from './BigBtn';
 const meta = {
   title: 'Components/BigBtn',
   component: BigBtn,
+  parameters: {
+    layout: 'centered',
+  },
   tags: ['autodocs'],
   argTypes: {
     title: { control: 'text', defaultValue: 'View More' },
@@ -13,7 +16,11 @@ const meta = {
 } satisfies Meta<typeof BigBtn>;
 
 export default meta;
-//type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>;
 
-const Template = (args: any) => <BigBtn {...args} />;
-export const Default = Template.bind({});
+export const BigBtnMain: Story = {
+  args: {
+    title: 'Submit',
+    onClick: () => console.log('Clicked'),
+  },
+};
