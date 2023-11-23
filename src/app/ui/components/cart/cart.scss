@@ -34,8 +34,14 @@
             padding: 15px clamp(1.5625rem, -6.1298rem + 12.0192vw, 4.6875rem) 80px;
             width: 393px;
             display: flex;
+            align-items: center;
             flex-direction: column;
-            gap: 60px;
+            gap: clamp(1.875rem, -1.9753rem + 8.0214vw, 3.75rem);
+
+            @media screen and (max-width: 1142px) {
+                padding: 40px clamp(1.5625rem, -6.1298rem + 12.0192vw, 4.6875rem);
+                width: 100%;
+            }
 
             h5 {
                 text-align: center;
@@ -45,6 +51,8 @@
                 display: flex;
                 flex-direction: column;
                 gap: 40px;
+                max-width: 393px;
+                width: 100%;
 
                 .totals {
                     display: flex;
