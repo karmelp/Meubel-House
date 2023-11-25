@@ -1,6 +1,6 @@
 'use client';
-import { useContext } from 'react';
-import { AuthContext } from '@/app/lib/AuthContext';
+import { useAuth } from '@/app/lib/AuthContext';
+import { useRouter } from 'next/navigation';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
@@ -9,33 +9,23 @@ import Dashboard from '@/app/ui/components/dashboard/Dashboard';
 
 import heroImage from '@/public/hero-bg.jpg';
 
-import './myAccount.scss';
-
 const breadcrumbs = [
   { text: 'Home', link: '/' },
   { text: 'My Account', link: '/my-account' },
 ];
 
-const MyAccount = () => {
-  const context = useContext(AuthContext);
+const MyAccountPage: React.FC = () => {
+  const { isAuthenticated } = useAuth();
 
   return (
     <div>
-      <Hero 
-        pageTitle="My Account"
-        breadcrumbs={breadcrumbs}
-        heroImage={heroImage}
-      />
-            
-      {context.isAuthenticated ? (
-        <Dashboard />
-      ) : (
-        <LoginRegisterForms />
-      )}
+      <Hero pageTitle='My Account' breadcrumbs={breadcrumbs} heroImage={heroImage} />
+
+      {isAuthenticated ? <Dashboard /> : <LoginRegisterForms />}
 
       <InfoSection />
     </div>
   );
 };
 
-export default MyAccount;
+export default MyAccountPage;
