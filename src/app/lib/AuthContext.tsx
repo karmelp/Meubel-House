@@ -1,6 +1,6 @@
 'use client';
 import React, { createContext, useContext, useState } from 'react';
-import { login, logout } from '@/app/services/authServices';
+import { login, logout } from '@/app/services/AuthServices';
 
 interface AuthContextProps {
   isAuthenticated: boolean;

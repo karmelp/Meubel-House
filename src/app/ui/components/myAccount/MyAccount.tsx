@@ -1,4 +1,6 @@
+'use client';
 import { useAuth } from '@/app/lib/AuthContext';
+import { useRouter } from 'next/router';
 
 import Hero from '@/app/ui/components/hero/Hero';
 import InfoSection from '@/app/ui/components/infoSection/InfoSection';
@@ -14,6 +16,7 @@ const breadcrumbs = [
 
 const MyAccountPage: React.FC = () => {
   const { isAuthenticated } = useAuth();
+  const router = useRouter();
 
   return (
     <div>
@@ -26,7 +29,7 @@ const MyAccountPage: React.FC = () => {
       {isAuthenticated ? (
         <Dashboard />
       ) : (
-        <LoginRegisterForms />
+        <LoginRegisterForms router={router} />
       )}
 
       <InfoSection />

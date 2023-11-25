@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import AuthProvider from '@/app/lib/AuthContext';
+import { AuthProvider } from '@/app/lib/AuthContext';
 import { CartProvider } from '@/app/lib/CartContext';
 
 import { poppins } from '@/app/ui/fonts';

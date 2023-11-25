@@ -1,12 +1,12 @@
 import { Metadata } from 'next';
-import MyAccountClientWrapper from '@/app/ui/components/MyAccountClientWrapper/MyAccountClientWrapper';
+import MyAccountPage from '@/app/ui/components/myAccount/MyAccount';
 
 export const metadata: Metadata = {
   title: 'My Account',
 };
 
 const MyAccount: React.FC = () => {
-  return <MyAccountClientWrapper />;
+  return <MyAccountPage />;
 };
 
 export default MyAccount;

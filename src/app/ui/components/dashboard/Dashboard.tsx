@@ -1,5 +1,5 @@
 import { AuthProvider } from '@/app/lib/AuthContext';
-import BigBtn from '../bigBtn/BigBtn';
+import BigBtn from '@/app/ui/components/bigBtn/BigBtn';
 
 import './dashboard.scss';
 
